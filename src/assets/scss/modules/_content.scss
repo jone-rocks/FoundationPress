@@ -1,0 +1,31 @@
+.bg-dark-grey {
+  background: $dark-grey;
+  color: #fff;
+}
+
+.bg-light-grey {
+  background: $light-grey;
+}
+
+.start-img {
+  img {
+    width: 100%;
+  }
+}
+
+.staerken {
+  .cell {
+    border-right: $red solid 1px;
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}
+
+.color-red {
+  color: $red;
+}
+
+.padding-small {
+  padding: 20px 30px;
+}
