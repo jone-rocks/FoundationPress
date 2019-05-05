@@ -69,22 +69,80 @@ get_header(); ?>
 <div class="grid-container">
 	<div class="grid-x grid-padding-y align-center">
 		<div class="cell small-8 text-center">
-			<h3 class="color-red">Stärken und Vorteile</h3>
+			<h3 class="color-red">Referenzen</h3>
 			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</p>
 		</div>
 	</div>
-	<div class="grid-x grid-padding-y staerken">
-		<div class="cell small-3 text-center">
-			Kompetenz
+	<div class="grid-x grid-padding-y align-center">
+		<div class="cell">
+			SLIDER GOES HERE!
 		</div>
-		<div class="cell small-3 text-center">
-			Persönlichkeit
+	</div>
+</div>
+
+<!-- Leistungen -->
+<div class="grid-container">
+	<div class="grid-x grid-padding-y align-center">
+		<div class="cell text-center">
+			<h3 class="color-red">Unsere Leistungen im Überblick</h3>
 		</div>
-		<div class="cell small-3 text-center">
-			Regional
+	</div>
+	<div class="grid-x grid-padding-y grid-margin-x grid-margin-y leistungen">
+		<div class="cell small-4 text-center">
+			<img src="http://cdn.onlinewebfonts.com/svg/img_132401.png" width="100px" /><br />
+			Consulting
 		</div>
-		<div class="cell small-3 text-center">
-			Zuverlässigleit
+		<div class="cell small-4 text-center">
+			<img src="http://cdn.onlinewebfonts.com/svg/img_132401.png" width="100px" /><br />
+			Consulting
+		</div>
+		<div class="cell small-4 text-center">
+			<img src="http://cdn.onlinewebfonts.com/svg/img_132401.png" width="100px" /><br />
+			Consulting
+		</div>
+		<div class="cell small-4 text-center">
+			<img src="http://cdn.onlinewebfonts.com/svg/img_132401.png" width="100px" /><br />
+			Consulting
+		</div>
+		<div class="cell small-4 text-center">
+			<img src="http://cdn.onlinewebfonts.com/svg/img_132401.png" width="100px" /><br />
+			Consulting
+		</div>
+		<div class="cell small-4 text-center">
+			<img src="http://cdn.onlinewebfonts.com/svg/img_132401.png" width="100px" /><br />
+			Consulting
+		</div>
+		<div class="cell small-4 text-center">
+			<img src="http://cdn.onlinewebfonts.com/svg/img_132401.png" width="100px" /><br />
+			Consulting
+		</div>
+		<div class="cell small-4 text-center">
+			<img src="http://cdn.onlinewebfonts.com/svg/img_132401.png" width="100px" /><br />
+			Consulting
+		</div>
+		<div class="cell small-4 text-center">
+			<img src="http://cdn.onlinewebfonts.com/svg/img_132401.png" width="100px" /><br />
+			Consulting
+		</div>
+	</div>
+</div>
+
+<!-- Aktuelles -->
+<div class="bg-light-grey">
+	<div class="grid-container">
+		<div class="grid-x grid-padding-y staerken">
+			<div class="cell small-3 text-center">
+				Kompetenz
+			</div>
+			<div class="cell small-3 text-center">
+				Persönlichkeit
+			</div>
+			<div class="cell small-3 text-center">
+				Regional
+			</div>
+			<div class="cell small-3 text-center">
+				Zuverlässigleit
+			</div>
 		</div>
 	</div>
 </div>

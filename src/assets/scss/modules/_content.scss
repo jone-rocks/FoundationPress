@@ -29,3 +29,9 @@
 .padding-small {
   padding: 20px 30px;
 }
+
+.leistungen {
+  .cell {
+    border: $light-grey solid 1px;
+  }
+}
