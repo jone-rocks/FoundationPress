@@ -7,18 +7,14 @@
   background: $light-grey;
 }
 
+.bg-red {
+  background: $red;
+  color: #fff;
+}
+
 .start-img {
   img {
     width: 100%;
-  }
-}
-
-.staerken {
-  .cell {
-    border-right: $red solid 1px;
-    &:last-child {
-      border-right: 0;
-    }
   }
 }
 
@@ -30,8 +26,42 @@
   padding: 20px 30px;
 }
 
+.staerken {
+  .cell {
+    border-right: $red solid 1px;
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}
+
 .leistungen {
   .cell {
     border: $light-grey solid 1px;
+  }
+}
+
+.aktuelles {
+  .cell {
+    hr {
+      border: 0;
+      border-top: solid $red 1px;
+    }
+    button {
+      background: #ff0000;
+      padding: 7px 10px;
+      color: #fff;
+      font-size: 12px;
+    }
+    &:hover {
+      hr {
+        border-top: solid #fff 1px;
+      }
+      button {
+        background: #fff;
+        color: $red;
+      }
+      background: $red;
+    }
   }
 }

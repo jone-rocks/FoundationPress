@@ -130,18 +130,35 @@ get_header(); ?>
 <!-- Aktuelles -->
 <div class="bg-light-grey">
 	<div class="grid-container">
-		<div class="grid-x grid-padding-y staerken">
-			<div class="cell small-3 text-center">
-				Kompetenz
+		<div class="grid-x grid-padding-y align-center">
+			<div class="cell text-center">
+				<h3 class="color-red">Aktuelles aus dem Newsblog</h3>
 			</div>
-			<div class="cell small-3 text-center">
-				Persönlichkeit
+		</div>
+		<div class="grid-x grid-padding-y grid-padding-x grid-margin-x grid-margin-y aktuelles">
+			<div class="cell small-3 bg-dark-grey">
+				<h4>Headline</h4>
+				<hr class="bg-red" />
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+				<button>mehr lesen ...</button>
 			</div>
-			<div class="cell small-3 text-center">
-				Regional
+			<div class="cell small-3 bg-dark-grey">
+				<h4>Headline</h4>
+				<hr class="bg-red" />
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+				<button>mehr lesen ...</button>
 			</div>
-			<div class="cell small-3 text-center">
-				Zuverlässigleit
+			<div class="cell small-3 bg-dark-grey">
+				<h4>Headline</h4>
+				<hr class="bg-red" />
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+				<button>mehr lesen ...</button>
+			</div>
+			<div class="cell small-3 bg-dark-grey">
+				<h4>Headline</h4>
+				<hr class="bg-red" />
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+				<button>mehr lesen ...</button>
 			</div>
 		</div>
 	</div>
