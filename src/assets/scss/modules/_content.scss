@@ -65,3 +65,28 @@
     }
   }
 }
+
+
+
+nav {
+  height: 70px;
+  &.top-bar {
+    background: none;
+    ul {
+      background: none;
+    }
+  }
+  @media print, screen and (min-width: 40em) {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem;
+  }
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  img.logo {
+    position: absolute;
+    max-height: 100px;
+    top: -5px;
+  }
+}
