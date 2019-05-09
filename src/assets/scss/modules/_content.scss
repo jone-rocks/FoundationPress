@@ -93,5 +93,22 @@ nav {
 
 
 img.support_availability {
-    width: 50px;
+  width: 50px;
   }
+
+.check {
+  width: 30px;
+}
+
+.rufbereitschaft {
+  .check-row {
+      .border-bottom {
+        border-bottom: solid 1px $light-grey;
+      }
+  }
+  .mail-phone {
+    .border-right {
+      border-right: 1px solid $light-grey;
+    }
+  }
+}

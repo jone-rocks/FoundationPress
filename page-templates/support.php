@@ -39,4 +39,40 @@ get_header(); ?>
 	</div>
 </div>
 
+<!-- Rufbereitschaft -->
+<div class="grid-container rufbereitschaft">
+	<div class="grid-x grid-padding-y align-center">
+		<div class="cell small-8 text-center">
+			<h3 class="color-red">H3 Headline - Rufbereitschaft</h3>
+			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy t dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</p>
+		</div>
+	</div>
+	<div class="grid-x grid-padding-y grid-margin-x check-row">
+		<div class="cell small-4 large-offset-2 border-bottom">
+			<img class="check" src="<?php echo get_template_directory_uri() ?>/img/haken_rot_auf_weiß.png" /> Lorem ipsum dolor sit amet
+		</div>
+		<div class="cell small-4 border-bottom">
+			<img class="check" src="<?php echo get_template_directory_uri() ?>/img/haken_rot_auf_weiß.png" /> consetetur sadipscing elitr
+		</div>
+	</div>
+	<div class="grid-x grid-padding-y grid-margin-x check-row">
+		<div class="cell small-4 large-offset-2">
+			<img class="check" src="<?php echo get_template_directory_uri() ?>/img/haken_rot_auf_weiß.png" /> sed diam nonumy eirmod tempor
+		</div>
+		<div class="cell small-4">
+			<img class="check" src="<?php echo get_template_directory_uri() ?>/img/haken_rot_auf_weiß.png" /> eirmod tempor invidunt ut labore e
+		</div>
+	</div>
+	<div class="grid-x grid-padding-y mail-phone">
+		<div class="cell small-2 large-offset-4 text-center border-right">
+			<img class="check" src="http://cdn.onlinewebfonts.com/svg/img_132401.png" /><br />
+			<a href="mailto:info@Raab-IT.de">info@Raab-IT.de</a>
+		</div>
+		<div class="cell small-2 text-center">
+			<img class="check" src="http://cdn.onlinewebfonts.com/svg/img_132401.png" /><br />
+			<a href="call:+498001013398">08001013398</a>
+		</div>
+	</div>
+</div>
+
 <?php get_footer();
