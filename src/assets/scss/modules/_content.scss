@@ -100,15 +100,18 @@ img.support_availability {
   width: 30px;
 }
 
-.rufbereitschaft {
-  .check-row {
-      .border-bottom {
-        border-bottom: solid 1px $light-grey;
-      }
-  }
+.rufbereitschaft, .benutzerservice {
   .mail-phone {
     .border-right {
       border-right: 1px solid $light-grey;
     }
   }
+}
+
+
+.border-bottom-lightgrey {
+  border-bottom: solid 1px $light-grey;
+}
+.border-bottom-red {
+  border-bottom: solid 1px $red;
 }
