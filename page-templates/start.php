@@ -8,7 +8,7 @@ get_header(); ?>
 <div class="grid-container full start-img">
 	<div class="grid-x">
 		<div class="cell">
-			<img src="<?php echo get_template_directory_uri() ?>/img/full-bg-img.jpg" />
+			<?php echo wp_get_attachment_image( get_field('startseite_header_img'), 'full' ); ?>
 		</div>
 	</div>
 </div>
@@ -18,11 +18,11 @@ get_header(); ?>
 	<div class="grid-container">
 		<div class="grid-x grid-padding-y small-up-1 medium-up-2 large-up-2">
 			<div class="cell">
-				<h1>Ihre IT in besten Händen</h1>
-				<h2>Raab IT-Systemhaus - seit 1988</h2>
+				<h1><?php the_field('startseite_title'); ?></h1>
+				<h2><?php the_field('startseite_header'); ?></h2>
 			</div>
 			<div class="cell">
-				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</p>
+				<p><?php the_field('startseite_titletext'); ?></p>
 			</div>
 		</div>
 	</div>
@@ -32,22 +32,26 @@ get_header(); ?>
 <div class="grid-container">
 	<div class="grid-x grid-padding-y align-center">
 		<div class="cell small-8 text-center">
-			<h3 class="color-red">Stärken und Vorteile</h3>
-			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</p>
+			<h3 class="color-red"><?php the_field('staerken_title'); ?></h3>
+			<p><?php the_field('staerken_text'); ?></p>
 		</div>
 	</div>
 	<div class="grid-x grid-padding-y staerken">
 		<div class="cell small-3 text-center">
-			Kompetenz
+			<?php echo wp_get_attachment_image( get_field('startseite_header_img'), 'full' ); ?><br />
+			<?php the_field('staerken_imgtxt_1'); ?>
 		</div>
 		<div class="cell small-3 text-center">
-			Persönlichkeit
+			<?php echo wp_get_attachment_image( get_field('startseite_header_img'), 'full' ); ?><br />
+			<?php the_field('staerken_imgtxt_2'); ?>
 		</div>
 		<div class="cell small-3 text-center">
-			Regional
+			<?php echo wp_get_attachment_image( get_field('startseite_header_img'), 'full' ); ?><br />	
+			<?php the_field('staerken_imgtxt_3'); ?>
 		</div>
 		<div class="cell small-3 text-center">
-			Zuverlässigleit
+			<?php echo wp_get_attachment_image( get_field('startseite_header_img'), 'full' ); ?><br />
+			<?php the_field('staerken_imgtxt_4'); ?>
 		</div>
 	</div>
 </div>
@@ -56,11 +60,11 @@ get_header(); ?>
 <div class="grid-container">
 	<div class="grid-x">
 		<div class="cell small-5 bg-dark-grey padding-small">
-			<h3>Geschäftsführung</h3>
-			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</p>
+			<h3><?php the_field('geschaeftsfuehrung_header'); ?></h3>
+			<p><?php the_field('geschaeftsfuehrung_txt'); ?></p>
 		</div>
 		<div class="cell small-7">
-			<img src="<?php echo get_template_directory_uri() ?>/img/gesch-img.png" />
+			<?php echo wp_get_attachment_image( get_field('geschaeftsfuehrung_img'), 'full' ); ?>
 		</div>
 	</div>
 </div>
@@ -69,13 +73,19 @@ get_header(); ?>
 <div class="grid-container">
 	<div class="grid-x grid-padding-y align-center">
 		<div class="cell small-8 text-center">
-			<h3 class="color-red">Referenzen</h3>
-			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</p>
+			<h3 class="color-red"><?php the_field('referenzen_header'); ?></h3>
+			<p><?php the_field('referenzen_txt'); ?></p>
 		</div>
 	</div>
 	<div class="grid-x grid-padding-y align-center">
 		<div class="cell">
-			SLIDER GOES HERE!
+		<?php
+			if( have_rows('logo_slider') ):
+				while ( have_rows('logo_slider') ) : the_row();
+					the_sub_field('logo');
+				endwhile;
+			endif;
+		?>
 		</div>
 	</div>
 </div>
@@ -84,50 +94,26 @@ get_header(); ?>
 <div class="grid-container">
 	<div class="grid-x grid-padding-y align-center">
 		<div class="cell text-center">
-			<h3 class="color-red">Unsere Leistungen im Überblick</h3>
+			<h3 class="color-red"><?php the_field('leistungen_header'); ?></h3>
 		</div>
 	</div>
+
 	<div class="grid-x grid-padding-y grid-margin-x grid-margin-y leistungen">
-		<div class="cell small-4 text-center">
-			<img src="http://cdn.onlinewebfonts.com/svg/img_132401.png" width="100px" /><br />
-			Consulting
-		</div>
-		<div class="cell small-4 text-center">
-			<img src="http://cdn.onlinewebfonts.com/svg/img_132401.png" width="100px" /><br />
-			Consulting
-		</div>
-		<div class="cell small-4 text-center">
-			<img src="http://cdn.onlinewebfonts.com/svg/img_132401.png" width="100px" /><br />
-			Consulting
-		</div>
-		<div class="cell small-4 text-center">
-			<img src="http://cdn.onlinewebfonts.com/svg/img_132401.png" width="100px" /><br />
-			Consulting
-		</div>
-		<div class="cell small-4 text-center">
-			<img src="http://cdn.onlinewebfonts.com/svg/img_132401.png" width="100px" /><br />
-			Consulting
-		</div>
-		<div class="cell small-4 text-center">
-			<img src="http://cdn.onlinewebfonts.com/svg/img_132401.png" width="100px" /><br />
-			Consulting
-		</div>
-		<div class="cell small-4 text-center">
-			<img src="http://cdn.onlinewebfonts.com/svg/img_132401.png" width="100px" /><br />
-			Consulting
-		</div>
-		<div class="cell small-4 text-center">
-			<img src="http://cdn.onlinewebfonts.com/svg/img_132401.png" width="100px" /><br />
-			Consulting
-		</div>
-		<div class="cell small-4 text-center">
-			<img src="http://cdn.onlinewebfonts.com/svg/img_132401.png" width="100px" /><br />
-			Consulting
-		</div>
+		<?php
+			if( have_rows('leistungen_tile') ):
+				while ( have_rows('leistungen_tile') ) : the_row();?>
+				<div class="cell small-4 text-center">
+					<?php echo wp_get_attachment_image( get_sub_field('leistungen_icon'), 'full' ); ?><br />
+					<?php the_sub_field('leistungen_txt'); ?>
+				</div>
+				<?php endwhile;
+			endif;
+		?>
 	</div>
 </div>
 
 <!-- Aktuelles -->
+<!--
 <div class="bg-light-grey">
 	<div class="grid-container">
 		<div class="grid-x grid-padding-y align-center">
@@ -163,7 +149,7 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
-
+-->
 
 
 <?php get_footer();
