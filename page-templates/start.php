@@ -15,7 +15,7 @@ get_header(); ?>
 
 <!-- Dark BG Header -->
 <div class="bg-dark-grey">
-	<div class="grid-container">
+	<div class="grid-container headline">
 		<div class="grid-x grid-padding-y small-up-1 medium-up-2 large-up-2">
 			<div class="cell">
 				<h1><?php the_field('startseite_title'); ?></h1>
@@ -38,26 +38,26 @@ get_header(); ?>
 	</div>
 	<div class="grid-x grid-padding-y staerken">
 		<div class="cell small-3 text-center">
-			<?php echo wp_get_attachment_image( get_field('startseite_header_img'), 'full' ); ?><br />
+			<?php echo wp_get_attachment_image( get_field('staerken_img_1'), 'full' ); ?><br />
 			<?php the_field('staerken_imgtxt_1'); ?>
 		</div>
 		<div class="cell small-3 text-center">
-			<?php echo wp_get_attachment_image( get_field('startseite_header_img'), 'full' ); ?><br />
+			<?php echo wp_get_attachment_image( get_field('staerken_img_2'), 'full' ); ?><br />
 			<?php the_field('staerken_imgtxt_2'); ?>
 		</div>
 		<div class="cell small-3 text-center">
-			<?php echo wp_get_attachment_image( get_field('startseite_header_img'), 'full' ); ?><br />	
+			<?php echo wp_get_attachment_image( get_field('staerken_img_3'), 'full' ); ?><br />	
 			<?php the_field('staerken_imgtxt_3'); ?>
 		</div>
 		<div class="cell small-3 text-center">
-			<?php echo wp_get_attachment_image( get_field('startseite_header_img'), 'full' ); ?><br />
+			<?php echo wp_get_attachment_image( get_field('staerken_img_4'), 'full' ); ?><br />
 			<?php the_field('staerken_imgtxt_4'); ?>
 		</div>
 	</div>
 </div>
 
 <!-- Geschäftsführung -->
-<div class="grid-container">
+<div class="grid-container geschaeftsfuehrung">
 	<div class="grid-x">
 		<div class="cell small-5 bg-dark-grey padding-small">
 			<h3><?php the_field('geschaeftsfuehrung_header'); ?></h3>
@@ -82,7 +82,7 @@ get_header(); ?>
 		<?php
 			if( have_rows('logo_slider') ):
 				while ( have_rows('logo_slider') ) : the_row();
-					the_sub_field('logo');
+				echo wp_get_attachment_image( get_sub_field('logo'), 'full' );
 				endwhile;
 			endif;
 		?>
@@ -91,20 +91,20 @@ get_header(); ?>
 </div>
 
 <!-- Leistungen -->
-<div class="grid-container">
+<div class="grid-container leistungen">
 	<div class="grid-x grid-padding-y align-center">
 		<div class="cell text-center">
 			<h3 class="color-red"><?php the_field('leistungen_header'); ?></h3>
 		</div>
 	</div>
 
-	<div class="grid-x grid-padding-y grid-margin-x grid-margin-y leistungen">
+	<div class="grid-x grid-padding-y grid-margin-x grid-margin-y leistungen-tiles">
 		<?php
 			if( have_rows('leistungen_tile') ):
 				while ( have_rows('leistungen_tile') ) : the_row();?>
 				<div class="cell small-4 text-center">
-					<?php echo wp_get_attachment_image( get_sub_field('leistungen_icon'), 'full' ); ?><br />
-					<?php the_sub_field('leistungen_txt'); ?>
+					<?php echo wp_get_attachment_image( get_sub_field('leistungen_icon'), 'full' ); ?>
+					<span><?php the_sub_field('leistungen_txt'); ?></span>
 				</div>
 				<?php endwhile;
 			endif;
