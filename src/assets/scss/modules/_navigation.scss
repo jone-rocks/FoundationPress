@@ -8,6 +8,42 @@
 .site-navigation .top-bar-left {
   @include show-for(medium);
 }
+.dropdown {
+  &.menu > li > a {
+    font-size: 23px;
+    color: $dark-gray;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 2rem;
+    &:hover {
+      color: $red;
+    }
+  }
+  &.menu > li.opens-left > .is-dropdown-submenu {
+    top: 57px;
+    left: 0;
+    right: auto;
+    background: $light-gray;
+    a {
+      color: $dark-gray;
+      font-size: 80%;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+  &.menu > li.is-dropdown-submenu-parent > a {
+    &::after {
+      content: none;
+    }
+  }
+  &.menu > li.is-dropdown-submenu-parent > a {
+    padding-right: 0;
+  }
+  &.menu > li.is-active > a {
+    color: $red;
+  }
+}
 
 // Site title
 .site-desktop-title a {
