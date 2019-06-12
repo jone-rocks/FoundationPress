@@ -1,44 +1,10 @@
-$dark-nav-color: $dark-gray;
-
-body{
-  font-size: 22px;
-  font-weight: 300;
-}
-
-p {
-  font-size: 22px;
-  font-weight: 300;
-  line-height: 1.4;
-}
-
-h1, h2, h3, h4 {
-  line-height: 1;
-}
-
-h1 {
-  font-weight: 200;
-}
-
-h2 {
-  font-weight: 900;
-}
-
-h3 {
-  font-weight: 300;
-  margin-bottom: 30px;
-}
-
-h4 {
-  font-weight: 900;
-}
-
 .bg-dark-grey {
-  background: $dark-gray;
+  background: $dark-grey;
   color: #fff;
 }
 
 .bg-light-grey {
-  background: $light-gray;
+  background: $light-grey;
 }
 
 .bg-red {
@@ -57,51 +23,18 @@ h4 {
 }
 
 .padding-small {
-  padding: 40px;
-}
-
-.grid-container {
-  margin-top: 60px;
-  margin-bottom: 60px;
-  &:first-child {
-    margin-top: 0px;
-  }
-  &.headline {
-    padding: 80px 0;
-  }
-}
-
-.geschaeftsfuehrung {
-  h3 {
-    margin-bottom: 30px;
-  }
+  padding: 20px 30px;
 }
 
 .staerken {
   .cell {
     border-right: $red solid 1px;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     &:last-child {
       border-right: 0;
     }
   }
 }
 
-.leistungen-tiles {
-  img {
-    width: 80px;
-  }
-  .cell {
-    border: $light-gray solid 1px;
-    padding: 40px;
-    font-size: 30px;
-    span {
-      display: block;
-      margin-top: 15px;
-    }
-  }
-}
 
 .aktuelles {
   .cell {
@@ -165,14 +98,14 @@ img.support_availability {
 .rufbereitschaft, .benutzerservice {
   .mail-phone {
     .border-right {
-      border-right: 1px solid $light-gray;
+      border-right: 1px solid $light-grey;
     }
   }
 }
 
 
 .border-bottom-lightgrey {
-  border-bottom: solid 1px $light-gray;
+  border-bottom: solid 1px $light-grey;
 }
 .border-bottom-red {
   border-bottom: solid 1px $red;
