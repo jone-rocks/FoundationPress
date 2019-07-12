@@ -58,3 +58,11 @@ require_once( 'library/gutenberg.php' );
 // require_once( 'library/class-foundationpress-protocol-relative-theme-assets.php' );
 
 add_filter('use_block_editor_for_post', '__return_false');
+
+
+function my_acf_init() {
+	
+	acf_update_setting('google_api_key', 'AIzaSyCDO05WIps0wGsqnTOKXKfiw-StbaeZTJU');
+}
+
+add_action('acf/init', 'my_acf_init');
