@@ -14,7 +14,7 @@ get_header(); ?>
 </div>
 
 <!-- Kontaktformular -->
-<div class="grid-container contaftform">
+<div class="grid-container contactform">
 	<div class="grid-x grid-padding-y align-center">
 		<div class="cell small-8 text-center">
 			<h3 class="color-red">H3 Headline - Kontakt</h3>
@@ -28,7 +28,7 @@ get_header(); ?>
 <!-- Telefonnummern -->
 <div class="bg-red">
 	<div class="grid-container">
-		<div class="grid-x grid-padding-y phonenumbers">
+		<div class="grid-x phonenumbers">
 			<div class="cell small-4 text-center">
 				<strong>Kundenhotline</strong></br>
 				089897128937
