@@ -23,6 +23,11 @@
 	<?php endif; ?>
 
 	<header class="site-header" role="banner">
+
+		<div class="top-bar-additional">
+			<?php wp_nav_menu( array ('menu' => 'top-bar-additional', 'menu_class' => 'menu' , 'container' => '', 'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',) ) ?>
+		</div>
+
 		<!-- Mobile -->
 		<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle(); ?>>
 			<div class="title-bar-left">
