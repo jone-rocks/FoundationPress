@@ -8,7 +8,7 @@ get_header(); ?>
 <div class="grid-container full start-img">
 	<div class="grid-x">
 		<div class="cell">
-			<img src="<?php echo get_template_directory_uri() ?>/img/full-bg-img.jpg" />
+			<?php echo wp_get_attachment_image( get_field('contact_header_img'), 'full' ); ?>
 		</div>
 	</div>
 </div>
@@ -17,10 +17,18 @@ get_header(); ?>
 <div class="grid-container contactform">
 	<div class="grid-x grid-padding-y align-center">
 		<div class="cell small-8 text-center">
-			<h3 class="color-red">H3 Headline - Kontakt</h3>
-			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy t dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</p>
+			<h3 class="color-red"><?php the_field('headline'); ?></h3>
+			<p><?php the_field('text'); ?></p>
 		</div>
 	</div>
+	<div class="grid-x contactform">
+			<div class="cell small-4 large-offset-1">
+				<?php the_field('adresse'); ?>
+			</div>
+			<div class="cell small-6">
+				<?php the_field('contactform'); ?>
+			</div>
+		</div>
 </div>
 
 
@@ -30,16 +38,16 @@ get_header(); ?>
 	<div class="grid-container">
 		<div class="grid-x phonenumbers">
 			<div class="cell small-4 text-center">
-				<strong>Kundenhotline</strong></br>
-				089897128937
+				<strong><?php the_field('phonenumber1_txt'); ?></strong></br>
+				<?php the_field('phonenumber1'); ?>
 			</div>
 			<div class="cell small-4 text-center">
-				<strong>Bestellservice</strong></br>
-				089897128937
+				<strong><?php the_field('phonenumber2_txt'); ?></strong></br>
+				<?php the_field('phonenumber2'); ?>
 			</div>
 			<div class="cell small-4 text-center">
-				<strong>Vertrieb</strong></br>	
-				089897128937
+				<strong><?php the_field('phonenumber3_txt'); ?></strong></br>
+				<?php the_field('phonenumber3'); ?>
 			</div>
 		</div>
 	</div>

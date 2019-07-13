@@ -108,10 +108,15 @@ img.support_availability {
 
 
 
+.contactform {
+  padding: 60px 0;
+}
+
 
 .phonenumbers {
-  padding: 20px 0;
+  padding: 30px 0;
   .cell {
+    padding: 5px 0;
     border-right: #fff solid 1px;
     &:last-child {
       border-right: 0;
@@ -119,6 +124,60 @@ img.support_availability {
   }
 }
 
+.nf-form-content {
+  padding: 0 !important;
+}
+
+
+.nf-form-content .list-select-wrap .nf-field-element>div, .nf-form-content input:not([type=button]), .nf-form-content textarea {
+  background: $dark-gray !important;
+  border: 0 !important;
+  color: #fff !important;
+}
+
+.nf-form-content .listselect-wrap .nf-field-element div, .nf-form-content input.ninja-forms-field, .nf-form-content select.ninja-forms-field:not([multiple]) {
+  height: 35px !important;
+}
+
+#ninja_forms_required_items, .nf-field-container {
+  margin-bottom: 15px !important;
+}
+
+.nf-input-limit {
+  margin-top: 5px !important;
+}
+
+.nf-error .nf-error-msg, .nf-error-msg, .ninja-forms-req-symbol {
+  color: $red !important;
+  font-size: 12px !important;
+}
+
+.nf-pass.field-wrap .nf-field-element:after {
+  content: none !important;
+}
+
+.nf-error.field-wrap .nf-field-element:after {
+  background: $red !important;
+  font-size: 15px !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  height: 35px !important;
+  width: 35px !important;
+  line-height: 35px !important;
+}
+
+.nf-form-content button, .nf-form-content input[type=button], .nf-form-content input[type=submit] {
+  background: $red !important;
+  color: #fff !important;
+  line-height: 35px !important;
+  padding: 0 20px !important;
+}
+
+.nf-form-content label {
+  font-size: 14px !important;
+  line-height: 22px !important;
+}
 
 
 .acf-map {
@@ -191,6 +250,9 @@ img.support_availability {
 
 
 
+.nf-form-fields-required {
+  display: none;
+}
 
 
 
