@@ -41,8 +41,8 @@
 						089897128937
 					</p>
 				</div>
-				<div class="cell small-4">
-
+				<div class="cell small-4 align-self-bottom">
+					<p><img src="<?php echo get_template_directory_uri() ?>/img/certified.png" style="float:left; width:50px;     margin: 0 10px 0 0;" /><strong>Wir sind zertifiziert<br />nach DIN EN ISO 9001:2015</strong></p>
 				</div>
 			</div>
 		</div>
