@@ -10,8 +10,54 @@
 ?>
 
 <footer class="footer-container">
-	<div class="footer-grid">
-		<?php dynamic_sidebar( 'footer-widgets' ); ?>
+	<div class="bg-dark-grey">
+		<div class="grid-container">
+			<div class="grid-x">
+				<div class="cell small-4">
+					<p>
+						<strong>Raab IT-Systemhaus GmbH & Co. KG</strong></br>
+						Gartenstraße 28<br />
+						89547 Gerstetten
+					</p>
+					<p>
+						Telefon: 07323 9527 - 0<br />
+						Telefax: 07323 9527 - 27
+					</p>
+					<p>
+						E-Mail: Info@Raab-IT.de
+					</p>
+				</div>
+				<div class="cell small-4">
+					<p>
+					<strong>Kundenhotline</strong></br>
+						089897128937
+					</p>
+					<p>
+						<strong>Bestellservice</strong></br>
+						089897128937
+					</p>
+					<p>
+						<strong>Vertrieb</strong></br>	
+						089897128937
+					</p>
+				</div>
+				<div class="cell small-4">
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bg-red">
+		<div class="grid-container">
+			<div class="grid-x subfooter">
+				<div class="cell small-6">
+					Copyright Raab IT-Systemhaus GmbH & Co. KG
+				</div>
+				<div class="cell small-6 text-right">	
+					<a href="">Impressum</a> | <a href="">Datenschutz</a> | <a href="">AGB</a>
+				</div>
+			</div>
+		</div>
 	</div>
 </footer>
 

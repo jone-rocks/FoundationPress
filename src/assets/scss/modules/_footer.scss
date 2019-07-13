@@ -1,7 +1,21 @@
 .footer-container {
-  @include xy-grid-container;
-  border-top: 1px solid $medium-gray;
-  margin-top: rem-calc(60);
+  .grid-x {
+    padding: 20px 0;
+    .cell {
+      padding: 0 20px;
+      &:first-child {
+        padding: 0;
+        border-right: #fff solid 1px;
+      }
+    }
+    &.subfooter {
+      font-size: 12px;
+      padding: 5px 0;
+      .cell {
+        border: 0;
+      }
+    }
+  }
 }
 
 .footer-grid {
