@@ -30,15 +30,15 @@ get_header(); ?>
 
 <!-- Stärken und Vorteile -->
 <div class="grid-container">
-	<div class="grid-x align-center headline">
+	<div class="grid-x align-center padding-top-80">
 		<div class="cell small-8 text-center">
 			<h3 class="color-red"><?php the_field('staerken_title'); ?></h3>
 			<p><?php the_field('staerken_text'); ?></p>
 		</div>
 	</div>
-	<div class="grid-x staerken">
-		<div class="cell small-3 text-center">
-			<?php echo wp_get_attachment_image( get_field('staerken_img_1'), 'full' ); ?><br />
+	<div class="grid-x staerken padding-bottom-80">
+	<div class="cell small-3 text-center">
+		<?php echo wp_get_attachment_image( get_field('staerken_img_1'), 'full' ); ?><br />
 			<?php the_field('staerken_imgtxt_1'); ?>
 		</div>
 		<div class="cell small-3 text-center">
@@ -71,12 +71,13 @@ get_header(); ?>
 
 <!-- Referenzen-->
 <div class="grid-container">
-	<div class="grid-x grid-padding-y align-center headline">
+	<div class="grid-x grid-padding-y align-center padding-top-80">
 		<div class="cell small-8 text-center">
 			<h3 class="color-red"><?php the_field('referenzen_header'); ?></h3>
 			<p><?php the_field('referenzen_txt'); ?></p>
 		</div>
 	</div>
+	<!--
 	<div class="grid-x grid-padding-y align-center">
 		<div class="cell">
 		<?php
@@ -88,11 +89,12 @@ get_header(); ?>
 		?>
 		</div>
 	</div>
+	-->
 </div>
 
 <!-- Leistungen -->
 <div class="grid-container">
-	<div class="grid-x align-center leistungen-header">
+	<div class="grid-x align-center leistungen-header padding-top-80">
 		<div class="cell text-center">
 			<h3 class="color-red"><?php the_field('leistungen_header'); ?></h3>
 		</div>

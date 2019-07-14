@@ -27,7 +27,7 @@
 }
 
 .staerken {
-  margin-bottom: 50px;
+  padding-top: 50px;
   .cell {
     border-right: $red solid 2px;
     padding: 5px 50px;
@@ -319,6 +319,33 @@ p {
   padding: 60px 0;
 }
 
-.headline {
-  padding: 50px 0;
+.padding-x-80 {
+  padding: 80px 0;
+}
+.padding-bottom-80 {
+  padding-bottom: 80px;
+}
+.padding-top-80 {
+  padding-top: 80px;
+}
+
+
+.telekommunikation-text {
+  padding-left: 40px;
+}
+
+.quote{
+  p {
+    font-size: 30px;
+  }
+}
+
+
+.netzwerk, .software{
+  p {
+    hyphens: auto;
+    -webkit-column-count: 2; /* Old Chrome, Safari and Opera */
+    -moz-column-count: 2; /* Old Firefox */
+    column-count: 2;
+  }
 }

@@ -41,7 +41,7 @@ get_header(); ?>
 
 <!-- Rufbereitschaft -->
 <div class="grid-container rufbereitschaft">
-	<div class="grid-x align-center headline">
+	<div class="grid-x align-center padding-x-80">
 		<div class="cell small-8 text-center">
 			<h3 class="color-red"><?php the_field('rufbereitschaft_headline'); ?></h3>
 			<p><?php the_field('rufbereitschaft_text'); ?></p>
@@ -93,7 +93,7 @@ get_header(); ?>
 <!-- Benutzerservice -->
 <div class="bg-light-grey">
 	<div class="grid-container benutzerservice">
-		<div class="grid-x align-center headline">
+		<div class="grid-x align-center padding-x-80">
 			<div class="cell small-8 text-center">
 				<h3 class="color-red"><?php the_field('benutzerservice_headline'); ?></h3>
 				<p><?php the_field('benutzerservice_text'); ?></p>
