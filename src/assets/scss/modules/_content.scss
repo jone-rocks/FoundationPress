@@ -311,7 +311,7 @@ h2 {
   font-weight: 900;
 }
 p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.4;
 }
 
@@ -347,5 +347,42 @@ p {
     -webkit-column-count: 2; /* Old Chrome, Safari and Opera */
     -moz-column-count: 2; /* Old Firefox */
     column-count: 2;
+  }
+}
+
+
+
+.it-security, .gebaeudetechnik, .systemintegration{
+  .list {
+    background-image: linear-gradient(to right, #f1f1f1 , #fefefe);
+  }
+  ul {
+    padding: 20px 0;
+  }
+  li {
+    border-bottom: 1px solid #ddd;
+    list-style: none;
+    padding: 10px 0 10px;
+    font-size: 20px;
+    &:last-child {
+      border-bottom: 0;
+    }
+    .check {
+      margin-right: 15px;
+    }
+  }
+}
+
+
+header {
+  transition: 0.2s;
+}
+
+.logo {
+  img {
+    z-index: 9999;
+    position: absolute;
+    top: 10px;
+    width: 150px;
   }
 }

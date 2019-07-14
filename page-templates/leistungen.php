@@ -37,12 +37,12 @@ while( have_rows('gebaeudetechnik') ): the_row(); ?>
 				<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 				<p><?php the_sub_field('text'); ?></p>
 			</div>
-			<div class="cell small-5">
+			<div class="cell small-5 list">
 				<ul>
 					<?php
 					if( have_rows('haken') ):
 						while ( have_rows('haken') ) : the_row();
-						?><li><?php
+						?><li><img class="check" src="<?php echo get_template_directory_uri() ?>/img/haken_rot_auf_weiß.png" />  <?php
 							the_sub_field('haken_value');?>
 							</li><?php
 						endwhile;
@@ -166,18 +166,18 @@ while( have_rows('serversysteme') ): the_row(); ?>
 <!-- Systemintegration -->
 <?php if( have_rows('gebaeudetechnik') ): 
 while( have_rows('gebaeudetechnik') ): the_row(); ?>
-	<div class="grid-container padding-x-80">
+	<div class="grid-container padding-x-80 gebaeudetechnik">
 		<div class="grid-x grid-padding-y grid-padding-x headline">
 			<div class="cell small-7">
 				<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 				<p><?php the_sub_field('text'); ?></p>
 			</div>
-			<div class="cell small-5">
+			<div class="cell small-5 list">
 				<ul>
 					<?php
 					if( have_rows('haken') ):
 						while ( have_rows('haken') ) : the_row();
-						?><li><?php
+						?><li><img class="check" src="<?php echo get_template_directory_uri() ?>/img/haken_rot_auf_weiß.png" />  <?php
 							the_sub_field('haken_value');?>
 							</li><?php
 						endwhile;
@@ -220,20 +220,21 @@ while( have_rows('software') ): the_row(); ?>
 <!-- IT-Security -->
 <?php if( have_rows('it-security') ): 
 while( have_rows('it-security') ): the_row(); ?>
-	<div class="grid-container padding-x-80">
+	<div class="grid-container padding-x-80 it-security">
 		<div class="grid-x grid-padding-y grid-padding-x headline">
 			<div class="cell small-7">
 				<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 				<p><?php the_sub_field('text'); ?></p>
 			</div>
-			<div class="cell small-5">
+			<div class="cell small-5 list">
 				<ul>
 					<?php
 					if( have_rows('haken') ):
 						while ( have_rows('haken') ) : the_row();
-						?><li><?php
-							the_sub_field('haken_value');?>
-							</li><?php
+						?>
+						<li><img class="check" src="<?php echo get_template_directory_uri() ?>/img/haken_rot_auf_weiß.png" />  <?php the_sub_field('haken_value');?></li>
+						
+						<?php
 						endwhile;
 					else :
 					endif;
