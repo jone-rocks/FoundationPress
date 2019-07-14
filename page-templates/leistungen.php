@@ -16,7 +16,7 @@ get_header(); ?>
 <!-- Dark BG Header -->
 <div class="bg-dark-grey">
 	<div class="grid-container">
-		<div class="grid-x grid-padding-y small-up-1 medium-up-2 large-up-2">
+		<div class="grid-x grid-padding-y grid-padding-x align-middle small-up-1 medium-up-2 large-up-2 dark-header">
 			<div class="cell">
 				<h1>Lorem Ipsum</h1>
 				<h2>Lorem Ipsum</h2>
@@ -42,14 +42,16 @@ get_header(); ?>
 </div>
 
 <!-- Telekommunikation -->
-<div class="grid-container full">
-	<div class="grid-x">
-		<div class="cell small-6">
-			<img src="https://picsum.photos/1000/500" />
-		</div>
-		<div class="cell small-6">
-			<h3 class="color-red">Telekommunikation</h3>
-			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy t dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</p>
+<div class="bg-light-grey">
+	<div class="grid-container full">
+		<div class="grid-x grid-padding-x align-middle">
+			<div class="cell small-6">
+				<img src="https://picsum.photos/1000/500" />
+			</div>
+			<div class="cell small-6">
+				<h3 class="color-red">Telekommunikation</h3>
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy t dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</p>
+			</div>
 		</div>
 	</div>
 </div>
@@ -89,22 +91,24 @@ get_header(); ?>
 	</div>
 </div>
 
-<!-- Zitat -->
-<div class="grid-container">
-	<div class="grid-x">
-		<div class="cell small-6">
-			<img src="https://picsum.photos/700/500" />
-		</div>
-		<div class="cell small-6 padding-small">
-			<h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy t dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, </h3>
-			<p>Jochen Raab, Geschäftsführer</p>
+<!-- Jochen Raab -->
+<div class="bg-light-grey">
+	<div class="grid-container">
+		<div class="grid-x grid-padding-x align-middle klaus-raab">
+			<div class="cell small-7">
+				<img src="<?php echo get_template_directory_uri() ?>/img/jochen-raab.png" />
+			</div>
+			<div class="cell small-5 padding-small quote">
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+				<strong>Klaus Raab, Geschäftsführer</strong>
+			</div>
 		</div>
 	</div>
 </div>
 
 <!-- Serversysteme -->
 <div class="grid-container">
-	<div class="grid-x grid-padding-y align-center">
+	<div class="grid-x grid-padding-y align-center headline">
 		<div class="cell small-8 text-center">
 			<h3 class="color-red">Serversysteme</h3>
 			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy t dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
@@ -132,7 +136,7 @@ get_header(); ?>
 
 <!-- Systemintegration -->
 <div class="grid-container">
-	<div class="grid-x grid-padding-y grid-padding-x">
+	<div class="grid-x grid-padding-y grid-padding-x headline">
 		<div class="cell small-7">
 			<h3 class="color-red">Systemintegration</h3>
 			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy t dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</p>
