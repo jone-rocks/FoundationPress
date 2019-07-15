@@ -13,7 +13,7 @@
 	<div class="bg-dark-grey">
 		<div class="grid-container">
 			<div class="grid-x">
-				<div class="cell small-4">
+				<div class="cell small-4 adress">
 					<p>
 						<strong>Raab IT-Systemhaus GmbH & Co. KG</strong></br>
 						Gartenstraße 28<br />
@@ -27,9 +27,10 @@
 						E-Mail: Info@Raab-IT.de
 					</p>
 				</div>
-				<div class="cell small-4">
+				<div class="cell small-4 phones">
+					<img src="<?php echo get_template_directory_uri() ?>/img/raabit_icon_telefon_footer.svg" class="phone-icon" />
 					<p>
-					<strong>Kundenhotline</strong></br>
+						<strong>Kundenhotline</strong></br>
 						089897128937
 					</p>
 					<p>

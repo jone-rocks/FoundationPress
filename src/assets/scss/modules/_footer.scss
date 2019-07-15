@@ -4,8 +4,18 @@
     .cell {
       padding: 0 20px;
       &:first-child {
-        padding: 0;
+        padding-right: 2%;
         border-right: #fff solid 1px;
+      }
+      .phone-icon {
+        position: absolute;
+        width: 20px;
+        top: 5px;
+        left: 14%;
+      }
+      &.phones {
+        position: relative;
+        padding-left: 8%;
       }
     }
     &.subfooter {
