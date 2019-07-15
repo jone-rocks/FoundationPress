@@ -126,7 +126,7 @@ get_header(); ?>
 	<div class="grid-x align-center padding-x-80">
 		<div class="cell small-4">
 			<h3 class="color-red"><?php the_field('support-level_headline'); ?></h3>
-			<p><?php the_field('support-level_headline'); ?></p>
+			<p><?php the_field('support-level_txt'); ?></p>
 		</div>
 		<?php
 		if( have_rows('support-level_accordion') ): ?>

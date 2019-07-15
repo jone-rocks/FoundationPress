@@ -1,4 +1,10 @@
 .footer-container {
+  a {
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
   .grid-x {
     padding: 20px 0;
     .cell {
@@ -43,5 +49,15 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+  }
+}
+
+
+.mail-phone {
+  a {
+    color: $red;
+    &:hover {
+      color: $red;
+    }
   }
 }
