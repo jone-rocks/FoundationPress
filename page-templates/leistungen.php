@@ -14,25 +14,30 @@ get_header(); ?>
 </div>
 
 <!-- Dark BG Header -->
-<div class="bg-dark-grey">
-	<div class="grid-container">
-		<div class="grid-x grid-padding-y grid-padding-x align-middle small-up-1 medium-up-2 large-up-2 dark-header">
-			<div class="cell">
-				<h1><?php the_field('leistungen_title'); ?></h1>
-				<h2><?php the_field('leistungen_title2'); ?></h2>
-			</div>
-			<div class="cell">
-				<p><?php the_field('leistungen_titletext'); ?></p>
+	<?php if( have_rows('leistungen') ): 
+	while( have_rows('leistungen') ): the_row(); ?>
+
+	<div class="bg-dark-grey">
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x align-middle small-up-1 medium-up-2 large-up-2 dark-header">
+				<div class="cell">
+					<h1><?php the_field('leistungen_title'); ?></h1>
+					<h2><?php the_field('leistungen_title2'); ?></h2>
+				</div>
+				<div class="cell">
+					<p><?php the_field('leistungen_titletext'); ?></p>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+<?php endwhile; ?>
+<?php endif; ?>
 
 <!-- Gebaeudetechnik -->
 <?php if( have_rows('gebaeudetechnik') ): 
 while( have_rows('gebaeudetechnik') ): the_row(); ?>
 	<div class="grid-container">
-		<div class="grid-x grid-padding-x gebaeudetechnik grid-padding-x align-middle padding-x-80">
+		<div class="grid-x grid-padding-x gebaeudetechnik grid-padding-x padding-x-80">
 			<div class="cell small-7">
 				<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 				<p><?php the_sub_field('text'); ?></p>
@@ -80,16 +85,16 @@ while( have_rows('netzwerk') ): the_row(); ?>
 	<div class="bg-dark-grey">
 		<div class="grid-container netzwerk padding-x-80 netzwerk">
 			<div class="grid-x text-center">
-				<div class="cell">
+				<div class="cell small-8">
 					<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 				</div>
 			</div>
-			<div class="grid-x grid-padding-y grid-margin-x align-center">
+			<div class="grid-x grid-margin-x align-center">
 				<div class="cell">
 					<p><?php the_sub_field('text'); ?></p>
 				</div>
 			</div>
-			<div class="grid-x grid-padding-y grid-margin-x check-row">
+			<div class="grid-x grid-margin-x check-row">
 				<div class="cell small-4 large-offset-2 border-bottom-red">
 					<img class="check" src="<?php echo get_template_directory_uri() ?>/img/haken_rot_auf_weiß.png" /> <?php the_sub_field('haken1'); ?>
 				</div>
@@ -97,7 +102,7 @@ while( have_rows('netzwerk') ): the_row(); ?>
 					<img class="check" src="<?php echo get_template_directory_uri() ?>/img/haken_rot_auf_weiß.png" /> <?php the_sub_field('haken2'); ?>
 				</div>
 			</div>
-			<div class="grid-x grid-padding-y grid-margin-x check-row">
+			<div class="grid-x grid-margin-x check-row">
 				<div class="cell small-4 large-offset-2">
 					<img class="check" src="<?php echo get_template_directory_uri() ?>/img/haken_rot_auf_weiß.png" /> <?php the_sub_field('haken3'); ?>
 				</div>
@@ -112,7 +117,7 @@ while( have_rows('netzwerk') ): the_row(); ?>
 
 
 <!-- Jochen Raab -->
-<div class="bg-light-grey">
+<div class="bg-light-gray-gradient">
 	<div class="grid-container">
 		<div class="grid-x grid-padding-x align-middle klaus-raab">
 			<div class="cell small-7">
@@ -120,7 +125,7 @@ while( have_rows('netzwerk') ): the_row(); ?>
 			</div>
 			<div class="cell small-5 padding-small quote">
 				<p><?php the_field('leistungen_title'); ?></p>
-				<strong>Klaus Raab, Geschäftsführer</strong>
+				<strong>Jochen Raab, Geschäftsführer</strong>
 			</div>
 		</div>
 	</div>
@@ -133,13 +138,13 @@ while( have_rows('serversysteme') ): the_row(); ?>
 
 	<div class="bg-light-grey">
 		<div class="grid-container padding-x-80">
-			<div class="grid-x grid-padding-y align-center">
+			<div class="grid-x align-center">
 				<div class="cell small-8 text-center">
 					<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 					<p><?php the_sub_field('text'); ?></p>
 				</div>
 			</div>
-			<div class="grid-x grid-padding-y staerken">
+			<div class="grid-x staerken">
 				<div class="cell small-3 text-center">
 					<?php echo wp_get_attachment_image( get_field('img_1'), 'full' ); ?><br />
 					<?php the_sub_field('imgtxt_1'); ?>
@@ -167,7 +172,7 @@ while( have_rows('serversysteme') ): the_row(); ?>
 <?php if( have_rows('gebaeudetechnik') ): 
 while( have_rows('gebaeudetechnik') ): the_row(); ?>
 	<div class="grid-container padding-x-80 gebaeudetechnik">
-		<div class="grid-x grid-padding-y grid-padding-x headline">
+		<div class="grid-x grid-padding-x headline">
 			<div class="cell small-7">
 				<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 				<p><?php the_sub_field('text'); ?></p>
@@ -205,7 +210,7 @@ while( have_rows('gebaeudetechnik') ): the_row(); ?>
 while( have_rows('software') ): the_row(); ?>
 	<div class="bg-dark-grey">
 		<div class="grid-container padding-x-80 software">
-			<div class="grid-x grid-padding-y align-center">
+			<div class="grid-x align-center">
 				<div class="cell small-8 text-justify">
 					<h3 class="color-red text-center"><?php the_sub_field('headline'); ?></h3>
 					<p><?php the_sub_field('text'); ?></p>
@@ -221,7 +226,7 @@ while( have_rows('software') ): the_row(); ?>
 <?php if( have_rows('it-security') ): 
 while( have_rows('it-security') ): the_row(); ?>
 	<div class="grid-container padding-x-80 it-security">
-		<div class="grid-x grid-padding-y grid-padding-x headline">
+		<div class="grid-x grid-padding-x headline">
 			<div class="cell small-7">
 				<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 				<p><?php the_sub_field('text'); ?></p>
@@ -262,7 +267,7 @@ while( have_rows('it-security') ): the_row(); ?>
 while( have_rows('hosting_domain') ): the_row(); ?>
 	<div class="bg-light-grey">
 		<div class="grid-container padding-x-80 software">
-			<div class="grid-x grid-padding-y align-center">
+			<div class="grid-x align-center">
 				<div class="cell small-8 text-justify">
 					<h3 class="color-red text-center"><?php the_sub_field('headline'); ?></h3>
 					<p><?php the_sub_field('text'); ?></p>
