@@ -16,7 +16,7 @@ get_header(); ?>
 <!-- Dark BG Header -->
 <div class="bg-dark-grey">
 	<div class="grid-container">
-		<div class="grid-x grid-padding-y grid-padding-x align-middle small-up-1 medium-up-2 large-up-2 dark-header">
+		<div class="grid-x grid-padding-x align-middle small-up-1 medium-up-2 large-up-2 dark-header">
 			<div class="cell">
 				<h1><?php the_field('startseite_title'); ?></h1>
 				<h2><?php the_field('startseite_header'); ?></h2>
