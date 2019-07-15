@@ -182,16 +182,13 @@ $(document).foundation();
     
     })(jQuery);
 
-
-
-
     
-    $(document).ready(function(){
+$(document).ready(function(){
     
-        $(".icon-hover").mouseover(function () {
-            $(this).attr('src', $(this).data("hover"));
-        }).mouseout(function () {
-            $(this).attr('src', $(this).data("src"));
-        });
-    
-    })(jQuery);
+    $(".leistungen_link").mouseover(function () {
+        $(this).find(".icon-hover").attr('src', $(this).find(".icon-hover").data("hover"));
+    }).mouseout(function () {
+        $(this).find(".icon-hover").attr('src', $(this).find(".icon-hover").data("src"));
+    });
+
+})(jQuery);
