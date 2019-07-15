@@ -181,3 +181,17 @@ $(document).foundation();
     });
     
     })(jQuery);
+
+
+
+
+    
+    $(document).ready(function(){
+    
+        $(".icon-hover").mouseover(function () {
+            $(this).attr('src', $(this).data("hover"));
+        }).mouseout(function () {
+            $(this).attr('src', $(this).data("src"));
+        });
+    
+    })(jQuery);

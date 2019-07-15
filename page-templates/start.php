@@ -104,10 +104,24 @@ get_header(); ?>
 		<?php
 			if( have_rows('leistungen_tile') ):
 				while ( have_rows('leistungen_tile') ) : the_row();?>
-				<div class="cell small-4 text-center">
-					<?php echo wp_get_attachment_image( get_sub_field('leistungen_icon'), 'full' ); ?><br />
-					<?php the_sub_field('leistungen_txt'); ?>
-				</div>
+					<div class="cell small-4 text-center">
+
+					<a href="<?php the_sub_field('leistungen_link'); ?>">
+
+						<?php 
+						$img_src = get_sub_field('leistungen_icon');
+						$img_hover = get_sub_field('leistungen_icon_hover');
+						?>
+						
+						<img src="<?php echo $img_src; ?>" data-src="<?php echo $img_src; ?>" data-hover="<?php echo $img_hover; ?>" class="icon-hover" alt="" />
+
+						<?php
+						// echo wp_get_attachment_image( get_sub_field('leistungen_icon'), 'full'));
+						?><br />
+
+						<?php the_sub_field('leistungen_txt'); ?>
+				</a>
+					</div>
 				<?php endwhile;
 			endif;
 		?>
