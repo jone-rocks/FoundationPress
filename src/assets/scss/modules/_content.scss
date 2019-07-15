@@ -1,5 +1,6 @@
 body {
   background: white;
+  font-weight: 300;
 }
 
 .bg-dark-grey {
@@ -410,12 +411,14 @@ img.support_availability {
 
 h1 {
   line-height: 1;
+  font-weight: 200;
 }
 h2 {
   font-weight: 900;
 }
 h3 {
   line-height: 1.1;
+  font-weight: 300;
 }
 p {
   font-size: 18px;
@@ -544,4 +547,9 @@ header {
       height: 20px;
     }
   }
+}
+
+
+strong {
+  font-weight: 400;
 }
