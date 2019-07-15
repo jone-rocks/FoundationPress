@@ -49,18 +49,18 @@ get_header(); ?>
 	</div>
 	<div class="grid-x grid-padding-y grid-margin-x check-row">
 		<div class="cell small-4 large-offset-2 border-bottom-lightgrey">
-			<img class="check" src="<?php echo get_template_directory_uri() ?>/img/haken_rot_auf_weiß.png" /> <?php the_field('rufbereitschaft_haken1'); ?>
+			<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" /> <?php the_field('rufbereitschaft_haken1'); ?>
 		</div>
 		<div class="cell small-4 border-bottom-lightgrey">
-			<img class="check" src="<?php echo get_template_directory_uri() ?>/img/haken_rot_auf_weiß.png" /> <?php the_field('rufbereitschaft_haken2'); ?>
+			<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" /> <?php the_field('rufbereitschaft_haken2'); ?>
 		</div>
 	</div>
 	<div class="grid-x grid-padding-y grid-margin-x check-row">
 		<div class="cell small-4 large-offset-2">
-			<img class="check" src="<?php echo get_template_directory_uri() ?>/img/haken_rot_auf_weiß.png" /> <?php the_field('rufbereitschaft_haken3'); ?>
+			<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" /> <?php the_field('rufbereitschaft_haken3'); ?>
 		</div>
 		<div class="cell small-4">
-			<img class="check" src="<?php echo get_template_directory_uri() ?>/img/haken_rot_auf_weiß.png" /> <?php the_field('rufbereitschaft_haken4'); ?>
+			<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" /> <?php the_field('rufbereitschaft_haken4'); ?>
 		</div>
 	</div>
 	<div class="grid-x grid-padding-y mail-phone">
@@ -101,18 +101,18 @@ get_header(); ?>
 		</div>
 		<div class="grid-x grid-padding-y grid-margin-x check-row">
 			<div class="cell small-4 large-offset-2 border-bottom-red">
-				<img class="check" src="<?php echo get_template_directory_uri() ?>/img/haken_rot_auf_weiß.png" /> <?php the_field('Benutzerservice_haken1'); ?>
+				<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" /> <?php the_field('Benutzerservice_haken1'); ?>
 			</div>
 			<div class="cell small-4  border-bottom-red">
-				<img class="check" src="<?php echo get_template_directory_uri() ?>/img/haken_rot_auf_weiß.png" /> <?php the_field('Benutzerservice_haken2'); ?>
+				<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" /> <?php the_field('Benutzerservice_haken2'); ?>
 			</div>
 		</div>
 		<div class="grid-x grid-padding-y grid-margin-x check-row">
 			<div class="cell small-4 large-offset-2">
-				<img class="check" src="<?php echo get_template_directory_uri() ?>/img/haken_rot_auf_weiß.png" /> <?php the_field('Benutzerservice_haken3'); ?>
+				<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" /> <?php the_field('Benutzerservice_haken3'); ?>
 			</div>
 			<div class="cell small-4">
-				<img class="check" src="<?php echo get_template_directory_uri() ?>/img/haken_rot_auf_weiß.png" /> <?php the_field('Benutzerservice_haken4'); ?>
+				<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" /> <?php the_field('Benutzerservice_haken4'); ?>
 			</div>
 		</div>
 	</div>
