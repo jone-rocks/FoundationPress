@@ -39,15 +39,21 @@
 		</div>
 
 		<!-- Desktop -->
-		<nav class="site-navigation top-bar" role="navigation" id="<?php foundationpress_mobile_menu_id(); ?>">
-			<div class="top-bar-left">
-				<div class="site-desktop-title top-bar-title logo">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" />
-				</div>
+		<div class="top-bar-container" data-sticky-container>
+			<div class="sticky" id="example2" data-sticky data-top-anchor="example2:top" data-options="anchor: page; marginTop: 0; stickyOn: small;" style="width:100%; z-index: 9999">
+				<nav class="site-navigation top-bar" role="navigation" id="<?php foundationpress_mobile_menu_id(); ?>" data-options="sticky_on: large">
+					<div class="top-bar-left">
+						<div class="site-desktop-title top-bar-title logo">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/raabit_logo_header.svg" class="logo_nonsticky" />
+							<img src="<?php echo get_template_directory_uri(); ?>/img/raabit_logo_haken_header.svg" class="logo_sticky" />
+						</div>
+					</div>
+					<div class="top-bar-right">
+						<?php wp_nav_menu( array ('menu' => 'nav', 'menu_class' => 'dropdown menu' , 'container' => '', 'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',) ) ?>
+					</div>
+				</nav>
 			</div>
-			<div class="top-bar-right">
-				<?php wp_nav_menu( array ('menu' => 'nav', 'menu_class' => 'dropdown menu' , 'container' => '', 'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',) ) ?>
-			</div>
-		</nav>
+		</div>
+
 
 	</header>

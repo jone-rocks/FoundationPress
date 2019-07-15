@@ -1,3 +1,7 @@
+body {
+  background: white;
+}
+
 .bg-dark-grey {
   background: $dark-gray;
   color: #fff;
@@ -409,7 +413,7 @@ p {
 }
 
 .dark-header {
-  padding: 60px 0;
+  padding: 70px 0;
 }
 
 .padding-x-80 {
@@ -477,17 +481,40 @@ p {
 
 header {
   transition: 0.2s;
+  .sticky {
+    background: white;
+  }
 }
 
 .logo {
   img {
     z-index: 9999;
     position: absolute;
-    top: 10px;
+    top: -2px;
     width: 150px;
   }
 }
 
 .bg-light-gray-gradient {
   background-image: linear-gradient(to right, #ccc, #fefefe);
+}
+
+
+.sticky {
+  &.is-anchored {
+    .logo_nonsticky {
+      display: block;
+    }
+    .logo_sticky {
+      display: none;
+    }
+  }
+  &.is-stuck {
+    .logo_nonsticky {
+      display: none;
+    }
+    .logo_sticky {
+      display: block;
+    }
+  }
 }
