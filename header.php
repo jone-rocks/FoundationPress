@@ -39,9 +39,9 @@
 		</div>
 
 		<!-- Desktop -->
-		<nav class="site-navigation top-bar data-sticky-container" role="navigation" id="<?php foundationpress_mobile_menu_id(); ?>">
-			<div class="top-bar-left" data-sticky data-margin-top="0">
-				<div class="site-desktop-title top-bar-title">
+		<nav class="site-navigation top-bar" role="navigation" id="<?php foundationpress_mobile_menu_id(); ?>">
+			<div class="top-bar-left">
+				<div class="site-desktop-title top-bar-title logo">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" />
 				</div>
 			</div>
