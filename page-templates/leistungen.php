@@ -130,7 +130,7 @@ while( have_rows('netzwerk') ): the_row(); ?>
 			<div class="cell small-5 padding-small quote">
 				<p><img src="<?php echo get_template_directory_uri() ?>/img/raabit_icon_zitat.svg" class="quote_icon" />
 					<?php the_field('zitat_txt'); ?></p>
-				<strong>Klaus Raab, Geschäftsführer</strong>
+				<strong>Jochen Raab, Geschäftsführer</strong>
 			</div>
 		</div>
 	</div>
