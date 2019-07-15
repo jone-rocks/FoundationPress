@@ -22,6 +22,12 @@
 		<?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
 	<?php endif; ?>
 
+	<div class="contact-icons">
+		<span class="phone"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_phone.svg" /></span>
+		<span class="mail"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_mail.svg" /></span>
+		<span class="newsletter"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_newsletter.svg" /></span>
+	</div>
+
 	<header class="site-header" role="banner">
 
 		<div class="top-bar-additional">
