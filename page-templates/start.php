@@ -77,19 +77,21 @@ get_header(); ?>
 			<p><?php the_field('referenzen_txt'); ?></p>
 		</div>
 	</div>
-	<!--
-	<div class="grid-x grid-padding-y align-center">
-		<div class="cell">
-		<?php
-			if( have_rows('logo_slider') ):
-				while ( have_rows('logo_slider') ) : the_row();
-					the_sub_field('logo');
-				endwhile;
-			endif;
-		?>
+	<div class="grid-x align-center">
+		<div class="cell slick_slider_cell">
+			<div class="slider">
+			<?php
+				if( have_rows('logo_slider') ):
+					while ( have_rows('logo_slider') ) : the_row();
+					?>
+						<div><?php echo wp_get_attachment_image( get_sub_field('logo'), 'full' ); ?></div>
+					<?php
+					endwhile;
+				endif;
+			?>
+			</div>
 		</div>
 	</div>
-	-->
 </div>
 
 <!-- Leistungen -->

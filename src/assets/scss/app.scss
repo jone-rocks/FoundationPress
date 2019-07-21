@@ -31,10 +31,8 @@
 @include foundation-label;
 @include foundation-media-object;
 @include foundation-off-canvas;
-@include foundation-orbit;
 @include foundation-pagination;
 @include foundation-progress-bar;
-@include foundation-slider;
 @include foundation-sticky;
 @include foundation-reveal;
 @include foundation-switch;
@@ -69,6 +67,7 @@
 @import "modules/content";
 @import "modules/footer";
 @import "modules/editor-style";
+@import "modules/slick-theme";
 
 // Components
 @import "components/buttons";

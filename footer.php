@@ -66,6 +66,19 @@
 	</div><!-- Close off-canvas content -->
 <?php endif; ?>
 
+<script>
+
+
+$(document).ready(function(){
+    $('.slider').slick({
+		infinite: true,
+		slidesToShow: 4,
+		slidesToScroll: 1
+    });
+})(jQuery);
+
+</script>
+
 <?php wp_footer(); ?>
 </body>
 </html>

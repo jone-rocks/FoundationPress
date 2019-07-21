@@ -419,6 +419,7 @@ h2 {
 h3 {
   line-height: 1.1;
   font-weight: 300;
+  margin-bottom: 14px;
 }
 p {
   font-size: 18px;
@@ -499,12 +500,17 @@ header {
   }
 }
 
+
+.logo_sticky {
+  top: 3px !important;
+}
+
 .logo {
   img {
     z-index: 9999;
     position: absolute;
-    top: -2px;
-    width: 150px;
+    top: -4px;
+    width: 140px;
   }
 }
 
@@ -552,4 +558,11 @@ header {
 
 strong {
   font-weight: 400;
+}
+
+
+.slick_slider_cell {
+  padding: 0 30px;
+  border-top: 2px solid $light-gray;
+  border-bottom: 2px solid $light-gray;
 }
