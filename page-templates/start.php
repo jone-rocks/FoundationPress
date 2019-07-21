@@ -84,7 +84,7 @@ get_header(); ?>
 				if( have_rows('logo_slider') ):
 					while ( have_rows('logo_slider') ) : the_row();
 					?>
-						<div><?php echo wp_get_attachment_image( get_sub_field('logo'), 'full' ); ?></div>
+						<div><a href="<?php the_sub_field('link'); ?>" target="_blank"><?php echo wp_get_attachment_image( get_sub_field('logo'), 'full' ); ?></a></div>
 					<?php
 					endwhile;
 				endif;
