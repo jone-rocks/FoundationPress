@@ -20,13 +20,15 @@
     }
   }
   &.menu > li.opens-left > .is-dropdown-submenu {
-    top: 57px;
+    top: 58px;
     left: 0;
     right: auto;
     background: $light-gray;
+    padding: 10px 0;
     a {
       color: $dark-gray;
-      font-size: 80%;
+      padding: 6px 0;
+      font-size: 20px;
       &:hover {
         color: $red;
       }
