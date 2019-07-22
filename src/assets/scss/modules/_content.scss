@@ -113,7 +113,7 @@ img.support_availability {
   width: 30px;
 }
 
-.rufbereitschaft, .benutzerservice {
+.rufbereitschaft, .benutzerservice, .netzwerk {
   padding-bottom: 80px;
   .mail-phone {
     margin-top: 60px;
@@ -368,6 +368,9 @@ img.support_availability {
 .border-bottom-red {
   border-bottom: solid 1px $red;
 }
+.border-bottom-white {
+  border-bottom: solid 1px white;
+}
 
 
 .top-bar {
@@ -469,7 +472,7 @@ p {
 
 
 .telekommunikation-text {
-  padding: 0 40px;
+  padding: 0 80px 0 60px;
 }
 
 .quote{

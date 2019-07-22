@@ -39,10 +39,16 @@ get_header(); ?>
 <?php if( have_rows('gebaeudetechnik') ): 
 while( have_rows('gebaeudetechnik') ): the_row(); ?>
 	<div class="grid-container"><a id="gebaeudetechnik"></a>
-		<div class="grid-x grid-padding-x gebaeudetechnik grid-padding-x padding-x-80">
+		<div class="grid-x grid-padding-x grid-padding-x padding-top-80">
 			<div class="cell small-7">
 				<h4 class="headline_left with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 				<span class="sexy_line_left"></span>
+			</div>
+			<div class="cell small-5">
+			</div>
+		</div>
+		<div class="grid-x grid-padding-x gebaeudetechnik grid-padding-x padding-bottom-80">
+			<div class="cell small-7">
 				<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 				<p><?php the_sub_field('text'); ?></p>
 			</div>
@@ -106,20 +112,20 @@ while( have_rows('netzwerk') ): the_row(); ?>
 					<p><?php the_sub_field('text'); ?></p>
 				</div>
 			</div>
-			<div class="grid-x grid-margin-x check-row">
-				<div class="cell small-4 large-offset-2 border-bottom-red">
-					<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" /> <?php the_sub_field('haken1'); ?>
+			<div class="grid-x grid-margin-x check-row first-row">
+				<div class="cell small-4 large-offset-2 border-bottom-white">
+					<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung_white.svg" /> <?php the_sub_field('haken1'); ?>
 				</div>
-				<div class="cell small-4  border-bottom-red">
-					<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" /> <?php the_sub_field('haken2'); ?>
+				<div class="cell small-4  border-bottom-white">
+					<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung_white.svg" /> <?php the_sub_field('haken2'); ?>
 				</div>
 			</div>
 			<div class="grid-x grid-margin-x check-row">
 				<div class="cell small-4 large-offset-2">
-					<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" /> <?php the_sub_field('haken3'); ?>
+					<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung_white.svg" /> <?php the_sub_field('haken3'); ?>
 				</div>
 				<div class="cell small-4">
-					<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" /> <?php the_sub_field('haken3'); ?>
+					<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung_white.svg" /> <?php the_sub_field('haken3'); ?>
 				</div>
 			</div>
 		</div>
@@ -191,6 +197,12 @@ while( have_rows('systemintegration') ): the_row(); ?>
 			<div class="cell small-7">
 				<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 				<span class="sexy_line_left"></span>
+			</div>
+			<div class="cell small-5">
+			</div>
+		</div>
+		<div class="grid-x grid-padding-x headline">
+			<div class="cell small-7">
 				<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 				<p><?php the_sub_field('text'); ?></p>
 			</div>
@@ -228,11 +240,11 @@ while( have_rows('software') ): the_row(); ?>
 	<div class="bg-dark-grey"><a id="software"></a>
 		<div class="grid-container padding-x-80 software">
 			<div class="grid-x align-center">
-				<div class="cell small-8 text-justify">
+				<div class="cell small-8 text-center">
 					<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 					<span class="sexy_line_middle_white"></span>
 					<h3 class="color-red text-center"><?php the_sub_field('headline'); ?></h3>
-					<p><?php the_sub_field('text'); ?></p>
+					<p class="text-justify"><?php the_sub_field('text'); ?></p>
 				</div>
 			</div>
 		</div>
@@ -249,6 +261,12 @@ while( have_rows('it-security') ): the_row(); ?>
 			<div class="cell small-7">
 				<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 				<span class="sexy_line_left"></span>
+			</div>
+			<div class="cell small-5">
+			</div>
+		</div>
+		<div class="grid-x grid-padding-x headline">
+			<div class="cell small-7">
 				<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 				<p><?php the_sub_field('text'); ?></p>
 			</div>
@@ -289,11 +307,11 @@ while( have_rows('hosting_domain') ): the_row(); ?>
 	<div class="bg-light-grey"><a id="hosting_domain"></a>
 		<div class="grid-container padding-x-80 software">
 			<div class="grid-x align-center">
-				<div class="cell small-8 text-justify">
+				<div class="cell small-8 text-center">
 					<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 					<span class="sexy_line_middle"></span>
 					<h3 class="color-red text-center"><?php the_sub_field('headline'); ?></h3>
-					<p><?php the_sub_field('text'); ?></p>
+					<p class="text-justify"><?php the_sub_field('text'); ?></p>
 				</div>
 			</div>
 		</div>
