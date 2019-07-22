@@ -23,7 +23,9 @@ get_header(); ?>
 	</div>
 	<div class="grid-x contactform">
 			<div class="cell small-4 large-offset-1">
-				<?php the_field('adresse'); ?>
+				<span style="background-image: url('<?php the_field('adresse_icon'); ?>')"><?php the_field('adresse'); ?></span>
+				<span style="background-image: url('<?php the_field('telefon_fax_icon'); ?>')"><?php the_field('telefon_fax'); ?></span>
+				<span style="background-image: url('<?php the_field('email_icon'); ?>')"><?php the_field('email'); ?></span>
 			</div>
 			<div class="cell small-6">
 				<?php the_field('contactform'); ?>
