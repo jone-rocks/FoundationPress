@@ -43,6 +43,8 @@ get_header(); ?>
 <div class="grid-container rufbereitschaft">
 	<div class="grid-x align-center padding-x-80">
 		<div class="cell small-8 text-center">
+			<h4 class="headline_middle with-icon" style="background-image: url('<?php echo get_template_directory_uri() ?>/img/raabit_icons_dunkelgrau.svg')"><?php the_field('rufbereitschaft_title'); ?></h4>
+			<span class="sexy_line_middle"></span>
 			<h3 class="color-red"><?php the_field('rufbereitschaft_headline'); ?></h3>
 			<p><?php the_field('rufbereitschaft_text'); ?></p>
 		</div>
@@ -96,6 +98,8 @@ get_header(); ?>
 	<div class="grid-container benutzerservice">
 		<div class="grid-x align-center padding-x-80">
 			<div class="cell small-8 text-center">
+				<h4 class="headline_middle"><?php the_field('benutzerservice_title'); ?></h4>
+				<span class="sexy_line_middle"></span>
 				<h3 class="color-red"><?php the_field('benutzerservice_headline'); ?></h3>
 				<p><?php the_field('benutzerservice_text'); ?></p>
 			</div>
@@ -125,6 +129,8 @@ get_header(); ?>
 <div class="grid-container supportlevel">
 	<div class="grid-x align-center padding-x-80">
 		<div class="cell small-4">
+			<h4 class="headline_middle"><?php the_field('support-level_headline'); ?></h4>
+			<span class="sexy_line_left"></span>
 			<h3 class="color-red"><?php the_field('support-level_headline'); ?></h3>
 			<p><?php the_field('support-level_txt'); ?></p>
 		</div>
