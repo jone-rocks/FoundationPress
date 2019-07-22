@@ -41,7 +41,7 @@ get_header(); ?>
 
 <!-- Rufbereitschaft -->
 <div class="grid-container rufbereitschaft">
-	<div class="grid-x align-center padding-x-80">
+	<div class="grid-x align-center padding-top-80">
 		<div class="cell small-8 text-center">
 			<h4 class="headline_middle with-icon" style="background-image: url('<?php the_field('rufbereitschaft_icon'); ?>')"><?php the_field('rufbereitschaft_title'); ?></h4>
 			<span class="sexy_line_middle"></span>
@@ -49,7 +49,7 @@ get_header(); ?>
 			<p><?php the_field('rufbereitschaft_text'); ?></p>
 		</div>
 	</div>
-	<div class="grid-x grid-padding-y grid-margin-x check-row">
+	<div class="grid-x grid-padding-y grid-margin-x check-row first-row">
 		<div class="cell small-4 large-offset-2 border-bottom-lightgrey">
 			<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" /> <?php the_field('rufbereitschaft_haken1'); ?>
 		</div>
@@ -96,7 +96,7 @@ get_header(); ?>
 <!-- Benutzerservice -->
 <div class="bg-light-grey">
 	<div class="grid-container benutzerservice">
-		<div class="grid-x align-center padding-x-80">
+		<div class="grid-x align-center padding-top-80">
 			<div class="cell small-8 text-center">
 				<h4 class="headline_middle with-icon" style="background-image: url('<?php the_field('benutzerservice_icon'); ?>')"><?php the_field('benutzerservice_title'); ?></h4>
 				<span class="sexy_line_middle"></span>
@@ -104,7 +104,7 @@ get_header(); ?>
 				<p><?php the_field('benutzerservice_text'); ?></p>
 			</div>
 		</div>
-		<div class="grid-x grid-padding-y grid-margin-x check-row">
+		<div class="grid-x grid-padding-y grid-margin-x check-row first-row">
 			<div class="cell small-4 large-offset-2 border-bottom-red">
 				<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" /> <?php the_field('Benutzerservice_haken1'); ?>
 			</div>

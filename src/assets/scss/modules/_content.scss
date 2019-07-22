@@ -114,9 +114,9 @@ img.support_availability {
 }
 
 .rufbereitschaft, .benutzerservice {
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   .mail-phone {
-    margin-top: 40px;
+    margin-top: 60px;
     font-size: 20px;
     .border-right {
       border-right: 1px solid $light-gray;
@@ -124,6 +124,14 @@ img.support_availability {
     img {
       width: 55px;
       margin-bottom: 10px;
+    }
+  }
+  .check-row {
+    &.first-row {
+      margin-top: 40px;
+    }
+    .check {
+      margin-right: 15px;
     }
   }
 }
