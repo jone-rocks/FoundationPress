@@ -67,11 +67,11 @@ get_header(); ?>
 	</div>
 	<div class="grid-x grid-padding-y mail-phone">
 		<div class="cell small-2 large-offset-4 text-center border-right">
-			<img src="<?php echo get_template_directory_uri() ?>/img/mail-icon.png" /><br />
+			<img src="<?php echo get_template_directory_uri() ?>/img/raabit_support_icon_mail.svg" /><br />
 			<a href="mailto:info@Raab-IT.de">info@raab-it.de</a>
 		</div>
 		<div class="cell small-2 text-center">
-			<img src="<?php echo get_template_directory_uri() ?>/img/phone-icon.png" /><br />
+			<img src="<?php echo get_template_directory_uri() ?>/img/raabit_support_icon_phone.svg" /><br />
 			<a href="call:+498001013398">08001013398</a>
 		</div>
 	</div>
