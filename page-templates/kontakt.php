@@ -17,7 +17,7 @@ get_header(); ?>
 <div class="grid-container contactform">
 	<div class="grid-x grid-padding-y align-center">
 		<div class="cell small-8 text-center">
-			<h3 class="color-red"><?php the_field('headline'); ?></h3>
+			<h1 class="color-red"><?php the_field('headline'); ?></h1>
 			<p><?php the_field('text'); ?></p>
 		</div>
 	</div>
