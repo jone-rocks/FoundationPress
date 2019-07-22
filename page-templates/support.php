@@ -127,31 +127,34 @@ get_header(); ?>
 
 <!-- Support-Level -->
 <div class="grid-container supportlevel">
-	<div class="grid-x align-center padding-x-80">
+	<div class="grid-x align-center padding-top-80">
 		<div class="cell small-4">
 			<h4 class="headline_middle with-icon" style="background-image: url('<?php the_field('support-level_icon'); ?>')"><?php the_field('support-level_title'); ?></h4>
 			<span class="sexy_line_left"></span>
+		</div>
+		<div class="cell small-8">
+		</div>
+	</div>
+	<div class="grid-x align-center padding-bottom-80">
+		<div class="cell small-4">
 			<h3 class="color-red"><?php the_field('support-level_headline'); ?></h3>
 			<p><?php the_field('support-level_txt'); ?></p>
 		</div>
 		<?php
 		if( have_rows('support-level_accordion') ): ?>
-			<div class="cell small-8 support-accordion">
-				<ul class="accordion" data-accordion>
-					
-					<?php
-			while ( have_rows('support-level_accordion') ) : the_row(); ?>
-				
+		<div class="cell small-8 support-accordion">
+			<ul class="accordion" data-accordion>
+			<?php while ( have_rows('support-level_accordion') ) : the_row(); ?>
 				<li class="accordion-item" data-accordion-item>
 					<a href="#" class="accordion-title"><span class="accordion-circle"></span><?php the_sub_field('support-level_accordion_title'); ?></a>
 					<div class="accordion-content" data-tab-content>
 						<p><?php the_sub_field('support-level_accordion_txt'); ?></p>
 					</div>
 				</li>
-			<?php endwhile; ?>
-				</ul>
-			</div>
-			<?php
+				<?php endwhile; ?>
+			</ul>
+		</div>
+		<?php
 		else :
 		endif;
 		?>
