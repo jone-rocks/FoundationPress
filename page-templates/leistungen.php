@@ -25,7 +25,7 @@ get_header(); ?>
 					<h2><?php the_sub_field('subheader'); ?></h2>
 				</div>
 				<div class="cell">
-					<h4 class="headline_left"><?php the_field('title'); ?></h4>
+					<h4 class="headline_left with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 					<span class="sexy_line_left_white"></span>
 					<p><?php the_sub_field('text'); ?></p>
 				</div>
@@ -41,7 +41,7 @@ while( have_rows('gebaeudetechnik') ): the_row(); ?>
 	<div class="grid-container"><a id="gebaeudetechnik"></a>
 		<div class="grid-x grid-padding-x gebaeudetechnik grid-padding-x padding-x-80">
 			<div class="cell small-7">
-				<h4 class="headline_left"><?php the_field('title'); ?></h4>
+				<h4 class="headline_left with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 				<span class="sexy_line_left"></span>
 				<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 				<p><?php the_sub_field('text'); ?></p>
@@ -76,7 +76,7 @@ while( have_rows('telekommunikation') ): the_row(); ?>
 					<?php echo wp_get_attachment_image( get_sub_field('img'), 'full' ); ?>
 				</div>
 				<div class="cell small-6 telekommunikation-text">
-					<h4 class="headline_left"><?php the_field('title'); ?></h4>
+					<h4 class="headline_left with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 					<span class="sexy_line_left"></span>
 					<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 					<p><?php the_sub_field('txt'); ?></p>
@@ -96,7 +96,7 @@ while( have_rows('netzwerk') ): the_row(); ?>
 		<div class="grid-container padding-x-80 netzwerk">
 			<div class="grid-x text-center">
 				<div class="cell">
-					<h4 class="headline_middle"><?php the_field('title'); ?></h4>
+					<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 					<span class="sexy_line_middle_white"></span>
 					<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 				</div>
@@ -153,7 +153,7 @@ while( have_rows('serversysteme') ): the_row(); ?>
 		<div class="grid-container padding-x-80">
 			<div class="grid-x align-center">
 				<div class="cell small-8 text-center">
-					<h4 class="headline_middle"><?php the_field('title'); ?></h4>
+					<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 					<span class="sexy_line_middle"></span>
 					<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 					<p><?php the_sub_field('text'); ?></p>
@@ -189,7 +189,7 @@ while( have_rows('systemintegration') ): the_row(); ?>
 	<div class="grid-container padding-x-80 systemintegration"><a id="systemintegration"></a>
 		<div class="grid-x grid-padding-x headline">
 			<div class="cell small-7">
-				<h4 class="headline_middle"><?php the_field('title'); ?></h4>
+				<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 				<span class="sexy_line_left"></span>
 				<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 				<p><?php the_sub_field('text'); ?></p>
@@ -229,7 +229,7 @@ while( have_rows('software') ): the_row(); ?>
 		<div class="grid-container padding-x-80 software">
 			<div class="grid-x align-center">
 				<div class="cell small-8 text-justify">
-					<h4 class="headline_middle"><?php the_field('title'); ?></h4>
+					<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 					<span class="sexy_line_middle_white"></span>
 					<h3 class="color-red text-center"><?php the_sub_field('headline'); ?></h3>
 					<p><?php the_sub_field('text'); ?></p>
@@ -247,7 +247,7 @@ while( have_rows('it-security') ): the_row(); ?>
 	<div class="grid-container padding-x-80 it-security"><a id="it-security"></a>
 		<div class="grid-x grid-padding-x headline">
 			<div class="cell small-7">
-				<h4 class="headline_middle"><?php the_field('title'); ?></h4>
+				<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 				<span class="sexy_line_left"></span>
 				<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 				<p><?php the_sub_field('text'); ?></p>
@@ -290,7 +290,7 @@ while( have_rows('hosting_domain') ): the_row(); ?>
 		<div class="grid-container padding-x-80 software">
 			<div class="grid-x align-center">
 				<div class="cell small-8 text-justify">
-					<h4 class="headline_middle"><?php the_field('title'); ?></h4>
+					<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 					<span class="sexy_line_middle"></span>
 					<h3 class="color-red text-center"><?php the_sub_field('headline'); ?></h3>
 					<p><?php the_sub_field('text'); ?></p>
