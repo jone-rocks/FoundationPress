@@ -13,7 +13,7 @@
 	<div class="bg-dark-grey">
 		<div class="grid-container">
 			<div class="grid-x">
-				<div class="cell small-4 adress">
+				<div class="cell small-12 medium-4 adress">
 					<p>
 						<strong>Raab IT-Systemhaus GmbH & Co. KG</strong></br>
 						Gartenstraße 28<br />
@@ -27,7 +27,7 @@
 						E-Mail: Info@Raab-IT.de
 					</p>
 				</div>
-				<div class="cell small-4 phones">
+				<div class="cell small-12 medium-4 phones">
 					<img src="<?php echo get_template_directory_uri() ?>/img/raabit_icon_telefon_footer.svg" class="phone-icon" />
 					<p>
 						<strong>Kundenhotline</strong></br>
@@ -42,7 +42,7 @@
 						089897128937
 					</p>
 				</div>
-				<div class="cell small-4 align-self-bottom">
+				<div class="cell small-12 medium-4 align-self-bottom">
 					<p><img src="<?php echo get_template_directory_uri() ?>/img/certified.png" style="float:left; width:50px;     margin: 0 10px 0 0;" /><strong>Wir sind zertifiziert<br />nach DIN EN ISO 9001:2015</strong></p>
 				</div>
 			</div>
@@ -51,10 +51,10 @@
 	<div class="bg-red">
 		<div class="grid-container">
 			<div class="grid-x subfooter">
-				<div class="cell small-6">
+				<div class="cell small-12 medium-6">
 					Copyright Raab IT-Systemhaus GmbH & Co. KG
 				</div>
-				<div class="cell small-6 text-right">	
+				<div class="cell small-12 medium-6 text-right">	
 					<a href="">Impressum</a> | <a href="">Datenschutz</a> | <a href="">AGB</a>
 				</div>
 			</div>
@@ -73,7 +73,16 @@ $(document).ready(function(){
     $('.slider').slick({
 		infinite: true,
 		slidesToShow: 4,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 500,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			}
+		]  
     });
 })(jQuery);
 

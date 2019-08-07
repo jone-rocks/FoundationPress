@@ -59,11 +59,11 @@ get_header(); ?>
 <!-- Geschäftsführung -->
 <div class="grid-container">
 	<div class="grid-x geschaeftsfuehrung">
-		<div class="cell small-5 bg-dark-grey padding-small">
+		<div class="cell small-12 medium-5 bg-dark-grey padding-small">
 			<h3><?php the_field('geschaeftsfuehrung_header'); ?></h3>
 			<p><?php the_field('geschaeftsfuehrung_txt'); ?></p>
 		</div>
-		<div class="cell small-7">
+		<div class="cell small-12 medium-7">
 			<?php echo wp_get_attachment_image( get_field('geschaeftsfuehrung_img'), 'full' ); ?>
 		</div>
 	</div>
@@ -102,11 +102,11 @@ get_header(); ?>
 		</div>
 	</div>
 
-	<div class="grid-x grid-margin-x grid-margin-y leistungen">
+	<div class="grid-x grid-margin-x align-center grid-margin-y leistungen">
 		<?php
 			if( have_rows('leistungen_tile') ):
 				while ( have_rows('leistungen_tile') ) : the_row();?>
-					<div class="cell small-4 text-center">
+					<div class="cell small-6 medium-4 text-center">
 
 					<a href="<?php the_sub_field('leistungen_link'); ?>" class="leistungen_link">
 

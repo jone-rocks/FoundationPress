@@ -1,4 +1,5 @@
 .footer-container {
+  //mobile: font-size: 14px
   a {
     color: white;
     &:hover {
@@ -10,10 +11,10 @@
     .cell {
       padding: 0 20px;
       &:first-child {
-        padding-right: 2%;
-        border-right: #fff solid 1px;
+        padding-right: 2%; //mobile: padding-right: 0
+        border-right: #fff solid 1px; //mobile: border: 0
       }
-      .phone-icon {
+      .phone-icon { //mobile: display: none
         position: absolute;
         width: 20px;
         top: 5px;
@@ -21,7 +22,7 @@
       }
       &.phones {
         position: relative;
-        padding-left: 8%;
+        padding-left: 8%; //mobile: padding-left: 0
       }
     }
     &.subfooter {
