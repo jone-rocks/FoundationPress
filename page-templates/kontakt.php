@@ -27,7 +27,7 @@ get_header(); ?>
 			<span style="background-image: url('<?php the_field('telefon_fax_icon'); ?>')"><?php the_field('telefon_fax'); ?></span>
 			<span style="background-image: url('<?php the_field('email_icon'); ?>')"><?php the_field('email'); ?></span>
 		</div>
-		<div class="cell grid-padding-x small-12 medium-6">
+		<div class="cell small-12 medium-6">
 			<?php the_field('contactform'); ?>
 		</div>
 	</div>
