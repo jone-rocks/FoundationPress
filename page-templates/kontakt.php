@@ -15,22 +15,22 @@ get_header(); ?>
 
 <!-- Kontaktformular -->
 <div class="grid-container contactform">
-	<div class="grid-x grid-padding-y align-center">
-		<div class="cell small-8 text-center">
+	<div class="grid-x grid-padding-y grid-padding-x align-center">
+		<div class="cell small-12 medium-8 text-center">
 			<h1 class="color-red"><?php the_field('headline'); ?></h1>
 			<p><?php the_field('text'); ?></p>
 		</div>
 	</div>
-	<div class="grid-x contactform">
-			<div class="cell small-4 large-offset-1">
-				<span style="background-image: url('<?php the_field('adresse_icon'); ?>')"><?php the_field('adresse'); ?></span>
-				<span style="background-image: url('<?php the_field('telefon_fax_icon'); ?>')"><?php the_field('telefon_fax'); ?></span>
-				<span style="background-image: url('<?php the_field('email_icon'); ?>')"><?php the_field('email'); ?></span>
-			</div>
-			<div class="cell small-6">
-				<?php the_field('contactform'); ?>
-			</div>
+	<div class="grid-x grid-padding-x contactform">
+		<div class="cell small-12 medium-4 large-offset-1">
+			<span style="background-image: url('<?php the_field('adresse_icon'); ?>')"><?php the_field('adresse'); ?></span>
+			<span style="background-image: url('<?php the_field('telefon_fax_icon'); ?>')"><?php the_field('telefon_fax'); ?></span>
+			<span style="background-image: url('<?php the_field('email_icon'); ?>')"><?php the_field('email'); ?></span>
 		</div>
+		<div class="cell grid-padding-x small-12 medium-6">
+			<?php the_field('contactform'); ?>
+		</div>
+	</div>
 </div>
 
 
@@ -39,15 +39,15 @@ get_header(); ?>
 <div class="bg-red">
 	<div class="grid-container">
 		<div class="grid-x phonenumbers">
-			<div class="cell small-4 text-center">
+			<div class="cell small-12 medium-4 text-center">
 				<strong><?php the_field('phonenumber1_txt'); ?></strong></br>
 				<?php the_field('phonenumber1'); ?>
 			</div>
-			<div class="cell small-4 text-center">
+			<div class="cell small-12 medium-4 text-center">
 				<strong><?php the_field('phonenumber2_txt'); ?></strong></br>
 				<?php the_field('phonenumber2'); ?>
 			</div>
-			<div class="cell small-4 text-center">
+			<div class="cell small-12 medium-4 text-center">
 				<strong><?php the_field('phonenumber3_txt'); ?></strong></br>
 				<?php the_field('phonenumber3'); ?>
 			</div>
