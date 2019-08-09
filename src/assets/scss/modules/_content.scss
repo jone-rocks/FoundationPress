@@ -695,6 +695,9 @@ strong {
   height:1px;
   background-color: $dark-gray;
   margin: 15px 0 60px 0;
+  @include breakpoint(small) {
+    margin: 15px 0 30px 0;
+  }
   background: $dark-gray;
   background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, $dark-gray 50%, rgba(0,0,0,0) 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0)), color-stop(50%, $dark-gray), color-stop(100%, rgba(0,0,0,0)));
@@ -711,6 +714,9 @@ strong {
   height:1px;
   background-color: white;
   margin: 15px 0 60px 0;
+  @include breakpoint(small) {
+    margin: 15px 0 30px 0;
+  }
   background: white;
   background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, white 50%, rgba(0,0,0,0) 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0)), color-stop(50%, white), color-stop(100%, rgba(0,0,0,0)));
@@ -727,6 +733,9 @@ strong {
   color:white;
   height:1px;
   margin: 15px 0 60px 0;
+  @include breakpoint(small) {
+    margin: 15px 0 30px 0;
+  }
   background: $dark-gray;
   background: -moz-linear-gradient(left, $dark-gray 0%, rgba(0,0,0,0) 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, $dark-gray), color-stop(100%, rgba(0,0,0,0)));
@@ -742,6 +751,9 @@ strong {
   color:white;
   height:1px;
   margin: 15px 0 60px 0;
+  @include breakpoint(small) {
+    margin: 15px 0 30px 0;
+  }
   background: white;
   background: -moz-linear-gradient(left, white 0%, rgba(0,0,0,0) 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, white), color-stop(100%, rgba(0,0,0,0)));
@@ -758,6 +770,9 @@ strong {
   color:white;
   height:1px;
   margin: 15px 0 60px 0;
+  @include breakpoint(small) {
+    margin: 15px 0 30px 0;
+  }
   background: $dark-gray;
   background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, $dark-gray 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, $dark-gray));
@@ -773,6 +788,9 @@ strong {
   color:white;
   height:1px;
   margin: 15px 0 60px 0;
+  @include breakpoint(small) {
+    margin: 15px 0 30px 0;
+  }
   background: white;
   background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, white 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, white));
