@@ -50,27 +50,27 @@ get_header(); ?>
 		</div>
 	</div>
 	<div class="grid-x grid-padding-y grid-margin-x check-row first-row">
-		<div class="cell small-4 large-offset-2 border-bottom-lightgrey">
+		<div class="cell small-12 medium-4 medium-offset-2 border-bottom-lightgrey">
 			<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" /> <?php the_field('rufbereitschaft_haken1'); ?>
 		</div>
-		<div class="cell small-4 border-bottom-lightgrey">
+		<div class="cell small-12 medium-4 border-bottom-lightgrey">
 			<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" /> <?php the_field('rufbereitschaft_haken2'); ?>
 		</div>
 	</div>
 	<div class="grid-x grid-padding-y grid-margin-x check-row">
-		<div class="cell small-4 large-offset-2">
+		<div class="cell small-12 medium-4 medium-offset-2"> <!-- border-bottom bei mobile -->
 			<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" /> <?php the_field('rufbereitschaft_haken3'); ?>
 		</div>
-		<div class="cell small-4">
+		<div class="cell small-12 medium-4"> <!-- border-bottom bei mobile -->
 			<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" /> <?php the_field('rufbereitschaft_haken4'); ?>
 		</div>
 	</div>
 	<div class="grid-x grid-padding-y mail-phone">
-		<div class="cell small-2 large-offset-4 text-center border-right">
+		<div class="cell small-6 medium-2 medium-offset-4 text-center border-right">
 			<img src="<?php echo get_template_directory_uri() ?>/img/raabit_support_icon_mail.svg" /><br />
 			<a href="mailto:info@Raab-IT.de">info@raab-it.de</a>
 		</div>
-		<div class="cell small-2 text-center">
+		<div class="cell small-6 medium-2 text-center">
 			<img src="<?php echo get_template_directory_uri() ?>/img/raabit_support_icon_phone.svg" /><br />
 			<a href="call:+498001013398">08001013398</a>
 		</div>
@@ -80,11 +80,11 @@ get_header(); ?>
 <!-- Klaus Raab -->
 <div class="bg-light-gray-gradient">
 	<div class="grid-container">
-		<div class="grid-x grid-padding-x align-middle klaus-raab">
-			<div class="cell small-7">
+		<div class="grid-x grid-padding-x small-padding-collapse align-middle klaus-raab">
+			<div class="cell small-12 medium-7">
 				<?php echo wp_get_attachment_image( get_field('zitat_bild'), 'full' ); ?>
 			</div>
-			<div class="cell small-5 padding-small quote">
+			<div class="cell small-12 medium-5 padding-small quote">
 				<p><img src="<?php echo get_template_directory_uri() ?>/img/raabit_icon_zitat.svg" class="quote_icon" />
 					<?php the_field('zitat_txt'); ?></p>
 				<strong>Klaus Raab, Geschäftsführer</strong>
@@ -105,18 +105,18 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="grid-x grid-padding-y grid-margin-x check-row first-row">
-			<div class="cell small-4 large-offset-2 border-bottom-red">
+			<div class="cell small-12 medium-4 medium-offset-2 border-bottom-red">
 				<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" /> <?php the_field('Benutzerservice_haken1'); ?>
 			</div>
-			<div class="cell small-4  border-bottom-red">
+			<div class="cell small-12 medium-4 border-bottom-red">
 				<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" /> <?php the_field('Benutzerservice_haken2'); ?>
 			</div>
 		</div>
 		<div class="grid-x grid-padding-y grid-margin-x check-row">
-			<div class="cell small-4 large-offset-2">
+			<div class="cell small-12 medium-4 medium-offset-2"> <!-- border-bottom bei mobile -->
 				<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" /> <?php the_field('Benutzerservice_haken3'); ?>
 			</div>
-			<div class="cell small-4">
+			<div class="cell small-12 medium-4"> <!-- border-bottom bei mobile -->
 				<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" /> <?php the_field('Benutzerservice_haken4'); ?>
 			</div>
 		</div>
@@ -128,21 +128,21 @@ get_header(); ?>
 <!-- Support-Level -->
 <div class="grid-container supportlevel">
 	<div class="grid-x align-center padding-top-80">
-		<div class="cell small-4">
+		<div class="cell small-12 medium-4">
 			<h4 class="headline_middle with-icon" style="background-image: url('<?php the_field('support-level_icon'); ?>')"><?php the_field('support-level_title'); ?></h4>
 			<span class="sexy_line_left"></span>
 		</div>
-		<div class="cell small-8">
+		<div class="cell small-0 medium-8">
 		</div>
 	</div>
 	<div class="grid-x align-center padding-bottom-80">
-		<div class="cell small-4">
+		<div class="cell small-12 medium-4">
 			<h3 class="color-red"><?php the_field('support-level_headline'); ?></h3>
 			<p><?php the_field('support-level_txt'); ?></p>
 		</div>
 		<?php
 		if( have_rows('support-level_accordion') ): ?>
-		<div class="cell small-8 support-accordion">
+		<div class="cell small-12 medium-8 support-accordion">
 			<ul class="accordion" data-accordion>
 			<?php while ( have_rows('support-level_accordion') ) : the_row(); ?>
 				<li class="accordion-item" data-accordion-item>

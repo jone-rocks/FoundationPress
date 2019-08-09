@@ -111,7 +111,14 @@ nav {
 img.support_availability {
   width: 36px;
   margin: 0 21px;
+  @include breakpoint(small) {
+    display: block;
+    margin: 10px auto;
+    &:before, &:after {
+      content: '\A';
+    }
   }
+}
 
 .check {
   width: 30px;
@@ -140,10 +147,52 @@ img.support_availability {
   }
 }
 
+
+.benutzerservice{
+  .check-row {
+    .cell {
+      @include breakpoint(small) {
+        &:not(.border-bottom-red) {
+          border-bottom: 1px solid $red;
+        }
+      }
+    }
+  }
+}
+
+
+.rufbereitschaft{
+  .check-row {
+    .cell {
+      @include breakpoint(small) {
+        &:not(.border-bottom-lightgrey) {
+          border-bottom: 1px solid $light-gray;
+        }
+      }
+    }
+  }
+}
+
+
+.netzwerk{
+  .check-row {
+    .cell {
+      @include breakpoint(small) {
+        &:not(.border-bottom-white) {
+          border-bottom: 1px solid white;
+        }
+      }
+    }
+  }
+} 
+
 .check-row {
   font-size: 20px;
   .cell {
     padding: 10px 0;
+    @include breakpoint(small) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -151,6 +200,10 @@ img.support_availability {
 .klaus-raab {
   .quote {
     padding-left: 40px;
+    @include breakpoint(small) {
+      padding-left: 80px;
+      padding-right: 20px;
+    }
   }
 }
 
@@ -286,6 +339,9 @@ img.support_availability {
 .supportlevel {
   .support-accordion {
     padding-left: 100px;
+    @include breakpoint(small) {
+      padding-left: 0;
+    }
     .accordion-item {
       .accordion-title {
         position: relative;
@@ -367,6 +423,9 @@ img.support_availability {
   .cell {
     font-size: 28px;
     padding: 30px 0;
+    @include breakpoint(small) {
+      font-size: 23px;
+    }
   }
 }
 
@@ -492,6 +551,9 @@ p {
   p {
     font-size: 30px;
     position: relative;
+    @include breakpoint(small) {
+      font-size: 20px;
+  }
     img {
       position: absolute;
       top: 9px;
