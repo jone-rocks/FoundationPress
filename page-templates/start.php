@@ -8,7 +8,15 @@ get_header(); ?>
 <div class="grid-container full start-img">
 	<div class="grid-x">
 		<div class="cell">
-			<?php echo wp_get_attachment_image( get_field('startseite_header_img'), 'full' ); ?>
+			<!--<?php echo wp_get_attachment_image( get_field('startseite_header_img'), 'full' ); ?>-->
+			<?php 
+			$gallery = get_field('startseite_header_img2');
+			$rand = array_rand($gallery, 1);
+
+			if( $gallery ): ?>
+				<img src="<?php echo $gallery[$rand]['sizes']['large']; ?>" alt="<?php echo $gallery[$rand]['alt']; ?>" />
+			<?php endif; ?>
+
 		</div>
 	</div>
 </div>
