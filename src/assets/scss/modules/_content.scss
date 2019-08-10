@@ -240,6 +240,9 @@ img.support_availability {
     display: inline-block;
     background-repeat: no-repeat;
     line-height: 2.5;
+    @media screen and (max-width: 39.9375em) {
+      background-size: 24px;
+    }
   }
 }
 
