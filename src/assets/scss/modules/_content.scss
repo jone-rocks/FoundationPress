@@ -37,7 +37,7 @@ body {
     border-right: $red solid 2px;
     padding: 5px 50px;
     font-size: 20px;
-    @include breakpoint(small) {
+    @media screen and (max-width: 39.9375em) {
       padding: 0;
       font-size: 12px;
     }
@@ -111,7 +111,7 @@ nav {
 img.support_availability {
   width: 36px;
   margin: 0 21px;
-  @include breakpoint(small) {
+  @media screen and (max-width: 39.9375em) {
     display: block;
     margin: 10px auto;
     &:before, &:after {
@@ -151,7 +151,7 @@ img.support_availability {
 .benutzerservice{
   .check-row {
     .cell {
-      @include breakpoint(small) {
+      @media screen and (max-width: 39.9375em) {
         &:not(.border-bottom-red) {
           border-bottom: 1px solid $red;
         }
@@ -164,7 +164,7 @@ img.support_availability {
 .rufbereitschaft{
   .check-row {
     .cell {
-      @include breakpoint(small) {
+      @media screen and (max-width: 39.9375em) {
         &:not(.border-bottom-lightgrey) {
           border-bottom: 1px solid $light-gray;
         }
@@ -177,7 +177,7 @@ img.support_availability {
 .netzwerk{
   .check-row {
     .cell {
-      @include breakpoint(small) {
+      @media screen and (max-width: 39.9375em) {
         &:not(.border-bottom-white) {
           border-bottom: 1px solid white;
         }
@@ -190,7 +190,7 @@ img.support_availability {
   font-size: 20px;
   .cell {
     padding: 10px 0;
-    @include breakpoint(small) {
+    @media screen and (max-width: 39.9375em) {
       font-size: 18px;
     }
   }
@@ -200,7 +200,7 @@ img.support_availability {
 .klaus-raab {
   .quote {
     padding-left: 40px;
-    @include breakpoint(small) {
+    @media screen and (max-width: 39.9375em) {
       padding-left: 80px;
       padding-right: 20px;
     }
@@ -306,14 +306,14 @@ img.support_availability {
 }
 .leistungen {
   font-size: 22px;
-  @include breakpoint(small) {
+  @media screen and (max-width: 39.9375em) {
     font-size: 15px;
   }
   margin-bottom: 75px;
   .cell {
     img {
       width: 75px;
-      @include breakpoint(small) {
+      @media screen and (max-width: 39.9375em) {
         width: 60px;
       }
       margin-bottom: 10px;
@@ -325,7 +325,7 @@ img.support_availability {
       height: 100%;
       display: block;
       padding: 20px;
-      @include breakpoint(small) {
+      @media screen and (max-width: 39.9375em) {
         padding: 15px;
       }
       &:hover {
@@ -339,7 +339,7 @@ img.support_availability {
 .supportlevel {
   .support-accordion {
     padding-left: 100px;
-    @include breakpoint(small) {
+    @media screen and (max-width: 39.9375em) {
       padding-left: 0;
     }
     .accordion-item {
@@ -423,7 +423,7 @@ img.support_availability {
   .cell {
     font-size: 28px;
     padding: 30px 0;
-    @include breakpoint(small) {
+    @media screen and (max-width: 39.9375em) {
       font-size: 23px;
     }
   }
@@ -465,7 +465,7 @@ img.support_availability {
 
 
 .top-bar-additional {
-  @include breakpoint(small) {
+  @media screen and (max-width: 39.9375em) {
     display: none;
   }
   max-width: 75rem;
@@ -551,7 +551,7 @@ p {
   p {
     font-size: 30px;
     position: relative;
-    @include breakpoint(small) {
+    @media screen and (max-width: 39.9375em) {
       font-size: 20px;
   }
     img {
@@ -648,7 +648,7 @@ header {
   position: fixed;
   right: 0;
   top: 40%;
-  @include breakpoint(small) {
+  @media screen and (max-width: 39.9375em) {
     display: none;
   }
   span {
@@ -695,7 +695,7 @@ strong {
   height:1px;
   background-color: $dark-gray;
   margin: 15px 0 60px 0;
-  @include breakpoint(small) {
+  @media screen and (max-width: 39.9375em) {
     margin: 15px 0 30px 0;
   }
   background: $dark-gray;
@@ -714,7 +714,7 @@ strong {
   height:1px;
   background-color: white;
   margin: 15px 0 60px 0;
-  @include breakpoint(small) {
+  @media screen and (max-width: 39.9375em) {
     margin: 15px 0 30px 0;
   }
   background: white;
@@ -733,7 +733,7 @@ strong {
   color:white;
   height:1px;
   margin: 15px 0 60px 0;
-  @include breakpoint(small) {
+  @media screen and (max-width: 39.9375em) {
     margin: 15px 0 30px 0;
   }
   background: $dark-gray;
@@ -751,7 +751,7 @@ strong {
   color:white;
   height:1px;
   margin: 15px 0 60px 0;
-  @include breakpoint(small) {
+  @media screen and (max-width: 39.9375em) {
     margin: 15px 0 30px 0;
   }
   background: white;
@@ -770,7 +770,7 @@ strong {
   color:white;
   height:1px;
   margin: 15px 0 60px 0;
-  @include breakpoint(small) {
+  @media screen and (max-width: 39.9375em) {
     margin: 15px 0 30px 0;
   }
   background: $dark-gray;
@@ -788,7 +788,7 @@ strong {
   color:white;
   height:1px;
   margin: 15px 0 60px 0;
-  @include breakpoint(small) {
+  @media screen and (max-width: 39.9375em) {
     margin: 15px 0 30px 0;
   }
   background: white;
