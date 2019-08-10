@@ -14,10 +14,6 @@ get_header(); ?>
 			<?php 
 			$gallery = get_field('startseite_header_img2');
 			$rand = array_rand($gallery, 1);
-
-echo '<pre>';
-echo htmlspecialchars(print_r($gallery[$rand],true));
-echo '</pre>';
 			if( $gallery ): ?>
 				<img src="<?php echo $gallery[$rand]['url']; ?>" alt="<?php echo $gallery[$rand]['alt']; ?>" />
 			<?php endif; ?>
