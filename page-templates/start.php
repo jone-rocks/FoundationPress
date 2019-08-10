@@ -117,7 +117,7 @@ get_header(); ?>
 				while ( have_rows('leistungen_tile') ) : the_row();?>
 					<div class="cell small-6 medium-4 text-center">
 
-					<a href="<?php the_sub_field('leistungen_link'); ?>" class="leistungen_link">
+					<a href="<?php the_sub_field('leistunen_link'); ?>" class="leistungen_link">
 
 						<?php 
 						$img_src = get_sub_field('leistungen_icon');
