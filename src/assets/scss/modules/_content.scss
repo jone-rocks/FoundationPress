@@ -214,9 +214,25 @@ img.support_availability {
 }
 
 
+.contactform_info {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (max-width: 39.9375em) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 .contactform {
   padding-top: 60px;
   padding-bottom: 60px;
+    .cell {
+      &:first-of-type{
+        @media screen and (max-width: 39.9375em) {
+         padding-bottom: 60px; 
+        }
+      }
+    }
   span {
     background-position: 0px 0px;
     padding-left: 50px;

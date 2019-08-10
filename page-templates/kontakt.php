@@ -21,7 +21,7 @@ get_header(); ?>
 			<p><?php the_field('text'); ?></p>
 		</div>
 	</div>
-	<div class="grid-x grid-padding-x contactform">
+	<div class="grid-x grid-padding-x contactform_info">
 		<div class="cell small-12 medium-4 large-offset-1">
 			<span style="background-image: url('<?php the_field('adresse_icon'); ?>')"><?php the_field('adresse'); ?></span>
 			<span style="background-image: url('<?php the_field('telefon_fax_icon'); ?>')"><?php the_field('telefon_fax'); ?></span>
