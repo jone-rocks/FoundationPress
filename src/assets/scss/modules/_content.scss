@@ -336,83 +336,81 @@ img.support_availability {
   }
 }
 
-.supportlevel {
-  .support-accordion {
-    padding-left: 100px;
-    @media screen and (max-width: 39.9375em) {
-      padding-left: 0;
-    }
-    .accordion-item {
-      .accordion-title {
+.support-accordion, .stellenangebot-accordion {
+  padding-left: 100px;
+  @media screen and (max-width: 39.9375em) {
+    padding-left: 0;
+  }
+  .accordion-item {
+    .accordion-title {
+      position: relative;
+      display: block;
+      padding: 1.25rem 1rem;
+      border-top: 1px solid $red;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 0;
+      font-size: 1rem;
+      line-height: 1;
+      color: $dark-gray;
+      background: #fff;
+      &:before {
+        content: '' !important;
+      }
+      .accordion-circle {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: red;
+        border-radius: 50%;
+        display: inline-block;
+        padding: 0 0 0 3px;
         position: relative;
-        display: block;
-        padding: 1.25rem 1rem;
-        border-top: 1px solid $red;
-        border-left: 0;
-        border-right: 0;
-        border-bottom: 0;
-        font-size: 1rem;
-        line-height: 1;
-        color: $dark-gray;
-        background: #fff;
-        &:before {
-          content: '' !important;
+        vertical-align: sub;
+        margin-right:10px;
+        &:after {
+          content: '';
+          display: inline-block;
+          /* margin-top: -3px; */
+          width: 10px;
+          height: 10px;
+          border-top: 2px solid white;
+          border-right: 2px solid white;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          top: 5px;
+          position: absolute;
         }
+      }
+    }
+    &.is-active {
+      .accordion-title {
+        background: $light-gray;
         .accordion-circle {
-          display: inline-block;
-          width: 20px;
-          height: 20px;
-          border-radius: 50%;
-          background-color: red;
-          border-radius: 50%;
-          display: inline-block;
-          padding: 0 0 0 3px;
-          position: relative;
-          vertical-align: sub;
-          margin-right:10px;
+          padding: 0 0 0 5px;
           &:after {
-            content: '';
-            display: inline-block;
-            /* margin-top: -3px; */
-            width: 10px;
-            height: 10px;
-            border-top: 2px solid white;
-            border-right: 2px solid white;
-            -webkit-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-            top: 5px;
-            position: absolute;
+            -webkit-transform: rotate(135deg);
+            -ms-transform: rotate(135deg);
+            transform: rotate(135deg);
+            top: 3px;
           }
         }
       }
-      &.is-active {
-        .accordion-title {
-          background: $light-gray;
-          .accordion-circle {
-            padding: 0 0 0 5px;
-            &:after {
-              -webkit-transform: rotate(135deg);
-              -ms-transform: rotate(135deg);
-              transform: rotate(135deg);
-              top: 3px;
-            }
-          }
-        }
-      }
-      .accordion-content {
-        display: none;
-        padding: 1.8rem 1rem;
-        border-top: 1px solid red;
-        border-left: 0;
-        border-right: 0;
-        border-bottom: 0;
-        background-color: #fff;
-        color: #0a0a0a;
-        p {
-          &:last-child {
-            margin-bottom: 0;
-          }
+    }
+    .accordion-content {
+      display: none;
+      padding: 1.8rem 1rem;
+      border-top: 1px solid red;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 0;
+      background-color: #fff;
+      color: #0a0a0a;
+      p {
+        &:last-child {
+          margin-bottom: 0;
         }
       }
     }
@@ -799,4 +797,12 @@ strong {
   background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%, white 100%);
   background: linear-gradient(to right, rgba(0,0,0,0) 0%, white 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
+}
+
+
+
+.karriere_ansprechpartner {
+  img {
+    width: 75%;
+  }
 }
