@@ -234,6 +234,12 @@ img.support_availability {
   .cell {
     padding: 5px 0;
     border-right: #fff solid 1px;
+    a {
+      color: white;
+    }
+    @media screen and (max-width: 39.9375em) {
+      border-right: 0;
+    }
     &:last-child {
       border-right: 0;
     }
@@ -293,6 +299,9 @@ img.support_availability {
 .nf-form-content label {
   font-size: 14px !important;
   line-height: 22px !important;
+  @media screen and (max-width: 39.9375em) {
+    font-size: 12px !important;
+  }
 }
 
 
