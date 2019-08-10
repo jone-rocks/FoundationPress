@@ -40,6 +40,9 @@
       }
       &.certified {
         img {
+          float: left;
+          width: 50px;
+          margin: 0 10px 0 0;
           @include breakpoint(small) {
             float: none;
             width: 50px;
