@@ -24,7 +24,7 @@
 						Telefax: 07323 9527 - 27
 					</p>
 					<p>
-						E-Mail: Info@Raab-IT.de
+						E-Mail: info@raab-it.de
 					</p>
 				</div>
 				<div class="cell small-12 medium-4 phones">
@@ -42,7 +42,7 @@
 						089897128937
 					</p>
 				</div>
-				<div class="cell small-12 medium-4 align-self-bottom">
+				<div class="cell small-12 medium-4 align-self-bottom certified">
 					<p><img src="<?php echo get_template_directory_uri() ?>/img/certified.png" style="float:left; width:50px;     margin: 0 10px 0 0;" /><strong>Wir sind zertifiziert<br />nach DIN EN ISO 9001:2015</strong></p>
 				</div>
 			</div>

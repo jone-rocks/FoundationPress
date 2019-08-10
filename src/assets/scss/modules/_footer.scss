@@ -1,6 +1,7 @@
 .footer-container {
   @include breakpoint(small) {
-    font-size: 14px
+    font-size: 14px;
+    text-align: center;
   }
   a {
     color: white;
@@ -35,6 +36,16 @@
         @include breakpoint(small) {
           position: inherit;
           padding: inherit;
+        }
+      }
+      &.certified {
+        img {
+          @include breakpoint(small) {
+            float: none;
+            width: 50px;
+            display: block;
+            margin: 0 auto;
+          }
         }
       }
     }
