@@ -24,7 +24,7 @@ get_header(); ?>
 					<h1><?php the_sub_field('header'); ?></h1>
 					<h2><?php the_sub_field('subheader'); ?></h2>
 				</div>
-				<div class="cell">
+				<div class="cell consulting">
 					<h4 class="headline_left with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 					<span class="sexy_line_left_white"></span>
 					<p><?php the_sub_field('text'); ?></p>
