@@ -38,7 +38,7 @@
 		</div>
 
 		<!-- Mobile -->
-		<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle(); ?>>
+		<!--<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle(); ?>>
 			<div class="title-bar-left">
 				<button aria-label="<?php _e( 'Main Menu', 'foundationpress' ); ?>" class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
 				<span class="site-mobile-title title-bar-title">
@@ -46,6 +46,16 @@
 				</span>
 			</div>
 		</div>
+		-->
+
+		<div class="navtext-container">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/raabit_logo_header.svg" class="logo_nonsticky" />
+		</div>
+		<input type="checkbox" class="mobmen-btn" id="mobmen-btn">
+		<label for="mobmen-btn" class="mobmen-icon"><span class="navicon"></span></label>
+		<ul class="mobmen">
+			<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
+		</ul>
 
 		<!-- Desktop -->
 		<div class="top-bar-container" data-sticky-container>
