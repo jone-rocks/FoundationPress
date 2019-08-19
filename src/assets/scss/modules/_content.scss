@@ -666,6 +666,15 @@ p {
   }
 }
 
+.telekommunikation {
+  .list {
+    background-image: none;
+  }
+  li {
+    border-bottom: 1px solid $dark-gray;
+  }
+}
+
 
 header {
   transition: 0.2s;
