@@ -156,7 +156,7 @@ while( have_rows('netzwerk') ): the_row(); ?>
 while( have_rows('serversysteme') ): the_row(); ?>
 
 	<div class="bg-light-grey"><a id="serversysteme"></a>
-		<div class="grid-container padding-x-80 grid-padding-x medium-padding-collapse">
+		<div class="grid-container padding-x-80 grid-padding-x">
 			<div class="grid-x align-center">
 				<div class="cell small-12 medium-8 text-center">
 					<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
