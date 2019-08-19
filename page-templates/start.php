@@ -46,19 +46,19 @@ get_header(); ?>
 		</div>
 	</div>
 	<div class="grid-x staerken padding-bottom-80">
-		<div class="cell small-3 text-center">
+		<div class="cell small-6 medium-3 text-center">
 		<?php echo wp_get_attachment_image( get_field('staerken_img_1'), 'full' ); ?><br />
 			<?php the_field('staerken_imgtxt_1'); ?>
 		</div>
-		<div class="cell small-3 text-center">
+		<div class="cell small-6 medium-3 text-center">
 			<?php echo wp_get_attachment_image( get_field('staerken_img_2'), 'full' ); ?><br />
 			<?php the_field('staerken_imgtxt_2'); ?>
 		</div>
-		<div class="cell small-3 text-center">
+		<div class="cell small-6 medium-3 text-center">
 			<?php echo wp_get_attachment_image( get_field('staerken_img_3'), 'full' ); ?><br />	
 			<?php the_field('staerken_imgtxt_3'); ?>
 		</div>
-		<div class="cell small-3 text-center">
+		<div class="cell small-6 medium-3 text-center">
 			<?php echo wp_get_attachment_image( get_field('staerken_img_4'), 'full' ); ?><br />
 			<?php the_field('staerken_imgtxt_4'); ?>
 		</div>

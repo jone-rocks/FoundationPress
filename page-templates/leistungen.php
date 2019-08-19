@@ -177,19 +177,19 @@ while( have_rows('serversysteme') ): the_row(); ?>
 				</div>
 			</div>
 			<div class="grid-x serversysteme grid-padding-x medium-padding-collapse">
-				<div class="cell small-3 text-center">
+				<div class="cell small-6 medium-3 text-center">
 					<?php echo wp_get_attachment_image( get_sub_field('img_1'), 'full' ); ?><br />
 					<?php the_sub_field('imgtxt_1'); ?>
 				</div>
-				<div class="cell small-3 text-center">
+				<div class="cell small-6 medium-3 text-center">
 					<?php echo wp_get_attachment_image( get_sub_field('img_2'), 'full' ); ?><br />
 					<?php the_sub_field('imgtxt_2'); ?>
 				</div>
-				<div class="cell small-3 text-center">
+				<div class="cell small-6 medium-3 text-center">
 					<?php echo wp_get_attachment_image( get_sub_field('img_3'), 'full' ); ?><br />	
 					<?php the_sub_field('imgtxt_3'); ?>
 				</div>
-				<div class="cell small-3 text-center">
+				<div class="cell small-6 medium-3 text-center">
 					<?php echo wp_get_attachment_image( get_sub_field('img_4'), 'full' ); ?><br />
 					<?php the_sub_field('imgtxt_4'); ?>
 				</div>
