@@ -47,15 +47,19 @@
 			</div>
 		</div>
 		-->
-
-		<div class="navtext-container">
-		<img src="<?php echo get_template_directory_uri(); ?>/img/raabit_logo_header.svg" class="logo_nonsticky" />
+		<div data-sticky-container>
+			<div class="sticky" id="example2" data-sticky data-top-anchor="example2:top" data-options="anchor: page; marginTop: 0; stickyOn: small;" style="width:100%; z-index: 9999">
+				<div class="navtext-container">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/raabit_logo_header.svg" />
+				</div>
+				<input type="checkbox" class="mobmen-btn" id="mobmen-btn">
+				<label for="mobmen-btn" class="mobmen-icon"><span class="navicon"></span></label>
+				<ul class="mobmen">
+					<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
+				</ul>
+			</div>
 		</div>
-		<input type="checkbox" class="mobmen-btn" id="mobmen-btn">
-		<label for="mobmen-btn" class="mobmen-icon"><span class="navicon"></span></label>
-		<ul class="mobmen">
-			<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
-		</ul>
+
 
 		<!-- Desktop -->
 		<div class="top-bar-container" data-sticky-container>
