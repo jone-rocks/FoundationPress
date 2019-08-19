@@ -77,7 +77,7 @@ while( have_rows('gebaeudetechnik') ): the_row(); ?>
 while( have_rows('telekommunikation') ): the_row(); ?>
 	<div class="bg-light-grey"><a id="telekommunikation"></a>
 		<div class="grid-container full telekommunikation">
-			<div class="grid-x align-middle">
+			<div class="grid-x align-middle grid-padding-x medium-padding-collapse">
 				<div class="cell small-12 medium-6">
 					<?php echo wp_get_attachment_image( get_sub_field('img'), 'full' ); ?>
 				</div>
@@ -100,19 +100,19 @@ while( have_rows('netzwerk') ): the_row(); ?>
 
 	<div class="bg-dark-grey"><a id="netzwerk"></a>
 		<div class="grid-container padding-x-80 netzwerk">
-			<div class="grid-x text-center">
+			<div class="grid-x text-center grid-padding-x medium-padding-collapse">
 				<div class="cell">
 					<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 					<span class="sexy_line_middle_white"></span>
 					<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 				</div>
 			</div>
-			<div class="grid-x grid-margin-x align-center">
+			<div class="grid-x grid-margin-x align-center grid-padding-x medium-padding-collapse">
 				<div class="cell">
 					<p><?php the_sub_field('text'); ?></p>
 				</div>
 			</div>
-			<div class="grid-x grid-margin-x check-row first-row">
+			<div class="grid-x grid-margin-x check-row first-row grid-padding-x medium-padding-collapse">
 				<div class="cell small-12 medium-4 medium-offset-2 border-bottom-white">
 					<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung_white.svg" /> <?php the_sub_field('haken1'); ?>
 				</div>
@@ -120,7 +120,7 @@ while( have_rows('netzwerk') ): the_row(); ?>
 					<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung_white.svg" /> <?php the_sub_field('haken2'); ?>
 				</div>
 			</div>
-			<div class="grid-x grid-margin-x check-row">
+			<div class="grid-x grid-margin-x check-row grid-padding-x medium-padding-collapse">
 				<div class="cell small-12 medium-4 large-offset-2">
 					<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung_white.svg" /> <?php the_sub_field('haken3'); ?>
 				</div>
@@ -137,7 +137,7 @@ while( have_rows('netzwerk') ): the_row(); ?>
 <!-- Jochen Raab -->
 <div class="bg-light-gray-gradient">
 	<div class="grid-container">
-		<div class="grid-x grid-padding-x small-padding-collapse align-middle klaus-raab">
+		<div class="grid-x grid-padding-x medium-padding-collapse align-middle klaus-raab">
 			<div class="cell small-12 medium-7">
 				<?php echo wp_get_attachment_image( get_field('zitat_bild'), 'full' ); ?>
 			</div>
@@ -156,7 +156,7 @@ while( have_rows('netzwerk') ): the_row(); ?>
 while( have_rows('serversysteme') ): the_row(); ?>
 
 	<div class="bg-light-grey"><a id="serversysteme"></a>
-		<div class="grid-container padding-x-80">
+		<div class="grid-container padding-x-80 grid-padding-x medium-padding-collapse">
 			<div class="grid-x align-center">
 				<div class="cell small-12 medium-8 text-center">
 					<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
@@ -165,7 +165,7 @@ while( have_rows('serversysteme') ): the_row(); ?>
 					<p><?php the_sub_field('text'); ?></p>
 				</div>
 			</div>
-			<div class="grid-x serversysteme">
+			<div class="grid-x serversysteme grid-padding-x medium-padding-collapse">
 				<div class="cell small-3 text-center">
 					<?php echo wp_get_attachment_image( get_sub_field('img_1'), 'full' ); ?><br />
 					<?php the_sub_field('imgtxt_1'); ?>
@@ -239,8 +239,8 @@ while( have_rows('systemintegration') ): the_row(); ?>
 while( have_rows('software') ): the_row(); ?>
 	<div class="bg-dark-grey"><a id="software"></a>
 		<div class="grid-container padding-x-80 software">
-			<div class="grid-x align-center">
-				<div class="cell small-8 text-center">
+			<div class="grid-x align-center grid-padding-x medium-padding-collapse">
+				<div class="cell small-12 medium-8 text-center">
 					<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 					<span class="sexy_line_middle_white"></span>
 					<h3 class="color-red text-center"><?php the_sub_field('headline'); ?></h3>
@@ -306,8 +306,8 @@ while( have_rows('it-security') ): the_row(); ?>
 while( have_rows('hosting_domain') ): the_row(); ?>
 	<div class="bg-light-grey"><a id="hosting_domain"></a>
 		<div class="grid-container padding-x-80 software">
-			<div class="grid-x align-center">
-				<div class="cell small-8 text-center">
+			<div class="grid-x align-center grid-padding-x medium-padding-collapse">
+				<div class="cell small-12 medium-8 text-center">
 					<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 					<span class="sexy_line_middle"></span>
 					<h3 class="color-red text-center"><?php the_sub_field('headline'); ?></h3>

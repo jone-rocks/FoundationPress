@@ -585,7 +585,7 @@ p {
     position: relative;
     @media screen and (max-width: 39.9375em) {
       font-size: 20px;
-  }
+    }
     img {
       position: absolute;
       top: 9px;
@@ -602,6 +602,11 @@ p {
     -webkit-column-count: 2; /* Old Chrome, Safari and Opera */
     -moz-column-count: 2; /* Old Firefox */
     column-count: 2;
+    @media screen and (max-width: 39.9375em) {
+      -webkit-column-count: 1; /* Old Chrome, Safari and Opera */
+      -moz-column-count: 1; /* Old Firefox */
+      column-count: 1;
+    }
   }
 }
 
