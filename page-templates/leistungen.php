@@ -38,11 +38,12 @@ get_header(); ?>
 <!-- Gebaeudetechnik -->
 <?php if( have_rows('gebaeudetechnik') ): 
 while( have_rows('gebaeudetechnik') ): the_row(); ?>
-	<div class="grid-container gebaeudetechnik-container"><a id="servicedesk"></a>
+	<div class="grid-container align-center gebaeudetechnik-container"><a id="servicedesk"></a>
 		<div class="grid-x grid-padding-x grid-padding-x padding-top-80">
 			<div class="cell small-12 medium-7">
-				<h4 class="headline_left with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
-				<span class="sexy_line_left"></span>
+				
+			<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
+					<span class="sexy_line_middle_white"></span>
 			</div>
 			<div class="cell small-5">
 			</div>

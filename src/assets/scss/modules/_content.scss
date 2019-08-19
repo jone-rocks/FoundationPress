@@ -673,6 +673,10 @@ p {
   li {
     border-bottom: 1px solid $dark-gray;
   }
+  img {
+    height: 800px;
+    object-fit: cover;
+  }
 }
 
 
