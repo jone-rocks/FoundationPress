@@ -38,7 +38,7 @@ get_header(); ?>
 <!-- Gebaeudetechnik -->
 <?php if( have_rows('gebaeudetechnik') ): 
 while( have_rows('gebaeudetechnik') ): the_row(); ?>
-	<div class="grid-container gebaeudetechnik-container"><a id="gebaeudetechnik"></a>
+	<div class="grid-container gebaeudetechnik-container"><a id="servicedesk"></a>
 		<div class="grid-x grid-padding-x grid-padding-x padding-top-80">
 			<div class="cell small-12 medium-7">
 				<h4 class="headline_left with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
@@ -72,7 +72,7 @@ while( have_rows('gebaeudetechnik') ): the_row(); ?>
 <!-- Telekommunikation -->
 <?php if( have_rows('telekommunikation') ): 
 while( have_rows('telekommunikation') ): the_row(); ?>
-	<div class="bg-light-grey"><a id="telekommunikation"></a>
+	<div class="bg-light-grey"><a id="facilitytelefonie"></a>
 		<div class="grid-container full telekommunikation">
 			<div class="grid-x align-middle grid-padding-x medium-padding-collapse">
 				<div class="cell small-12 medium-6">
@@ -315,7 +315,7 @@ while( have_rows('it-security') ): the_row(); ?>
 <!-- Hosting und Domain -->
 <?php if( have_rows('hosting_domain') ): 
 while( have_rows('hosting_domain') ): the_row(); ?>
-	<div class="bg-light-grey"><a id="hosting_domain"></a>
+	<div class="bg-light-grey"><a id="cloud"></a>
 		<div class="grid-container padding-x-80 software">
 			<div class="grid-x align-center grid-padding-x medium-padding-collapse">
 				<div class="cell small-12 medium-8 text-center">
