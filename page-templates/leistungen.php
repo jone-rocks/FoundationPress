@@ -17,7 +17,7 @@ get_header(); ?>
 <?php if( have_rows('title') ): 
 	while( have_rows('title') ): the_row(); ?>
 
-	<div class="bg-dark-grey"><a id="consulting"></a>
+	<div class="bg-dark-grey consulting-container"><a id="consulting"></a>
 		<div class="grid-container">
 			<div class="grid-x grid-padding-x align-middle small-up-1 medium-up-2 large-up-2 dark-header">
 				<div class="cell">
@@ -38,7 +38,7 @@ get_header(); ?>
 <!-- Gebaeudetechnik -->
 <?php if( have_rows('gebaeudetechnik') ): 
 while( have_rows('gebaeudetechnik') ): the_row(); ?>
-	<div class="grid-container"><a id="gebaeudetechnik"></a>
+	<div class="grid-container gebaeudetechnik-container"><a id="gebaeudetechnik"></a>
 		<div class="grid-x grid-padding-x grid-padding-x padding-top-80">
 			<div class="cell small-12 medium-7">
 				<h4 class="headline_left with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>

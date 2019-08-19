@@ -145,12 +145,16 @@ img.support_availability {
     }
   }
   .check-row {
+    text-align: left;
     &.first-row {
       margin-top: 40px;
     }
     .check {
       margin-right: 15px;
     }
+  }
+  @media screen and (max-width: 39.9375em) {
+    text-align: center;
   }
 }
 
@@ -566,7 +570,8 @@ p {
 }
 
 .padding-x-80 {
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .padding-bottom-80 {
   padding-bottom: 80px;
@@ -575,9 +580,18 @@ p {
   padding-top: 80px;
 }
 
+.telekommunikation {
+  @media screen and (max-width: 39.9375em) {
+    text-align: center;
+  }
+}
 
 .telekommunikation-text {
   padding: 0 80px 0 60px !important;
+  @media screen and (max-width: 39.9375em) {
+    padding-right: .625rem !important;
+    padding-left: .625rem !important;
+  }
 }
 
 .quote{
@@ -611,7 +625,11 @@ p {
   }
 }
 
-
+.gebaeudetechnik-container, .consulting-container {
+  @media screen and (max-width: 39.9375em) {
+    text-align: center;
+  }
+}
 
 .it-security, .gebaeudetechnik, .systemintegration{
   .list {
@@ -632,6 +650,9 @@ p {
     .check {
       margin-right: 15px;
     }
+  }
+  @media screen and (max-width: 39.9375em) {
+    text-align: center;
   }
 }
 
