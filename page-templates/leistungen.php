@@ -47,8 +47,9 @@ while( have_rows('gebaeudetechnik') ): the_row(); ?>
 			<div class="cell small-5">
 			</div>
 		</div>
-		<div class="grid-x grid-padding-x gebaeudetechnik grid-padding-x padding-bottom-80">
-			<div class="cell small-12 medium-7">
+
+		<div class="grid-x align-center grid-padding-x medium-padding-collapse gebaeudetechnik padding-bottom-80">
+			<div class="cell small-12 medium-8 text-center">
 				<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 				<p><?php the_sub_field('text'); ?></p>
 			</div>
