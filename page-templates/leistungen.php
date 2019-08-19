@@ -52,24 +52,21 @@ while( have_rows('gebaeudetechnik') ): the_row(); ?>
 				<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 				<p><?php the_sub_field('text'); ?></p>
 			</div>
-			<div class="cell small-12 medium-5 list">
-				<ul>
-					<?php
-					if( have_rows('haken') ):
-						while ( have_rows('haken') ) : the_row();
-						?><li><img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" />  <?php
-							the_sub_field('haken_value');?>
-							</li><?php
-						endwhile;
-					else :
-					endif;
-					?>
-				</ul>
-			</div>
 		</div>
 	</div>
 <?php endwhile; ?>
 <?php endif; ?>
+
+<!-- 24/7 -->
+<div class="bg-red">
+	<div class="grid-container">
+		<div class="grid-x align-center s24-7">
+			<div class="cell small-8 text-center">
+				Reaktion unter 2 Stunden <img class="support_availability" src="<?php echo get_template_directory_uri() ?>/img/raabit_support_icon_clock.svg" /> 24 Stunden - 7 Tage
+			</div>
+		</div>
+	</div>
+</div>
 
 
 <!-- Telekommunikation -->
@@ -86,6 +83,20 @@ while( have_rows('telekommunikation') ): the_row(); ?>
 					<span class="sexy_line_left"></span>
 					<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 					<p><?php the_sub_field('txt'); ?></p>
+					<div class="cell small-12 medium-5 list">
+						<ul>
+							<?php
+							if( have_rows('haken') ):
+								while ( have_rows('haken') ) : the_row();
+								?><li><img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung.svg" />  <?php
+									the_sub_field('haken_value');?>
+									</li><?php
+								endwhile;
+							else :
+							endif;
+							?>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
