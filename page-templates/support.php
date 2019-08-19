@@ -40,7 +40,7 @@ get_header(); ?>
 </div>
 
 <!-- Rufbereitschaft -->
-<div class="grid-container rufbereitschaft">
+<div class="grid-container rufbereitschaft"><a id="rufbereitschaft"></a>
 	<div class="grid-x align-center padding-top-80">
 		<div class="cell small-8 text-center">
 			<h4 class="headline_middle with-icon" style="background-image: url('<?php the_field('rufbereitschaft_icon'); ?>')"><?php the_field('rufbereitschaft_title'); ?></h4>
@@ -94,7 +94,7 @@ get_header(); ?>
 </div>
 
 <!-- Benutzerservice -->
-<div class="bg-light-grey">
+<div class="bg-light-grey"><a id="benutzerservice"></a>
 	<div class="grid-container benutzerservice">
 		<div class="grid-x align-center padding-top-80">
 			<div class="cell small-8 text-center">
@@ -126,7 +126,7 @@ get_header(); ?>
 
 
 <!-- Support-Level -->
-<div class="grid-container supportlevel">
+<div class="grid-container supportlevel"><a id="supportlevels"></a>
 	<div class="grid-x align-center padding-top-80">
 		<div class="cell small-12 medium-4">
 			<h4 class="headline_middle with-icon" style="background-image: url('<?php the_field('support-level_icon'); ?>')"><?php the_field('support-level_title'); ?></h4>
