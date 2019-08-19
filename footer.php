@@ -28,18 +28,17 @@
 					</p>
 				</div>
 				<div class="cell small-12 medium-4 phones">
-					<img src="<?php echo get_template_directory_uri() ?>/img/raabit_icon_telefon_footer.svg" class="phone-icon" />
+					
 					<p>
-						<strong>Kundenhotline</strong></br>
-						089897128937
+						<img src="<?php echo get_template_directory_uri() ?>/img/raabit_icon_telefon_footer.svg" class="phone-icon" />
+						<strong>Team Vertrieb</strong></br>
+						07323 9527 0
 					</p>
+					
 					<p>
-						<strong>Bestellservice</strong></br>
-						089897128937
-					</p>
-					<p>
-						<strong>Vertrieb</strong></br>	
-						089897128937
+						<img src="<?php echo get_template_directory_uri() ?>/img/raabit_icon_telefon_footer.svg" class="phone-icon" />
+						<strong>Team Service</strong></br>
+						07323 9527 20
 					</p>
 				</div>
 				<div class="cell small-12 medium-4 align-self-bottom certified">
