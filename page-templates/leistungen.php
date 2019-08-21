@@ -17,7 +17,7 @@ get_header(); ?>
 <?php if( have_rows('title') ): 
 	while( have_rows('title') ): the_row(); ?>
 
-	<div class="bg-dark-grey consulting-container"><a id="consulting"></a>
+	<div class="bg-dark-grey">
 		<div class="grid-container">
 			<div class="grid-x grid-padding-x align-middle small-up-1 medium-up-2 large-up-2 dark-header">
 				<div class="cell">
@@ -25,10 +25,32 @@ get_header(); ?>
 					<h2><?php the_sub_field('subheader'); ?></h2>
 				</div>
 				<div class="cell consulting">
-					<h4 class="headline_left with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
-					<span class="sexy_line_left_white"></span>
 					<p><?php the_sub_field('text'); ?></p>
 				</div>
+			</div>
+		</div>
+	</div>
+<?php endwhile; ?>
+<?php endif; ?>
+
+<!-- Gebaeudetechnik -->
+<?php if( have_rows('consulting') ): 
+while( have_rows('consulting') ): the_row(); ?>
+	<div class="grid-container align-center consulting-container"><a id="consulting"></a>
+		<div class="grid-x grid-padding-x grid-padding-x padding-top-80">
+			<div class="cell small-12 medium-7">
+				
+			<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
+					<span class="sexy_line_middle_white"></span>
+			</div>
+			<div class="cell small-5">
+			</div>
+		</div>
+
+		<div class="grid-x align-center grid-padding-x medium-padding-collapse consulting padding-bottom-80">
+			<div class="cell small-12 medium-8 text-center">
+				<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
+				<p><?php the_sub_field('text'); ?></p>
 			</div>
 		</div>
 	</div>
