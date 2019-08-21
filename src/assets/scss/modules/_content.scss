@@ -34,6 +34,10 @@ body {
   color: $red;
 }
 
+.color-white {
+  color: white;
+}
+
 .padding-small {
   padding: 40px;
 }
@@ -47,9 +51,9 @@ body {
     @media screen and (max-width: 39.9375em) {
       padding: 0;
       border-right: 0;
-    }
-    &:nth-child(3), &:nth-child(4) {  
-      margin-top: 30px;
+      &:nth-child(3), &:nth-child(4) {  
+        margin-top: 30px;
+      }
     }
     img {
       width: 48px;
@@ -531,7 +535,7 @@ img.support_availability {
       }
       &:last-child {
         a {
-          padding: 0;
+          padding-right: 0;
         }
       }
     }
@@ -594,7 +598,7 @@ p {
 
 .telekommunikation-text {
   margin-top: 30px;
-  padding: 0 80px 0 60px !important;
+  padding: 0 120px 0 60px !important;
   @media screen and (max-width: 39.9375em) {
     padding-right: .625rem !important;
     padding-left: .625rem !important;
@@ -942,15 +946,6 @@ strong {
 
 
 
-.consulting {
-  @media screen and (max-width: 39.9375em) {
-    padding-top: 60px; 
-  }
-}
-
-
-
-
 
 /* Nav items */
 .mobmen {
@@ -980,7 +975,6 @@ strong {
 .mobmen a {
   text-decoration: none;
   font-weight: 500;
-  letter-spacing: 2px;
   font-size: 16px;
   text-transform: capitalize;
   color: $dark-gray;
@@ -1085,7 +1079,6 @@ strong {
 .navtext {
   position: absolute;
   text-transform: uppercase;
-  letter-spacing: 4px;
   font-size: 20px;
 }
 

@@ -24,7 +24,7 @@ get_header(); ?>
 					<h1><?php the_sub_field('header'); ?></h1>
 					<h2><?php the_sub_field('subheader'); ?></h2>
 				</div>
-				<div class="cell consulting">
+				<div class="cell">
 					<p><?php the_sub_field('text'); ?></p>
 				</div>
 			</div>
@@ -33,29 +33,42 @@ get_header(); ?>
 <?php endwhile; ?>
 <?php endif; ?>
 
-<!-- Gebaeudetechnik -->
+<!-- Consulting -->
 <?php if( have_rows('consulting') ): 
 while( have_rows('consulting') ): the_row(); ?>
-	<div class="grid-container align-center consulting-container"><a id="consulting"></a>
-		<div class="grid-x grid-padding-x grid-padding-x padding-top-80">
-			<div class="cell small-12 medium-7">
-				
-			<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
-					<span class="sexy_line_middle_white"></span>
+	<div class="bg-light-grey"><a id="consulting"></a>
+		<div class="grid-container full align-center consulting-container">
+			<div class="grid-x grid-padding-x grid-padding-x padding-top-80">
+				<div class="cell small-12 medium-7">
+					
+				<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
+						<span class="sexy_line_middle_white"></span>
+				</div>
+				<div class="cell small-5">
+				</div>
 			</div>
-			<div class="cell small-5">
-			</div>
-		</div>
 
-		<div class="grid-x align-center grid-padding-x medium-padding-collapse consulting padding-bottom-80">
-			<div class="cell small-12 medium-8 text-center">
-				<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
-				<p><?php the_sub_field('text'); ?></p>
+			<div class="grid-x align-center grid-padding-x medium-padding-collapse consulting padding-bottom-80">
+				<div class="cell small-12 medium-8 text-center">
+					<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
+					<p><?php the_sub_field('text'); ?></p>
+				</div>
 			</div>
 		</div>
 	</div>
 <?php endwhile; ?>
 <?php endif; ?>
+
+<!-- 24/7 -->
+<div class="bg-red">
+	<div class="grid-container">
+		<div class="grid-x align-center s24-7">
+			<div class="cell small-8 text-center">
+				Reaktion unter 2 Stunden <img class="support_availability" src="<?php echo get_template_directory_uri() ?>/img/raabit_support_icon_clock.svg" /> 24 Stunden - 7 Tage
+			</div>
+		</div>
+	</div>
+</div>
 
 <!-- Gebaeudetechnik -->
 <?php if( have_rows('gebaeudetechnik') ): 
@@ -80,17 +93,6 @@ while( have_rows('gebaeudetechnik') ): the_row(); ?>
 	</div>
 <?php endwhile; ?>
 <?php endif; ?>
-
-<!-- 24/7 -->
-<div class="bg-red">
-	<div class="grid-container">
-		<div class="grid-x align-center s24-7">
-			<div class="cell small-8 text-center">
-				Reaktion unter 2 Stunden <img class="support_availability" src="<?php echo get_template_directory_uri() ?>/img/raabit_support_icon_clock.svg" /> 24 Stunden - 7 Tage
-			</div>
-		</div>
-	</div>
-</div>
 
 
 <!-- Telekommunikation -->
@@ -129,6 +131,7 @@ while( have_rows('telekommunikation') ): the_row(); ?>
 <?php endif; ?>
 
 
+
 <!-- Netzwerk -->
 <?php if( have_rows('netzwerk') ): 
 while( have_rows('netzwerk') ): the_row(); ?>
@@ -136,14 +139,14 @@ while( have_rows('netzwerk') ): the_row(); ?>
 	<div class="bg-dark-grey"><a id="netzwerk"></a>
 		<div class="grid-container padding-x-80 netzwerk">
 			<div class="grid-x text-center grid-padding-x medium-padding-collapse">
-				<div class="cell">
+				<div class="cell small-12 medium-8 text-center">
 					<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 					<span class="sexy_line_middle_white"></span>
-					<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
+					<h3 class="color-white"><?php the_sub_field('headline'); ?></h3>
 				</div>
 			</div>
-			<div class="grid-x grid-margin-x align-center grid-padding-x medium-padding-collapse">
-				<div class="cell">
+			<div class="grid-x align-center grid-padding-x medium-padding-collapse">
+				<div class="cell small-12 medium-8 text-center">
 					<p><?php the_sub_field('text'); ?></p>
 				</div>
 			</div>
@@ -278,7 +281,7 @@ while( have_rows('software') ): the_row(); ?>
 				<div class="cell small-12 medium-8 text-center">
 					<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 					<span class="sexy_line_middle_white"></span>
-					<h3 class="color-red text-center"><?php the_sub_field('headline'); ?></h3>
+					<h3 class="color-whtie text-center"><?php the_sub_field('headline'); ?></h3>
 					<p class="text-justify"><?php the_sub_field('text'); ?></p>
 				</div>
 			</div>
@@ -340,7 +343,7 @@ while( have_rows('it-security') ): the_row(); ?>
 <?php if( have_rows('hosting_domain') ): 
 while( have_rows('hosting_domain') ): the_row(); ?>
 	<div class="bg-light-grey"><a id="cloud"></a>
-		<div class="grid-container padding-x-80 software">
+		<div class="grid-container padding-x-80 cloud">
 			<div class="grid-x align-center grid-padding-x medium-padding-collapse">
 				<div class="cell small-12 medium-8 text-center">
 					<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
