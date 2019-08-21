@@ -659,6 +659,8 @@ p {
     }
     .check {
       margin-right: 15px;
+      height: auto;
+      object-fit: fill;
     }
   }
   @media screen and (max-width: 39.9375em) {
@@ -674,10 +676,8 @@ p {
     border-bottom: 1px solid $dark-gray;
   }
   .img {
-    &:first-of-type{
-      height: 800px;
-      object-fit: cover;
-    }
+    height: 800px;
+    object-fit: cover;
   }
 }
 
