@@ -33,16 +33,17 @@ get_header(); ?>
 <?php endwhile; ?>
 <?php endif; ?>
 
+
 <!-- Consulting -->
 <?php if( have_rows('consulting') ): 
 while( have_rows('consulting') ): the_row(); ?>
 	<div class="bg-light-grey"><a id="consulting"></a>
 		<div class="grid-container full align-center consulting-container">
 			<div class="grid-x grid-padding-x grid-padding-x padding-top-80">
-				<div class="cell small-12 medium-7">
+				<div class="cell small-12 medium-7 text-center">
 					
 				<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
-						<span class="sexy_line_middle_white"></span>
+						<span class="sexy_line_middle"></span>
 				</div>
 				<div class="cell small-5">
 				</div>
@@ -75,10 +76,10 @@ while( have_rows('consulting') ): the_row(); ?>
 while( have_rows('gebaeudetechnik') ): the_row(); ?>
 	<div class="grid-container align-center gebaeudetechnik-container"><a id="servicedesk"></a>
 		<div class="grid-x grid-padding-x grid-padding-x padding-top-80">
-			<div class="cell small-12 medium-7">
+			<div class="cell small-12 medium-7 text-center">
 				
 			<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
-					<span class="sexy_line_middle_white"></span>
+					<span class="sexy_line_middle"></span>
 			</div>
 			<div class="cell small-5">
 			</div>
@@ -139,7 +140,7 @@ while( have_rows('netzwerk') ): the_row(); ?>
 	<div class="bg-dark-grey"><a id="netzwerk"></a>
 		<div class="grid-container padding-x-80 netzwerk">
 			<div class="grid-x text-center grid-padding-x medium-padding-collapse">
-				<div class="cell small-12 medium-8 text-center">
+				<div class="cell small-12 medium-12 text-center">
 					<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 					<span class="sexy_line_middle_white"></span>
 					<h3 class="color-white"><?php the_sub_field('headline'); ?></h3>
