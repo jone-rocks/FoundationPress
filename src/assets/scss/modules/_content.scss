@@ -13,6 +13,10 @@ body {
   background: $light-gray;
 }
 
+.bg-ultralight-gray {
+  background: $ultralight-gray;
+}
+
 .bg-red {
   background: $red;
   color: #fff;
@@ -643,6 +647,9 @@ p {
 }
 
 .it-security, .telekommunikation, .systemintegration{
+  .text {
+    padding-right: 100px;
+  }
   .list {
     background-image: linear-gradient(to right, #f1f1f1 , #fefefe);
     @media screen and (max-width: 39.9375em) {
@@ -766,7 +773,10 @@ header {
 }
 
 
-strong {
+strong, b {
+  font-weight: 700;
+}
+i, italic {
   font-weight: 400;
 }
 

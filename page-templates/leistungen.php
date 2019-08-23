@@ -37,8 +37,8 @@ get_header(); ?>
 <!-- Consulting -->
 <?php if( have_rows('consulting') ): 
 while( have_rows('consulting') ): the_row(); ?>
-	<div class="bg-light-grey"><a id="consulting"></a>
-		<div class="grid-container full align-center consulting-container">
+	<div class="bg-ultralight-grey"><a id="consulting"></a>
+		<div class="grid-container align-center consulting-container">
 			<div class="grid-x grid-padding-x grid-padding-x align-center padding-top-80">
 				<div class="cell small-12 medium-8 text-center">
 					
@@ -49,6 +49,7 @@ while( have_rows('consulting') ): the_row(); ?>
 				</div>
 			</div>
 
+			<div class="grid-x align-center grid-padding-x medium-padding-collapse gebaeudetechnik padding-bottom-80">
 			<div class="grid-x align-center grid-padding-x medium-padding-collapse consulting padding-bottom-80">
 				<div class="cell small-12 medium-8 text-center">
 					<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
@@ -148,23 +149,28 @@ while( have_rows('netzwerk') ): the_row(); ?>
 			</div>
 			<div class="grid-x align-center grid-padding-x medium-padding-collapse">
 				<div class="cell small-12 medium-8 text-center">
-					<p><?php the_sub_field('text'); ?></p>
+					<p class="text-justify"><?php the_sub_field('text'); ?></p>
 				</div>
 			</div>
+
+			<div class="grid-x grid-margin-x check-row first-row grid-padding-x medium-padding-collapse">
+				<div class="cell small-12 medium-3 medium-offset-2">
+					<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung_white.svg" /> <?php the_sub_field('haken1'); ?>
+				</div>
+				<div class="cell small-12 medium-3">
+					<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung_white.svg" /> <?php the_sub_field('haken1'); ?>
+				</div>
+				<div class="cell small-12 medium-3">
+					<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung_white.svg" /> <?php the_sub_field('haken1'); ?>
+				</div>
+			</div>
+
 			<div class="grid-x grid-margin-x check-row first-row grid-padding-x medium-padding-collapse">
 				<div class="cell small-12 medium-4 medium-offset-2 border-bottom-white">
 					<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung_white.svg" /> <?php the_sub_field('haken1'); ?>
 				</div>
 				<div class="cell small-12 medium-4 border-bottom-white">
 					<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung_white.svg" /> <?php the_sub_field('haken2'); ?>
-				</div>
-			</div>
-			<div class="grid-x grid-margin-x check-row grid-padding-x medium-padding-collapse">
-				<div class="cell small-12 medium-4 large-offset-2">
-					<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung_white.svg" /> <?php the_sub_field('haken3'); ?>
-				</div>
-				<div class="cell small-12 medium-4">
-					<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung_white.svg" /> <?php the_sub_field('haken3'); ?>
 				</div>
 			</div>
 		</div>
@@ -240,8 +246,8 @@ while( have_rows('systemintegration') ): the_row(); ?>
 			<div class="cell small-0 medium-5">
 			</div>
 		</div>
-		<div class="grid-x grid-padding-x headline">
-			<div class="cell small-12 medium-7">
+		<div class="grid-x grid-padding-x">
+			<div class="cell small-12 medium-7 text">
 				<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 				<p><?php the_sub_field('text'); ?></p>
 			</div>
@@ -304,8 +310,8 @@ while( have_rows('it-security') ): the_row(); ?>
 			<div class="cell small-0 medium-5">
 			</div>
 		</div>
-		<div class="grid-x grid-padding-x headline">
-			<div class="cell small-12 medium-7">
+		<div class="grid-x grid-padding-x">
+			<div class="cell small-12 medium-7 text">
 				<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 				<p><?php the_sub_field('text'); ?></p>
 			</div>
@@ -350,7 +356,7 @@ while( have_rows('hosting_domain') ): the_row(); ?>
 					<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 					<span class="sexy_line_middle"></span>
 					<h3 class="color-red text-center"><?php the_sub_field('headline'); ?></h3>
-					<p class="text-justify"><?php the_sub_field('text'); ?></p>
+					<p class="text-center"><?php the_sub_field('text'); ?></p>
 				</div>
 			</div>
 		</div>
