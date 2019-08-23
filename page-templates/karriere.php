@@ -45,7 +45,7 @@ get_header(); ?>
 		<?php
 		if( have_rows('stellenangebote') ): ?>
 		<div class="cell small-12 medium-8 stellenangebot-accordion">
-			<ul class="accordion" data-accordion>
+			<ul class="accordion" data-accordion data-allow-all-closed="true">
 			<?php while ( have_rows('stellenangebote') ) : the_row(); ?>
 				<li class="accordion-item" data-accordion-item>
 					<a href="#" class="accordion-title"><span class="accordion-circle"></span><?php the_sub_field('stelle'); ?></a>
