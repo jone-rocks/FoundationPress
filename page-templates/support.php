@@ -143,7 +143,7 @@ get_header(); ?>
 		<?php
 		if( have_rows('support-level_accordion') ): ?>
 		<div class="cell small-12 medium-8 support-accordion">
-			<ul class="accordion" data-accordion>
+			<ul class="accordion" data-accordion data-allow-all-closed="true">
 			<?php while ( have_rows('support-level_accordion') ) : the_row(); ?>
 				<li class="accordion-item" data-accordion-item>
 					<a href="#" class="accordion-title"><span class="accordion-circle"></span><?php the_sub_field('support-level_accordion_title'); ?></a>
