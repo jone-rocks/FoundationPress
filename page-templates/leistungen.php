@@ -165,14 +165,6 @@ while( have_rows('netzwerk') ): the_row(); ?>
 				</div>
 			</div>
 
-			<div class="grid-x grid-margin-x check-row first-row grid-padding-x medium-padding-collapse">
-				<div class="cell small-12 medium-4 medium-offset-2 border-bottom-white">
-					<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung_white.svg" /> <?php the_sub_field('haken1'); ?>
-				</div>
-				<div class="cell small-12 medium-4 border-bottom-white">
-					<img class="check" src="<?php echo get_template_directory_uri() ?>/img/raabit_haken_aufzaehlung_white.svg" /> <?php the_sub_field('haken2'); ?>
-				</div>
-			</div>
 		</div>
 	</div>
 <?php endwhile; ?>
