@@ -197,3 +197,10 @@ $(document).ready(function(){
     });
 
 })(jQuery);
+
+    
+$(document).ready(function(){
+    
+    $('.accordion li:first').addClass('is-active');
+
+})(jQuery);
