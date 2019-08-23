@@ -761,6 +761,8 @@ header {
     bottom: 0;
     width: 100%;
     display: block;
+    top: auto;
+    right: auto;
   }
 
     span {
@@ -782,6 +784,7 @@ header {
     display: block;
     padding: 7px 10px 10px;
     margin: 7px 0;
+    width: inherit;
     @media screen and (max-width: 39.9375em) {
       background: $red;
       display: inline-block;
@@ -798,7 +801,7 @@ header {
   .phone {
     display: none;
     @media screen and (max-width: 39.9375em) {
-      display: block;
+      display: inline-block;
     }
   }
 }
