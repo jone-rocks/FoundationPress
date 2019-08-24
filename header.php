@@ -24,28 +24,44 @@
 		<?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
 	<?php endif; ?>
 
-	<?php
-		
-	// vars
-	$kontakt_icons = get_field('kontakt_icons', 'option');	
+	
+	<?php $kontakt_icons = get_field('kontakt_icons', 'option');	
 
-	if( $kontakt_icons ): ?>
-		<div class="contact-icons">
-			<a href="tel:<?php get_sub_field('telefon') ?>"><span class="phone"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_phone.svg" /></span></a>
-			<a href="mailto:<?php get_sub_field('mail') ?>"><span class="mail"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_mail.svg" /></span></a>
-			<a href="http://<?php get_sub_field('newsletter') ?>"><span class="newsletter"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_newsletter.svg" /></span></a>
-			<a href="http://<?php get_sub_field('google_360') ?>"><span class="360"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_360.svg" /></span></a>
+		if( $kontakt_icons ):  
+
+			while( have_rows('hero') ): the_row(); ?>
+				<div class="contact-icons">
+					<a href="tel:<?php get_sub_field('telefon') ?>"><span class="phone"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_phone.svg" /></span></a>
+					<a href="mailto:<?php get_sub_field('mail') ?>"><span class="mail"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_mail.svg" /></span></a>
+					<a href="<?php get_sub_field('newsletter') ?>"><span class="newsletter"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_newsletter.svg" /></span></a>
+					<a href="" data-toggle="360-modal"><span class="360"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_360.svg" /></span></a>
+				</div>
+
+			<?php endwhile; ?>
+			
+		<?php endif; ?>
+
+
+		<div class="reveal" id="360-modal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+		<iframe onload="iFrameHeight(this)" name="" src="<?php get_sub_field('google_360') ?>" width="100%" height="450" scrolling="auto" frameborder="0" title="view 360 grad" class="wrapper">
+	Keine IFrames</iframe>
+			<button class="close-button" data-close aria-label="Close reveal" type="button">
+				<span aria-hidden="true">&times;</span>
+			</button>
 		</div>
-	<?php endif; ?>
 
 
+
+
+		
+<!--
 	<div class="contact-icons">
 		<span class="phone"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_phone.svg" /></span>
 		<span class="mail"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_mail.svg" /></span>
 		<span class="newsletter"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_newsletter.svg" /></span>
 		<span class="newsletter"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_360.svg" /></span>
 	</div>
-
+-->
 	<header class="site-header" role="banner">
 
 		<div class="top-bar-additional">
