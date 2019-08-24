@@ -797,6 +797,7 @@ header {
 }
 
 
+
 strong, b {
   font-weight: 700;
 }
@@ -1120,4 +1121,8 @@ i, italic {
 .menu .is-active > a {
   background: $light-gray;
   color: $dark-gray;
+}
+
+reveal-overlay {
+  position: fixed;
 }

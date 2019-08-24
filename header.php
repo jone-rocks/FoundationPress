@@ -25,25 +25,16 @@
 	<?php endif; ?>
 
 	
-	<?php $kontakt_icons = get_field('kontakt_icons', 'option');	
-
-		if( $kontakt_icons ):  
-
-			while( have_rows('hero') ): the_row(); ?>
 				<div class="contact-icons">
-					<a href="tel:<?php get_sub_field('telefon') ?>"><span class="phone"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_phone.svg" /></span></a>
-					<a href="mailto:<?php get_sub_field('mail') ?>"><span class="mail"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_mail.svg" /></span></a>
-					<a href="<?php get_sub_field('newsletter') ?>"><span class="newsletter"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_newsletter.svg" /></span></a>
-					<a href="" data-toggle="360-modal"><span class="360"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_360.svg" /></span></a>
+					<a href="tel:<?php the_field('phone', 'option'); ?>"><span class="phone"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_phone.svg" /></span></a>
+					<a href="mailto:<?php the_field('mail', 'option'); ?>"><span class="mail"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_mail.svg" /></span></a>
+					<a href="<?php the_field('newsletter', 'option'); ?>"><span class="newsletter"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_newsletter.svg" /></span></a>
+					<a data-toggle="360-modal"><span class="360"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_360.svg" /></span></a>
 				</div>
-
-			<?php endwhile; ?>
-			
-		<?php endif; ?>
 
 
 		<div class="reveal" id="360-modal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
-		<iframe onload="iFrameHeight(this)" name="" src="<?php get_sub_field('google_360') ?>" width="100%" height="450" scrolling="auto" frameborder="0" title="view 360 grad" class="wrapper">
+		<iframe onload="iFrameHeight(this)" name="" src="<?php the_field('google_360', 'option'); ?>" width="100%" height="450" scrolling="auto" frameborder="0" title="view 360 grad" class="wrapper">
 	Keine IFrames</iframe>
 			<button class="close-button" data-close aria-label="Close reveal" type="button">
 				<span aria-hidden="true">&times;</span>
