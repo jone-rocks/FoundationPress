@@ -765,18 +765,7 @@ header {
     top: auto;
     right: auto;
   }
-
-    span {
-      background: $red;
-      float: left;
-      padding: 12px 10px 20px;
-      margin: 0;
-      width: 25%;
-      text-align: center;
-      @media screen and (max-width: 39.9375em) {
-        display: none;
-      }
-    }
+  
   
 
 
@@ -788,9 +777,9 @@ header {
     width: inherit;
     @media screen and (max-width: 39.9375em) {
       background: $red;
-      display: inline-block;
+      float: left;
       padding: 12px 10px 20px;
-      margin: -2px;
+      margin: 0;
       width: 25%;
       text-align: center;
     }
