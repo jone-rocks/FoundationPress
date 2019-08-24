@@ -24,6 +24,21 @@
 		<?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
 	<?php endif; ?>
 
+	<?php
+		
+	// vars
+	$kontakt_icons = get_field('kontakt_icons', 'option');	
+
+	if( $kontakt_icons ): ?>
+		<div class="contact-icons">
+			<a href="tel:<?php get_sub_field('telefon') ?>"><span class="phone"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_phone.svg" /></span></a>
+			<a href="mailto:<?php get_sub_field('mail') ?>"><span class="mail"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_mail.svg" /></span></a>
+			<a href="http://<?php get_sub_field('newsletter') ?>"><span class="newsletter"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_newsletter.svg" /></span></a>
+			<a href="http://<?php get_sub_field('google_360') ?>"><span class="360"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_360.svg" /></span></a>
+		</div>
+	<?php endif; ?>
+
+
 	<div class="contact-icons">
 		<span class="phone"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_phone.svg" /></span>
 		<span class="mail"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_mail.svg" /></span>

@@ -59,6 +59,12 @@ require_once( 'library/gutenberg.php' );
 
 add_filter('use_block_editor_for_post', '__return_false');
 
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}
+
 
 function my_acf_init() {
 	
