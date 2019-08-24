@@ -201,6 +201,6 @@ $(document).ready(function(){
     
 $(document).ready(function(){
     
-    $('li.accordion-item:first').addClass('is-active');
+    $('li.accordion-item:first').addClass('active');
 
 })(jQuery);
