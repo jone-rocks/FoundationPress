@@ -1136,4 +1136,12 @@ reveal-overlay {
   height: -webkit-calc(100% - 50px);
   height:    -moz-calc(100% - 50px);
   height:         calc(100% - 50px);
+  top: 0 !important;
+  @media screen and (max-width: 39.9375em) {
+    margin: 0;
+  }
+}
+
+.close-button, .close-button.medium {
+  font-size: 50px;
 }
