@@ -1131,5 +1131,9 @@ reveal-overlay {
 }
 
 .reveal {
-  height: 85%;
+  max-width: 100%;
+  margin: 25px;
+  height: -webkit-calc(100% - 50px);
+  height:    -moz-calc(100% - 50px);
+  height:         calc(100% - 50px);
 }
