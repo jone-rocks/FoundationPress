@@ -37,11 +37,6 @@ get_header(); ?>
 <!-- Stellenangebote -->
 <div class="grid-container stellenangebote">
 	<div class="grid-x align-center padding-x-80">
-		<div class="cell small-12 medium-4 karriere_ansprechpartner">
-			<h3 class="color-red"><?php the_field('ansprechpartner_header'); ?></h3>
-			<?php echo wp_get_attachment_image( get_field('ansprechpartner_img'), 'full' ); ?>
-			<p><?php the_field('ansprechpartner_kontaktinformationen'); ?></p>
-		</div>
 		<?php
 		if( have_rows('stellenangebote') ): ?>
 		<div class="cell small-12 medium-8 stellenangebot-accordion">
@@ -55,11 +50,18 @@ get_header(); ?>
 				</li>
 				<?php endwhile; ?>
 			</ul>
+			<p><?php the_field('erwartungen'); ?></p>
 		</div>
 		<?php
 		else :
 		endif;
 		?>
+		<div class="cell small-12 medium-4 karriere_ansprechpartner">
+			<h3 class="color-red"><?php the_field('ansprechpartner_header'); ?></h3>
+			<?php echo wp_get_attachment_image( get_field('ansprechpartner_img'), 'full' ); ?>
+			<strong>Klaus Raab, Geschäftsführer</strong>
+			<p><?php the_field('ansprechpartner_kontaktinformationen'); ?></p>
+		</div>
 		
 	</div>
 </div>
