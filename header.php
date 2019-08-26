@@ -70,7 +70,7 @@
 		</div>
 		-->
 		<div data-sticky-container>
-			<div class="sticky" id="example2" data-sticky data-top-anchor="example2:top" data-options="anchor: page; marginTop: 0; stickyOn: small;" style="width:100%; z-index: 9999">
+			<div class="sticky" id="example2" data-sticky data-top-anchor="example2:top" data-options="anchor: page; marginTop: 0; stickyOn: small;" style="width:100%; z-index: 999">
 				<div class="navtext-container">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/raabit_logo_header.svg" />
 				</div>
@@ -85,7 +85,7 @@
 
 		<!-- Desktop -->
 		<div class="top-bar-container" data-sticky-container>
-			<div class="sticky" id="example2" data-sticky data-top-anchor="example2:top" data-options="anchor: page; marginTop: 0; stickyOn: small;" style="width:100%; z-index: 9999">
+			<div class="sticky" id="example2" data-sticky data-top-anchor="example2:top" data-options="anchor: page; marginTop: 0; stickyOn: small;" style="width:100%; z-index: 999">
 				<nav class="site-navigation top-bar" role="navigation" id="<?php foundationpress_mobile_menu_id(); ?>" data-options="sticky_on: large">
 					<div class="top-bar-left">
 						<div class="site-desktop-title top-bar-title logo">
