@@ -58,7 +58,7 @@ get_header(); ?>
 		?>
 		<div class="cell small-12 medium-4 karriere_ansprechpartner">
 			<h3 class="color-red"><?php the_field('ansprechpartner_header'); ?></h3>
-			<?php echo wp_get_attachment_image( get_field('ansprechpartner_img'), 'full' ); ?>
+			<?php echo wp_get_attachment_image( get_field('ansprechpartner_img'), 'full' ); ?><br />
 			<strong>Klaus Raab, Geschäftsführer</strong>
 			<p><?php the_field('ansprechpartner_kontaktinformationen'); ?></p>
 		</div>

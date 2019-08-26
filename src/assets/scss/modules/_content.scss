@@ -389,8 +389,11 @@ img.support_availability {
   }
 }
 
-.support-accordion, .stellenangebot-accordion {
+.support-accordion, .karriere_ansprechpartner {
   padding-left: 100px;
+}
+
+.support-accordion, .stellenangebot-accordion {
   @media screen and (max-width: 39.9375em) {
     padding-left: 0;
   }
