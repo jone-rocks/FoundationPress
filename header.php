@@ -34,7 +34,7 @@
 
 
 		<div class="reveal" id="360-modal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
-		<iframe onload="iFrameHeight(this)" name="" src="<?php the_field('google_360', 'option'); ?>" width="100%" height="450" scrolling="auto" frameborder="0" title="view 360 grad" class="wrapper">
+		<iframe onload="iFrameHeight(this)" name="" src="<?php the_field('google_360', 'option'); ?>" width="100%" height="100%" scrolling="auto" frameborder="0" title="view 360 grad" class="wrapper">
 	Keine IFrames</iframe>
 			<button class="close-button" data-close aria-label="Close reveal" type="button">
 				<span aria-hidden="true">&times;</span>

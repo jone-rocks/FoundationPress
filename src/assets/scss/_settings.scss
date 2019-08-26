@@ -728,14 +728,14 @@ $responsive-embed-ratios: (
 // 47. Reveal
 // ----------
 
-$reveal-background: $white;
-$reveal-width: 600px;
+$reveal-background: $light-gray;
+$reveal-width: 95%;
 $reveal-max-width: $global-width;
 $reveal-padding: $global-padding;
-$reveal-border: 1px solid $medium-gray;
+$reveal-border: 2px solid $light-gray;
 $reveal-radius: $global-radius;
 $reveal-zindex: 1005;
-$reveal-overlay-background: rgba($black, 0.45);
+$reveal-overlay-background: $ultralight-gray;
 
 // 48. Slider
 // ----------
