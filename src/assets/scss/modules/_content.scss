@@ -381,9 +381,15 @@ img.support_availability {
       @media screen and (max-width: 39.9375em) {
         padding: 15px;
       }
+      -o-transition:color .2s ease-out, background 1s ease-in;
+      -ms-transition:color .2s ease-out, background 1s ease-in;
+      -moz-transition:color .2s ease-out, background 1s ease-in;
+      -webkit-transition:color .2s ease-out, background 1s ease-in;
+      /* ...and now override with proper CSS property */
+      transition:color .2s ease-out, background 1s ease-in;
       &:hover {
         color: $red;
-        background-image: linear-gradient(to bottom, $light-gray, white);
+        background: #f0f0f0;
       }
     }
   }
@@ -761,6 +767,8 @@ header {
   right: 0;
   top: 40%;
   z-index: 999;
+
+
   @media screen and (max-width: 39.9375em) {
     bottom: 0;
     width: 100%;
@@ -769,7 +777,13 @@ header {
     right: auto;
   }
   
-  
+  a {
+    &:hover {
+      -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+      filter: alpha(opacity=80);
+      opacity: 0.8;
+    }
+  }
 
 
   span {
