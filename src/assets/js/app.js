@@ -196,11 +196,14 @@ $(document).ready(function(){
         $(this).find(".icon-hover").attr('src', $(this).find(".icon-hover").data("src"));
     });
 
-})(jQuery);
+});
 
     
 $(document).ready(function(){
     
-    $('accordion-item:first').addClass('is-active');
+    $('.accordion li:first').addClass('is-active');
+    $('.accordion li:first .accordion-content').show();
 
-})(jQuery);
+    
+
+});
