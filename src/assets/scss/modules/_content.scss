@@ -1159,3 +1159,25 @@ reveal-overlay {
 .close-button, .close-button.medium {
   font-size: 50px;
 }
+
+.full_img_bg {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 70px;
+  @media screen and (max-width: 39.9375em) {
+    background-attachment: fixed;
+  }
+  img {
+    visibility: visible;
+    @media screen and (max-width: 39.9375em) {
+      visibility: visible; //change for mobile fix
+    }
+  }
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+.bg-hidden {
+  visibility: hidden;
+}

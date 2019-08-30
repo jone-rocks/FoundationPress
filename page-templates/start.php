@@ -4,18 +4,28 @@ Template Name: Startseite
 */
 get_header(); ?>
 
+
+<!-- Full width image -->
+<?php
+$full_bg_img = wp_get_attachment_image_src( get_field('support_header'), "full" );
+?>
+
 <!-- Full width image -->
 <div class="grid-container full start-img">
 	<div class="grid-x">
 		<div class="cell">
 
-			<!--<?php echo wp_get_attachment_image( get_field('startseite_header_img'), 'full' ); ?>-->
-
-			<?php 
+		<?php 
 			$gallery = get_field('startseite_header_img2');
 			$rand = array_rand($gallery, 1);
 			if( $gallery ): ?>
-				<img src="<?php echo $gallery[$rand]['url']; ?>" alt="<?php echo $gallery[$rand]['alt']; ?>" />
+
+			<div class="full_img_bg" style="background-image: url('<?php echo $gallery[$rand]['url']; ?>')">
+
+				<img src="<?php echo $gallery[$rand]['url']; ?>" />
+	
+			</div>
+
 			<?php endif; ?>
 
 		</div>

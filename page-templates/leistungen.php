@@ -4,11 +4,18 @@ Template Name: Leistungen
 */
 get_header(); ?>
 
+
 <!-- Full width image -->
+<?php
+$full_bg_img = wp_get_attachment_image_src( get_field('leistungen_header'), "full" );
+?>
+
 <div class="grid-container full start-img">
 	<div class="grid-x">
 		<div class="cell">
-			<?php echo wp_get_attachment_image( get_field('leistungen_header'), 'full' ); ?>
+			<div class="full_img_bg" style="background-image: url('<?php echo $full_bg_img[0]; ?>')">
+				<?php echo wp_get_attachment_image( get_field('leistungen_header'), 'full' ); ?>
+			</div>	
 		</div>
 	</div>
 </div>
@@ -187,6 +194,22 @@ while( have_rows('netzwerk') ): the_row(); ?>
 	</div>
 </div>
 
+<!-- Full width image // bEFORE SOFTWARE -->
+
+<?php
+$full_bg_img = wp_get_attachment_image_src( get_field('divider_img_1'), "full" );
+?>
+
+<div class="grid-container full start-img">
+	<div class="grid-x">
+		<div class="cell">
+			<div class="full_img_bg" style="background-image: url('<?php echo $full_bg_img[0]; ?>')">
+				<?php echo wp_get_attachment_image( get_field('divider_img_1'), 'full' ); ?>
+			</div>	
+		</div>
+	</div>
+</div>
+
 
 <!-- Serversysteme -->
 <?php if( have_rows('serversysteme') ): 
@@ -262,15 +285,6 @@ while( have_rows('systemintegration') ): the_row(); ?>
 <?php endwhile; ?>
 <?php endif; ?>
 
-<!-- Full width image -->
-<div class="grid-container full start-img">
-	<div class="grid-x">
-		<div class="cell">
-			<?php echo wp_get_attachment_image( get_field('divider_img_1'), 'full' ); ?>
-		</div>
-	</div>
-</div>
-
 <!-- Software -->
 <?php if( have_rows('software') ): 
 while( have_rows('software') ): the_row(); ?>
@@ -330,10 +344,17 @@ while( have_rows('it-security') ): the_row(); ?>
 
 
 <!-- Full width image -->
+
+<?php
+$full_bg_img = wp_get_attachment_image_src( get_field('divider_img_2'), "full" );
+?>
+
 <div class="grid-container full start-img">
 	<div class="grid-x">
 		<div class="cell">
-			<?php echo wp_get_attachment_image( get_field('divider_img_2'), 'full' ); ?>
+			<div class="full_img_bg" style="background-image: url('<?php echo $full_bg_img[0]; ?>')">
+				<?php echo wp_get_attachment_image( get_field('divider_img_2'), 'full' ); ?>
+			</div>	
 		</div>
 	</div>
 </div>

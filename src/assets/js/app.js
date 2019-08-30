@@ -204,6 +204,33 @@ $(document).ready(function(){
     $('.accordion li:first').addClass('is-active');
     $('.accordion li:first .accordion-content').show();
 
-    
 
+});
+
+
+
+$(document).ready(function() {
+    if( $(window).width() > 640 ) {
+        //Run this code when the screen width is wider than 420px
+        $(window).scroll(function () {
+            console.log('Scrolled to ' + $(this).scrollTop());
+            var $this = $(this),
+                $head = $('.full_img_bg'),
+                $img = $('.full_img_bg img');
+            if ($this.scrollTop() > 57 && $this.scrollTop() < 1000) {
+                $head.addClass('bg-fixed');
+                $img.css('visibility','hidden');
+            } else if ($this.scrollTop() > 3712 && $this.scrollTop() < 4500) {
+                $head.addClass('bg-fixed');
+                $img.css('visibility','hidden');
+            } else if ($this.scrollTop() > 4800) {
+                $head.addClass('bg-fixed');
+                $img.css('visibility','hidden');
+            } else {
+                $head.removeClass('bg-fixed');
+                $img.css('visibility','visible');
+                }
+        });
+
+    }
 });
