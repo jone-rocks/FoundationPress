@@ -220,12 +220,6 @@ $(document).ready(function() {
             if ($this.scrollTop() > 57 && $this.scrollTop() < 1000) {
                 $head.addClass('bg-fixed');
                 $img.css('visibility','hidden');
-            } else if ($this.scrollTop() > 3712 && $this.scrollTop() < 4500) {
-                $head.addClass('bg-fixed');
-                $img.css('visibility','hidden');
-            } else if ($this.scrollTop() > 4800) {
-                $head.addClass('bg-fixed');
-                $img.css('visibility','hidden');
             } else {
                 $head.removeClass('bg-fixed');
                 $img.css('visibility','visible');
