@@ -15,13 +15,13 @@
 			<div class="grid-x">
 				<div class="cell small-12 medium-4 adress">
 					<p>
-						<strong>Raab IT-Systemhaus GmbH & Co. KG</strong></br>
+						<strong>Raab IT Systemhaus GmbH & Co. KG</strong></br>
 						Gartenstraße 28<br />
 						89547 Gerstetten
 					</p>
 					<p>
-						Telefon: 07323 9527 - 0<br />
-						Telefax: 07323 9527 - 27
+						Telefon: 07323 9527 0<br />
+						Telefax: 07323 9527 27
 					</p>
 					<p>
 						E-Mail: info@raab-it.de
@@ -54,7 +54,7 @@
 					Copyright Raab IT-Systemhaus GmbH & Co. KG
 				</div>
 				<div class="cell small-12 medium-6 text-right">	
-					<a href="">Impressum</a> | <a href="">Datenschutz</a> | <a href="">AGB</a>
+					<a data-toggle="impressum">Impressum</a> | <a data-toggle="datenschutz">Datenschutz</a> | <a data-toggle="agb">AGB</a>
 				</div>
 			</div>
 		</div>
