@@ -20,7 +20,7 @@ $full_bg_img = wp_get_attachment_image_src( get_field('support_header'), "full" 
 			$rand = array_rand($gallery, 1);
 			if( $gallery ): ?>
 
-			<div class="full_img_bg" style="background-image: url('<?php echo $gallery[$rand]['url']; ?>')">
+			<div class="full_img_bg full_img_bg1" style="background-image: url('<?php echo $gallery[$rand]['url']; ?>')">
 
 				<img src="<?php echo $gallery[$rand]['url']; ?>" />
 	

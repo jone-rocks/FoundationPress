@@ -13,7 +13,7 @@ $full_bg_img = wp_get_attachment_image_src( get_field('leistungen_header'), "ful
 <div class="grid-container full start-img">
 	<div class="grid-x">
 		<div class="cell">
-			<div class="full_img_bg" style="background-image: url('<?php echo $full_bg_img[0]; ?>')">
+			<div class="full_img_bg full_img_bg1" style="background-image: url('<?php echo $full_bg_img[0]; ?>')">
 				<?php echo wp_get_attachment_image( get_field('leistungen_header'), 'full' ); ?>
 			</div>	
 		</div>
@@ -278,7 +278,7 @@ $full_bg_img = wp_get_attachment_image_src( get_field('divider_img_1'), "full" )
 <div class="grid-container full start-img">
 	<div class="grid-x">
 		<div class="cell">
-			<div class="full_img_bg" style="background-image: url('<?php echo $full_bg_img[0]; ?>')">
+			<div class="full_img_bg full_img_bg2" style="background-image: url('<?php echo $full_bg_img[0]; ?>')">
 				<?php echo wp_get_attachment_image( get_field('divider_img_1'), 'full' ); ?>
 			</div>	
 		</div>
@@ -352,7 +352,7 @@ $full_bg_img = wp_get_attachment_image_src( get_field('divider_img_2'), "full" )
 <div class="grid-container full start-img">
 	<div class="grid-x">
 		<div class="cell">
-			<div class="full_img_bg" style="background-image: url('<?php echo $full_bg_img[0]; ?>')">
+			<div class="full_img_bg full_img_bg3" style="background-image: url('<?php echo $full_bg_img[0]; ?>')">
 				<?php echo wp_get_attachment_image( get_field('divider_img_2'), 'full' ); ?>
 			</div>	
 		</div>

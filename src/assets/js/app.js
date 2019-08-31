@@ -207,24 +207,57 @@ $(document).ready(function(){
 
 });
 
-
-
 $(document).ready(function() {
-    if( $(window).width() > 640 ) {
-        //Run this code when the screen width is wider than 420px
-        $(window).scroll(function () {
-            console.log('Scrolled to ' + $(this).scrollTop());
-            var $this = $(this),
-                $head = $('.full_img_bg'),
-                $img = $('.full_img_bg img');
-            if ($this.scrollTop() > 57 && $this.scrollTop() < 1000) {
-                $head.addClass('bg-fixed');
-                $img.css('visibility','hidden');
+    $(window).on('scroll', function () {
+        var scrollTop     = $(window).scrollTop();
+        if ($('.full_img_bg1').length) {
+            var elementOffset1 = $('.full_img_bg1').offset().top;
+            var distance1      = (elementOffset1 - scrollTop);
+            if (distance1 <= 70) {
+                $('.full_img_bg1').addClass('bg-fixed');
+                $('.full_img_bg1 img').css('visibility','hidden');
             } else {
-                $head.removeClass('bg-fixed');
-                $img.css('visibility','visible');
-                }
-        });
+                $('.full_img_bg1').removeClass('bg-fixed');
+                $('.full_img_bg1 img').css('visibility','visible');
+            }
+        }
+        if ($('.full_img_bg2').length) {
+            var elementOffset2 = $('.full_img_bg2').offset().top;
+            var distance2      = (elementOffset2 - scrollTop);
+            if (distance2 <= 70) {
+                $('.full_img_bg2').addClass('bg-fixed');
+                $('.full_img_bg2 img').css('visibility','hidden');
+            } else {
+                $('.full_img_bg2').removeClass('bg-fixed');
+                $('.full_img_bg2 img').css('visibility','visible');
+            }
+        }
+        if ($('.full_img_bg3    ').length) {
+            var elementOffset3 = $('.full_img_bg3').offset().top;
+            var distance3      = (elementOffset3 - scrollTop);
+            if (distance3 <= 70) {
+                $('.full_img_bg3').addClass('bg-fixed');
+                $('.full_img_bg3 img').css('visibility','hidden');
+            } else {
+                $('.full_img_bg3').removeClass('bg-fixed');
+                $('.full_img_bg3 img').css('visibility','visible');
+            }
+        }
+        if ($('.full_img_bg4').length) {
+            var elementOffset4 = $('.full_img_bg4').offset().top;
+            var distance4      = (elementOffset4 - scrollTop);
+            if (distance4 <= 70) {
+                $('.full_img_bg4').addClass('bg-fixed');
+                $('.full_img_bg4 img').css('visibility','hidden');
+            } else {
+                $('.full_img_bg4').removeClass('bg-fixed');
+                $('.full_img_bg4 img').css('visibility','visible');
+            }
+        }
 
-    }
+        
+
+
+    });
 });
+

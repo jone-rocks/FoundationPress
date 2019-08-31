@@ -13,7 +13,7 @@ $full_bg_img = wp_get_attachment_image_src( get_field('karriere_header'), "full"
 <div class="grid-container full start-img">
 	<div class="grid-x">
 		<div class="cell">
-			<div class="full_img_bg" style="background-image: url('<?php echo $full_bg_img[0]; ?>')">
+			<div class="full_img_bg full_img_bg1" style="background-image: url('<?php echo $full_bg_img[0]; ?>')">
 				<?php echo wp_get_attachment_image( get_field('karriere_header'), 'full' ); ?>
 			</div>	
 		</div>
