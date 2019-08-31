@@ -252,7 +252,8 @@ $full_bg_img = wp_get_attachment_image_src( get_field('divider_img_1'), "full" )
 <!-- Systemintegration -->
 <?php if( have_rows('systemintegration') ): 
 while( have_rows('systemintegration') ): the_row(); ?>
-	<div class="grid-container padding-x-80 systemintegration"><a id="systemintegration"></a>
+<a id="systemintegration"></a>
+	<div class="grid-container padding-x-80 systemintegration">
 		<div class="grid-x grid-padding-x headline">
 			<div class="cell small-12 medium-7">
 				<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
@@ -307,7 +308,8 @@ while( have_rows('software') ): the_row(); ?>
 <!-- IT-Security -->
 <?php if( have_rows('it-security') ): 
 while( have_rows('it-security') ): the_row(); ?>
-	<div class="grid-container padding-x-80 it-security"><a id="it-security"></a>
+	<a id="it-security"></a>
+	<div class="grid-container padding-x-80 it-security">
 		<div class="grid-x grid-padding-x headline">
 			<div class="cell small-12 medium-7">
 				<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
