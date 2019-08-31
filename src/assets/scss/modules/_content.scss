@@ -1173,7 +1173,9 @@ reveal-overlay {
   background-size: contain;
   background-position: 0 70px;
   @media screen and (max-width: 39.9375em) {
-    background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: auto 250px;
+      background-position: center 53px;
   }
   img {
     visibility: visible;
