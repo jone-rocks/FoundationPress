@@ -749,12 +749,20 @@ header {
 
 
 
+.mobile-navigation {
+  display: none;
+  @media screen and (max-width: 39.9375em) {
+    display: block;
+  }
+}
 
-.top-bar-container {
+.desktop-navigation {
+  display: flex;
   @media screen and (max-width: 39.9375em) {
     display: none;
   }
 }
+
 
 .site-header {
   @media screen and (max-width: 39.9375em) {

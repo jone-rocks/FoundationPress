@@ -210,10 +210,17 @@ $(document).ready(function(){
 $(document).ready(function() {
     $(window).on('scroll', function () {
         var scrollTop     = $(window).scrollTop();
+        if( $(window).width() > 640 ) {
+            var fromTop       = 70;
+        } else {
+            var fromTop       = 52;
+        }
         if ($('.full_img_bg1').length) {
             var elementOffset1 = $('.full_img_bg1').offset().top;
-            var distance1      = (elementOffset1 - scrollTop);
-            if (distance1 <= 70) {
+            var distance1      = (elementOffset1 - scrollTop);	
+            console.log('fromTop - ' + fromTop);
+            console.log('1 - ' + distance1);
+            if (distance1 <= fromTop) {
                 $('.full_img_bg1').addClass('bg-fixed');
                 $('.full_img_bg1 img').css('visibility','hidden');
             } else {
@@ -223,8 +230,9 @@ $(document).ready(function() {
         }
         if ($('.full_img_bg2').length) {
             var elementOffset2 = $('.full_img_bg2').offset().top;
-            var distance2      = (elementOffset2 - scrollTop);
-            if (distance2 <= 70) {
+            var distance2      = (elementOffset2 - scrollTop);	
+            console.log('2 - ' + distance2);
+            if (distance2 <= fromTop) {
                 $('.full_img_bg2').addClass('bg-fixed');
                 $('.full_img_bg2 img').css('visibility','hidden');
             } else {
@@ -234,8 +242,9 @@ $(document).ready(function() {
         }
         if ($('.full_img_bg3    ').length) {
             var elementOffset3 = $('.full_img_bg3').offset().top;
-            var distance3      = (elementOffset3 - scrollTop);
-            if (distance3 <= 70) {
+            var distance3      = (elementOffset3 - scrollTop);	
+            console.log('3 - ' + distance3);
+            if (distance3 <= fromTop) {
                 $('.full_img_bg3').addClass('bg-fixed');
                 $('.full_img_bg3 img').css('visibility','hidden');
             } else {
@@ -245,8 +254,9 @@ $(document).ready(function() {
         }
         if ($('.full_img_bg4').length) {
             var elementOffset4 = $('.full_img_bg4').offset().top;
-            var distance4      = (elementOffset4 - scrollTop);
-            if (distance4 <= 70) {
+            var distance4      = (elementOffset4 - scrollTop);	
+            console.log('4 - ' + distance4);
+            if (distance4 <= fromTop) {
                 $('.full_img_bg4').addClass('bg-fixed');
                 $('.full_img_bg4 img').css('visibility','hidden');
             } else {

@@ -68,7 +68,6 @@
 				</span>
 			</div>
 		</div>
-		-->
 		<div data-sticky-container>
 			<div class="sticky" id="example2" data-sticky data-top-anchor="example2:top" data-options="anchor: page; marginTop: 0; stickyOn: small;" style="width:100%; z-index: 999">
 				<div class="navtext-container">
@@ -81,11 +80,26 @@
 				</ul>
 			</div>
 		</div>
+		-->
 
 
 		<!-- Desktop -->
 		<div class="top-bar-container" data-sticky-container>
 			<div class="sticky" id="example2" data-sticky data-top-anchor="example2:top" data-options="anchor: page; marginTop: 0; stickyOn: small;" style="width:100%; z-index: 999">
+				
+			
+				<div class="mobile-navigation">
+					<div class="navtext-container">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/raabit_logo_header.svg" />
+					</div>
+						<input type="checkbox" class="mobmen-btn" id="mobmen-btn">
+						<label for="mobmen-btn" class="mobmen-icon"><span class="navicon"></span></label>
+					<ul class="mobmen">
+						<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
+					</ul>
+				</div>
+			
+			
 				<nav class="site-navigation top-bar" role="navigation" id="<?php foundationpress_mobile_menu_id(); ?>" data-options="sticky_on: large">
 					<div class="top-bar-left">
 						<div class="site-desktop-title top-bar-title logo">
@@ -95,11 +109,10 @@
 					</div>
 					<div class="top-bar-right">
 						<?php foundationpress_top_bar_r(); ?>
-						<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
-							<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
-						<?php endif; ?>
 					</div>
 				</nav>
+
+
 			</div>
 		</div>
 
