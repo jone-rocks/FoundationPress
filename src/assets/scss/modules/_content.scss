@@ -1164,8 +1164,16 @@ reveal-overlay {
   }
 }
 
+.text-modal {
+  padding: 40px;
+  background: #fff;
+}
+
 .close-button, .close-button.medium {
   font-size: 50px;
+  right: 45px;
+  top: 25px;
+  position: fixed;
 }
 
 .full_img_bg {

@@ -43,6 +43,28 @@
 
 
 
+		<div class="reveal text-modal" id="impressum" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+			<p><?php the_field('text', 815); ?></p>
+			<button class="close-button" data-close aria-label="Close reveal" type="button">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+
+		<div class="reveal text-modal" id="datenschutz" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+			<p><?php the_field('text', 818); ?></p>
+			<button class="close-button" data-close aria-label="Close reveal" type="button">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+
+		<div class="reveal text-modal" id="agb" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+			<p><?php the_field('text', 820); ?></p>
+			<button class="close-button" data-close aria-label="Close reveal" type="button">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+
+
 
 		
 <!--
