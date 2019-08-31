@@ -269,7 +269,7 @@ while( have_rows('systemintegration') ): the_row(); ?>
 <?php endwhile; ?>
 <?php endif; ?>
 
-<!-- Full width image // bEFORE SOFTWAR -->
+<!-- Full width image -->
 
 <?php
 $full_bg_img = wp_get_attachment_image_src( get_field('divider_img_1'), "full" );
