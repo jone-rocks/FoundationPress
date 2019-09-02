@@ -45,10 +45,9 @@
           width: 50px;
           margin: 0 10px 0 0;
           @media screen and (max-width: 39.9375em) {
-            float: none;
+            
             width: 50px;
-            display: block;
-            margin: 0 auto;
+            
           }
         }
       }

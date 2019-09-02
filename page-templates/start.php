@@ -50,7 +50,7 @@ $full_bg_img = wp_get_attachment_image_src( get_field('support_header'), "full" 
 <!-- Stärken und Vorteile -->
 <div class="grid-container">
 	<div class="grid-x align-center padding-top-80">
-		<div class="cell small-8 text-center">
+		<div class="cell small-12 medium-8 text-center">
 			<h3 class="color-red"><?php the_field('staerken_title'); ?></h3>
 			<p><?php the_field('staerken_text'); ?></p>
 		</div>
@@ -91,7 +91,7 @@ $full_bg_img = wp_get_attachment_image_src( get_field('support_header'), "full" 
 <!-- Referenzen-->
 <div class="grid-container">
 	<div class="grid-x grid-padding-y align-center padding-top-80">
-		<div class="cell small-8 text-center">
+		<div class="cell small-12 medium-8 text-center">
 			<h3 class="color-red"><?php the_field('referenzen_header'); ?></h3>
 			<p><?php the_field('referenzen_txt'); ?></p>
 		</div>

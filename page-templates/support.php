@@ -49,7 +49,7 @@ $full_bg_img = wp_get_attachment_image_src( get_field('support_header'), "full" 
 <!-- Rufbereitschaft -->
 <div class="grid-container rufbereitschaft"><a id="rufbereitschaft"></a>
 	<div class="grid-x align-center padding-top-80">
-		<div class="cell small-8 text-center">
+		<div class="cell small-12 medium-8 text-center">
 			<h4 class="headline_middle with-icon" style="background-image: url('<?php the_field('rufbereitschaft_icon'); ?>')"><?php the_field('rufbereitschaft_title'); ?></h4>
 			<span class="sexy_line_middle"></span>
 			<h3 class="color-red"><?php the_field('rufbereitschaft_headline'); ?></h3>
@@ -104,7 +104,7 @@ $full_bg_img = wp_get_attachment_image_src( get_field('support_header'), "full" 
 <div class="bg-light-grey"><a id="benutzerservice"></a>
 	<div class="grid-container benutzerservice">
 		<div class="grid-x align-center padding-top-80">
-			<div class="cell small-8 text-center">
+			<div class="cell small-12 medium-8 text-center">
 				<h4 class="headline_middle with-icon" style="background-image: url('<?php the_field('benutzerservice_icon'); ?>')"><?php the_field('benutzerservice_title'); ?></h4>
 				<span class="sexy_line_middle"></span>
 				<h3 class="color-red"><?php the_field('benutzerservice_headline'); ?></h3>

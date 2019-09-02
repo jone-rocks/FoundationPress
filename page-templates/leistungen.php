@@ -56,7 +56,6 @@ while( have_rows('consulting') ): the_row(); ?>
 				</div>
 			</div>
 
-			<div class="grid-x align-center grid-padding-x medium-padding-collapse gebaeudetechnik padding-bottom-80">
 			<div class="grid-x align-center grid-padding-x medium-padding-collapse consulting padding-bottom-80">
 				<div class="cell small-12 medium-8 text-center">
 					<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
