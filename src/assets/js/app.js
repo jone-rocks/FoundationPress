@@ -212,8 +212,6 @@ $(document).ready(function() {
         var scrollTop     = $(window).scrollTop();
         if( $(window).width() > 640 ) {
             var fromTop       = 70;
-        } else {
-            var fromTop       = 52;
         }
         if ($('.full_img_bg1').length) {
             var elementOffset1 = $('.full_img_bg1').offset().top;

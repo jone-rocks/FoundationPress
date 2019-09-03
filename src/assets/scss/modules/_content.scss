@@ -1205,13 +1205,16 @@ reveal-overlay {
   img {
     visibility: visible;
     @media screen and (max-width: 39.9375em) {
-      visibility: visible; //change for mobile fix
+      visibility: visible !important; //change for mobile fix
     }
   }
 }
 
 .bg-fixed {
   background-attachment: fixed;
+  @media screen and (max-width: 39.9375em) {
+    background-attachment: initial;
+  }
 }
 .bg-hidden {
   visibility: hidden;
