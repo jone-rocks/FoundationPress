@@ -28,7 +28,7 @@
 				<div class="contact-icons">
 					<a href="tel:<?php the_field('phone', 'option'); ?>"><span class="phone"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_phone.svg" /></span></a>
 					<a href="mailto:<?php the_field('mail', 'option'); ?>"><span class="mail"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_mail.svg" /></span></a>
-					<a href="<?php the_field('newsletter', 'option'); ?>"><span class="newsletter"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_newsletter.svg" /></span></a>
+					<a data-toggle="newsletter"><span class="newsletter"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_newsletter.svg" /></span></a>
 					<a data-toggle="360-modal"><span class="360"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_360.svg" /></span></a>
 				</div>
 
@@ -59,6 +59,13 @@
 
 		<div class="reveal text-modal" id="agb" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
 			<p><?php the_field('text', 820); ?></p>
+			<button class="close-button" data-close aria-label="Close reveal" type="button">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+
+		<div class="reveal text-modal" id="newsletter" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+			<p><?php echo do_shortcode('[ninja_form id=2]') ?></p>
 			<button class="close-button" data-close aria-label="Close reveal" type="button">
 				<span aria-hidden="true">&times;</span>
 			</button>
