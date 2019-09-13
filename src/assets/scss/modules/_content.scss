@@ -251,6 +251,9 @@ img.support_availability {
 .contactform {
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (max-width: 39.9375em) {
+    padding-top: 35px;
+  }
     .cell {
       &:first-of-type{
         @media screen and (max-width: 39.9375em) {
