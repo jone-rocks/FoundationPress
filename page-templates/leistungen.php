@@ -108,11 +108,11 @@ while( have_rows('gebaeudetechnik') ): the_row(); ?>
 while( have_rows('telekommunikation') ): the_row(); ?>
 	<div class="bg-light-grey"><a id="facilitytelefonie"></a>
 		<div class="grid-container full telekommunikation">
-			<div class="grid-x align-middle grid-padding-x medium-padding-collapse">
+			<div class="grid-x align-middle medium-padding-collapse">
 				<div class="cell small-12 medium-6">
 					<?php echo wp_get_attachment_image( get_sub_field('img'), 'full' ); ?>
 				</div>
-				<div class="cell small-12 medium-6 telekommunikation-text">
+				<div class="cell small-12 medium-6 telekommunikation-text text-center-mobile">
 					<h4 class="headline_left with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 					<span class="sexy_line_left"></span>
 					<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
@@ -318,7 +318,7 @@ while( have_rows('it-security') ): the_row(); ?>
 			</div>
 		</div>
 		<div class="grid-x grid-padding-x">
-			<div class="cell small-12 medium-7 text text-center">
+			<div class="cell small-12 medium-7 text-center">
 				<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 				<p><?php the_sub_field('text'); ?></p>
 			</div>
