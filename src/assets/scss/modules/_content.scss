@@ -614,6 +614,12 @@ p {
   }
 }
 
+.systemintegration, .cloud {
+  &.padding-x-80 {
+    padding: 40px;
+  }
+}
+
 .padding-x-80 {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -1242,7 +1248,9 @@ reveal-overlay {
 }
 
 .footer-container p {
-  text-align: center;
+  @media screen and (max-width: 39.9375em) {
+    text-align: center;
+  }
 }
 
 .text-center-mobile {

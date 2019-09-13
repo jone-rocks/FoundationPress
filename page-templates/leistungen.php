@@ -262,7 +262,7 @@ while( have_rows('systemintegration') ): the_row(); ?>
 			</div>
 		</div>
 		<div class="grid-x grid-padding-x">
-			<div class="cell small-12 medium-7 text">
+			<div class="cell small-12 medium-7 text text-center-mobile">
 				<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 				<p><?php the_sub_field('text'); ?></p>
 			</div>
@@ -291,7 +291,7 @@ while( have_rows('software') ): the_row(); ?>
 	<div class="bg-dark-grey"><a id="software"></a>
 		<div class="grid-container padding-x-80 software">
 			<div class="grid-x align-center grid-padding-x medium-padding-collapse">
-				<div class="cell small-12 medium-8 text-center">
+				<div class="cell small-12 medium-8 text-center text-center-mobile">
 					<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 					<span class="sexy_line_middle_white"></span>
 					<h3 class="color-whtie text-center"><?php the_sub_field('headline'); ?></h3>
@@ -318,7 +318,7 @@ while( have_rows('it-security') ): the_row(); ?>
 			</div>
 		</div>
 		<div class="grid-x grid-padding-x">
-			<div class="cell small-12 medium-7 text">
+			<div class="cell small-12 medium-7 text text-center">
 				<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 				<p><?php the_sub_field('text'); ?></p>
 			</div>
