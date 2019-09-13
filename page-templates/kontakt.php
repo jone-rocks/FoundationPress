@@ -23,7 +23,7 @@ $full_bg_img = wp_get_attachment_image_src( get_field('contact_header_img'), "fu
 <!-- Kontaktformular -->
 <div class="grid-container contactform">
 	<div class="grid-x grid-padding-y grid-padding-x align-center">
-		<div class="cell small-12 medium-8 text-center">
+		<div class="cell small-12 medium-8 text-center text-center-mobile">
 			<h1 class="color-red"><?php the_field('headline'); ?></h1>
 			<p><?php the_field('text'); ?></p>
 		</div>
