@@ -42,7 +42,7 @@
 					</p>
 				</div>
 				<div class="cell small-12 medium-4 align-self-bottom certified">
-					<p><img src="<?php echo get_template_directory_uri() ?>/img/certified.png" /><strong>Wir sind zertifiziert<br />nach DIN EN ISO 9001:2015</strong></p>
+					<p><img src="<?php echo get_template_directory_uri() ?>/img/raabit_din_zertifiziert_icon_footer.svg" /><strong>Wir sind zertifiziert<br />nach DIN EN ISO 9001:2015</strong></p>
 				</div>
 			</div>
 		</div>

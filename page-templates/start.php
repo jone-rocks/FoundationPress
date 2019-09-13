@@ -76,7 +76,7 @@ $full_bg_img = wp_get_attachment_image_src( get_field('support_header'), "full" 
 </div>
 
 <!-- Geschäftsführung -->
-<div class="grid-container">
+<div class="grid-container gesch">
 	<div class="grid-x geschaeftsfuehrung">
 		<div class="cell small-12 medium-5 bg-dark-grey padding-small">
 			<h3><?php the_field('geschaeftsfuehrung_header'); ?></h3>

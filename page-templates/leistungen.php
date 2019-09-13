@@ -343,6 +343,32 @@ while( have_rows('it-security') ): the_row(); ?>
 <?php endif; ?>
 
 
+<!-- IT-Oursourcing -->
+<?php if( have_rows('it-outsourcing') ): 
+while( have_rows('it-outsourcing') ): the_row(); ?>
+	<div class="bg-light-grey"><a id="it-outsourcing"></a>
+		<div class="grid-container align-center it-outsourcing-container">
+			<div class="grid-x grid-padding-x align-center grid-padding-x padding-top-80">
+				<div class="cell small-12 medium-8 text-center text-center-mobile">
+					
+				<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
+						<span class="sexy_line_middle"></span>
+				</div>
+				<div class="cell small-5">
+				</div>
+			</div>
+
+			<div class="grid-x align-center grid-padding-x medium-padding-collapse it-outsourcing padding-bottom-80">
+				<div class="cell small-12 medium-8 text-center">
+					<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
+					<p><?php the_sub_field('text'); ?></p>
+				</div>
+			</div>
+		</div>
+	</div>
+<?php endwhile; ?>
+<?php endif; ?>
+
 
 <!-- Full width image -->
 
@@ -363,8 +389,7 @@ $full_bg_img = wp_get_attachment_image_src( get_field('divider_img_2'), "full" )
 <!-- Hosting und Domain -->
 <?php if( have_rows('hosting_domain') ): 
 while( have_rows('hosting_domain') ): the_row(); ?>
-	<div class="bg-light-grey"><a id="cloud"></a>
-		<div class="grid-container padding-x-80 cloud">
+		<div class="grid-container padding-x-80 cloud"><a id="cloud"></a>
 			<div class="grid-x align-center grid-padding-x medium-padding-collapse">
 				<div class="cell small-12 medium-8 text-center">
 					<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
@@ -374,7 +399,6 @@ while( have_rows('hosting_domain') ): the_row(); ?>
 				</div>
 			</div>
 		</div>
-	</div>
 <?php endwhile; ?>
 <?php endif; ?>
 

@@ -269,3 +269,10 @@ $(document).ready(function() {
     });
 });
 
+
+
+$(document).ready(function() {
+    if( $(window).width() < 640 ) {
+        $('.gesch').addClass('full');
+    }
+});

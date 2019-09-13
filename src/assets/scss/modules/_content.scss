@@ -1030,10 +1030,7 @@ i, italic {
 
 .karriere_ansprechpartner {
   img {
-    width: 75%;
-    @media screen and (max-width: 39.9375em) {
-      width: 100%;
-    }
+    width: 100%;
   }
 }
 

@@ -47,6 +47,7 @@ $full_bg_img = wp_get_attachment_image_src( get_field('karriere_header'), "full"
 		<?php
 		if( have_rows('stellenangebote') ): ?>
 		<div class="cell small-12 medium-8 stellenangebot-accordion">
+			<h3 class="color-red"><?php the_field('title_stellenangeboteText'); ?></h3>
 			<ul class="accordion" data-accordion data-allow-all-closed="true">
 			<?php while ( have_rows('stellenangebote') ) : the_row(); ?>
 				<li class="accordion-item" data-accordion-item>
