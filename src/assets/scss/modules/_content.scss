@@ -1235,3 +1235,14 @@ reveal-overlay {
 .footer-container p {
   text-align: center;
 }
+
+.text-center-mobile {
+  @media screen and (max-width: 39.9375em) {
+    text-align: center !important;
+  }
+  p {
+    @media screen and (max-width: 39.9375em) {
+      text-align: center !important;
+    }
+  }
+}
