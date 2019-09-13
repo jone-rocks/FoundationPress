@@ -39,7 +39,7 @@ $full_bg_img = wp_get_attachment_image_src( get_field('support_header'), "full" 
 <div class="bg-red">
 	<div class="grid-container">
 		<div class="grid-x align-center s24-7">
-			<div class="cell small-8 text-center">
+			<div class="cell small-12 medium-8 text-center">
 				Reaktion unter 2 Stunden <img class="support_availability" src="<?php echo get_template_directory_uri() ?>/img/raabit_support_icon_clock.svg" /> 24 Stunden - 7 Tage
 			</div>
 		</div>
