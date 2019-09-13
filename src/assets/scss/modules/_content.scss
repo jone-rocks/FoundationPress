@@ -606,6 +606,9 @@ p {
 
 .dark-header {
   padding: 70px 0;
+  @media screen and (max-width: 39.9375em) {
+    padding: 35px 0;
+  }
 }
 
 .padding-x-80 {
