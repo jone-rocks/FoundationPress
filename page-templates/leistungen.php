@@ -83,7 +83,7 @@ while( have_rows('consulting') ): the_row(); ?>
 while( have_rows('gebaeudetechnik') ): the_row(); ?>
 	<div class="grid-container align-center gebaeudetechnik-container"><a id="servicedesk"></a>
 		<div class="grid-x grid-padding-x align-center grid-padding-x padding-top-80">
-			<div class="cell small-12 medium-8 text-center">
+			<div class="cell small-12 medium-8 text-center text-center-mobile">
 				
 			<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 					<span class="sexy_line_middle"></span>
@@ -154,8 +154,8 @@ while( have_rows('netzwerk') ): the_row(); ?>
 				</div>
 			</div>
 			<div class="grid-x align-center grid-padding-x medium-padding-collapse">
-				<div class="cell small-12 medium-8 text-center">
-					<p class="text-justify"><?php the_sub_field('text'); ?></p>
+				<div class="cell small-12 medium-8 text-center text-center-mobile">
+					<p><?php the_sub_field('text'); ?></p>
 				</div>
 			</div>
 
@@ -180,7 +180,7 @@ while( have_rows('netzwerk') ): the_row(); ?>
 <!-- Jochen Raab -->
 <div class="bg-light-gray-gradient">
 	<div class="grid-container">
-		<div class="grid-x grid-padding-x medium-padding-collapse align-middle klaus-raab">
+		<div class="grid-x grid-padding-x small-padding-collapse align-middle klaus-raab">
 			<div class="cell small-12 medium-7">
 				<?php echo wp_get_attachment_image( get_field('zitat_bild'), 'full' ); ?>
 			</div>
@@ -201,7 +201,7 @@ while( have_rows('serversysteme') ): the_row(); ?>
 	<div class="bg-light-grey"><a id="serversysteme"></a>
 		<div class="grid-container padding-x-80 grid-padding-x">
 			<div class="grid-x align-center">
-				<div class="cell small-12 medium-8 text-center">
+				<div class="cell small-12 medium-8 text-center text-center-mobile">
 					<h4 class="headline_middle with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
 					<span class="sexy_line_middle"></span>
 					<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
