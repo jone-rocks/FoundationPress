@@ -1280,14 +1280,14 @@ reveal-overlay {
 
 .gesch-mobile {
   @media screen and (max-width: 39.9375em) {
-    visibility: visible;
+    display: block;
   }
-  visibility: hidden;
+  display: none;
 }
 
 .gesch-desktop {
   @media screen and (max-width: 39.9375em) {
-    visibility: hidden;
+    display: none;
   }
-  visibility: visible;
+  display: block;
 }
