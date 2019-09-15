@@ -90,7 +90,7 @@ $full_bg_img = wp_get_attachment_image_src( get_field('support_header'), "full" 
 
 <!-- Geschäftsführung Mobile -->
 <div class="grid-container gesch gesch-mobile">
-	<div class="grid-x geschaeftsfuehrung">
+	<div class="grid-x geschaeftsfuehrung text-center-mobile">
 		<div class="cell small-12 medium-7">
 			<?php echo wp_get_attachment_image( get_field('geschaeftsfuehrung_img'), 'full' ); ?>
 		</div>
