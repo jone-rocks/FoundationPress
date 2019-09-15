@@ -287,8 +287,9 @@ $(document).ready(function() {
     $(".anchorNavi").click(function(event){
         event.preventDefault();
         $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1200);
+        $('a').removeClass('subNaviActive');
+        $(this).addClass('subNaviActive');
     });
-
 
 
 
