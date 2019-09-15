@@ -276,3 +276,20 @@ $(document).ready(function() {
         $('.gesch').addClass('full');
     }
 });
+
+
+
+$(document).ready(function() {
+
+
+    $('.is-active ul li a').addClass('anchorNavi');
+
+    $(".anchorNavi").click(function(event){
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1200);
+    });
+
+
+
+
+});
