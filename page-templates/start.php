@@ -75,8 +75,8 @@ $full_bg_img = wp_get_attachment_image_src( get_field('support_header'), "full" 
 	</div>
 </div>
 
-<!-- Geschäftsführung -->
-<div class="grid-container gesch">
+<!-- Geschäftsführung Desktop -->
+<div class="grid-container gesch gesch-desktop">
 	<div class="grid-x geschaeftsfuehrung">
 		<div class="cell small-12 medium-5 bg-dark-grey padding-small">
 			<h3><?php the_field('geschaeftsfuehrung_header'); ?></h3>
@@ -84,6 +84,19 @@ $full_bg_img = wp_get_attachment_image_src( get_field('support_header'), "full" 
 		</div>
 		<div class="cell small-12 medium-7">
 			<?php echo wp_get_attachment_image( get_field('geschaeftsfuehrung_img'), 'full' ); ?>
+		</div>
+	</div>
+</div>
+
+<!-- Geschäftsführung Mobile -->
+<div class="grid-container gesch gesch-mobile">
+	<div class="grid-x geschaeftsfuehrung">
+		<div class="cell small-12 medium-7">
+			<?php echo wp_get_attachment_image( get_field('geschaeftsfuehrung_img'), 'full' ); ?>
+		</div>
+		<div class="cell small-12 medium-5 bg-dark-grey padding-small">
+			<h3><?php the_field('geschaeftsfuehrung_header'); ?></h3>
+			<p><?php the_field('geschaeftsfuehrung_txt'); ?></p>
 		</div>
 	</div>
 </div>

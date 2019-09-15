@@ -113,6 +113,9 @@ p {
 
 nav {
   height: 70px;
+  @media screen and (max-width: 39.9375em) {
+    height: auto;
+  }
   &.top-bar {
     background: none;
     ul {
@@ -1272,4 +1275,19 @@ reveal-overlay {
 
 .subNaviActive {
   color: $red !important;
+}
+
+
+.gesch-mobile {
+  @media screen and (max-width: 39.9375em) {
+    visibility: visible;
+  }
+  visibility: hidden;
+}
+
+.gesch-desktop {
+  @media screen and (max-width: 39.9375em) {
+    visibility: hidden;
+  }
+  visibility: visible;
 }
