@@ -153,7 +153,7 @@ $full_bg_img = wp_get_attachment_image_src( get_field('support_level_optic'), "f
 	<div class="grid-x align-center padding-top-80">
 		<div class="cell small-12 medium-4">
 			<h4 class="headline_middle with-icon" style="background-image: url('<?php the_field('support-level_icon'); ?>')"><?php the_field('support-level_title'); ?></h4>
-			<span class="sexy_line_left"></span>
+			<span class="sexy_line_middle"></span>
 		</div>
 		<div class="cell small-0 medium-8">
 		</div>
