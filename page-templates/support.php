@@ -79,7 +79,7 @@ $full_bg_img = wp_get_attachment_image_src( get_field('support_header'), "full" 
 		</div>
 		<div class="cell small-6 medium-2 text-center">
 			<img src="<?php echo get_template_directory_uri() ?>/img/raabit_support_icon_phone.svg" /><br />
-			<a href="call:+498001013398">08001013398</a>
+			08001013398
 		</div>
 	</div>
 </div>
