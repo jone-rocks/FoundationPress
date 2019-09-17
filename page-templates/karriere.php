@@ -54,6 +54,8 @@ $full_bg_img = wp_get_attachment_image_src( get_field('karriere_header'), "full"
 					<a href="#" class="accordion-title"><span class="accordion-circle"></span><?php the_sub_field('stelle'); ?></a>
 					<div class="accordion-content" data-tab-content>
 						<p><?php the_sub_field('stellenbeschreibung'); ?></p>
+						<p>&nbsp;</p>
+						<p class="bewerbungs-wrapper"><a data-toggle="bewerbung" class="bewerbung">Jetzt bewerben</a></p>
 					</div>
 				</li>
 				<?php endwhile; ?>

@@ -71,6 +71,13 @@
 			</button>
 		</div>
 
+		<div class="reveal text-modal" id="bewerbung" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+			<p><?php echo do_shortcode('[ninja_form id=3]') ?></p>
+			<button class="close-button" data-close aria-label="Close reveal" type="button">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+
 
 
 		
