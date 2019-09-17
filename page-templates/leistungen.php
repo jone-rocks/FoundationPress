@@ -155,7 +155,7 @@ while( have_rows('netzwerk') ): the_row(); ?>
 			</div>
 			<div class="grid-x align-center grid-padding-x medium-padding-collapse">
 				<div class="cell small-12 medium-8 text-center text-center-mobile">
-					<p><?php the_sub_field('text'); ?></p>
+					<p class="text-justify"><?php the_sub_field('text'); ?></p>
 				</div>
 			</div>
 
