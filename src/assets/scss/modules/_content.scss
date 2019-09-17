@@ -1311,3 +1311,11 @@ reveal-overlay {
   }
   display: block;
 }
+
+.supportlevel {
+  .text {
+    @media screen and (max-width: 39.9375em) {
+      margin-bottom: 50px;
+    }
+  }
+}
