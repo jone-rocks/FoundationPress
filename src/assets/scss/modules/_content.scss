@@ -413,14 +413,7 @@ img.support_availability {
   }
 }
 
-.support-accordion {
-  padding-left: 200px;
-  @media screen and (max-width: 39.9375em) {
-    padding-left: 0;
-  }
-}
-
-.karriere_ansprechpartner {
+.support-accordion, .karriere_ansprechpartner {
   padding-left: 100px;
   @media screen and (max-width: 39.9375em) {
     padding-left: 0;
