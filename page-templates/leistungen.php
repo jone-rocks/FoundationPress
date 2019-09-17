@@ -317,7 +317,7 @@ while( have_rows('it-security') ): the_row(); ?>
 			</div>
 		</div>
 		<div class="grid-x grid-padding-x">
-			<div class="cell small-12 medium-7 text-center">
+			<div class="cell small-12 medium-7 text-center-mobile">
 				<h3 class="color-red"><?php the_sub_field('headline'); ?></h3>
 				<p><?php the_sub_field('text'); ?></p>
 			</div>
