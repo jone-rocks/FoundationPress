@@ -239,6 +239,11 @@ img.support_availability {
       padding-left: 80px;
       padding-right: 20px;
     }
+    p {
+      @media screen and (max-width: 39.9375em) {
+        text-align: left;
+      }
+    }
   }
 }
 
