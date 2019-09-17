@@ -854,6 +854,13 @@ header {
       display: inline-block;
     }
   }
+  .fernwartung {
+    display: block;
+    @media screen and (max-width: 39.9375em) {
+      display: none;
+    }
+  }
+  
 }
 
 

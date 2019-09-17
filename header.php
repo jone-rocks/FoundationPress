@@ -23,13 +23,13 @@
 	<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
 		<?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
 	<?php endif; ?>
-
 	
 				<div class="contact-icons">
 					<a href="tel:<?php the_field('phone', 'option'); ?>"><span class="phone"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_phone.svg" /></span></a>
 					<a href="mailto:<?php the_field('mail', 'option'); ?>"><span class="mail"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_mail.svg" /></span></a>
 					<a data-toggle="newsletter"><span class="newsletter"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_newsletter.svg" /></span></a>
 					<a data-toggle="360-modal"><span class="360"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_360.svg" /></span></a>
+					<a href="http://fernwartung.raab-it.de/" target="_blank"><span class="fernwartung"><img src="<?php echo get_template_directory_uri() ?>/img/raabit_sidebar_icon_fernwartung.svg" /></span></a>
 				</div>
 
 
