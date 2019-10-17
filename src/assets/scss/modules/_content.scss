@@ -420,7 +420,7 @@ img.support_availability {
   }
 }
 
-.stellenangebot-accordion {
+.stellenangebot-accordion .accordion {
   margin-bottom: 60px;
 }
 
@@ -518,6 +518,7 @@ img.support_availability {
   width: 90%;
   margin-left: 12%;
 }
+
 
 .s24-7 {
   .cell {
@@ -1231,7 +1232,7 @@ reveal-overlay {
 }
 
 .text-modal {
-  padding: 30px 20%;
+  padding: 30px 350px 30px 30px;
   background: rgba(50, 45, 45, 0.9);
   color: #fff;
   .close-button {
