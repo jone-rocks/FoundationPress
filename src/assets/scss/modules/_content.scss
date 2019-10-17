@@ -420,6 +420,10 @@ img.support_availability {
   }
 }
 
+.stellenangebot-accordion {
+  margin-bottom: 60px;
+}
+
 .support-accordion, .stellenangebot-accordion {
   @media screen and (max-width: 39.9375em) {
     padding-left: 0;
@@ -498,6 +502,21 @@ img.support_availability {
       }
     }
   }
+}
+
+
+.erwartung_row {
+  clear: both;
+}
+
+.erwartung_icon {
+  float: left;
+  width: 10%;
+}
+
+.erwartung_text {
+  width: 90%;
+  margin-left: 12%;
 }
 
 .s24-7 {

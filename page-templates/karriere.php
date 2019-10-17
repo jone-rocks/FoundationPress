@@ -60,7 +60,26 @@ $full_bg_img = wp_get_attachment_image_src( get_field('karriere_header'), "full"
 				</li>
 				<?php endwhile; ?>
 			</ul>
-			<p><?php the_field('erwartungen'); ?></p>
+			
+			<h3><?php the_field('erwartungen_header'); ?></h3>
+			<?php
+			if( have_rows('erwartungen') ):
+				while ( have_rows('erwartungen') ) : the_row(); ?>
+					<div class="erwartung_row">
+						<div class="erwartung_icon">
+							<?php 
+							$image = get_sub_field('erwartung_icon');
+							if( !empty( $image ) ): ?>
+								<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+							<?php endif; ?>
+						</div>
+						<div class="erwartung_text"><?php the_sub_field('erwartung_text'); ?></div>
+					</div>
+				<?php endwhile;
+			else :
+			endif;
+			?>
+
 		</div>
 		<?php
 		else :
