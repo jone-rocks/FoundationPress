@@ -23,7 +23,7 @@ body {
 }
 
 p {
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     text-align: justify;
   }
 }
@@ -31,7 +31,7 @@ p {
 .start-img {
   img {
     width: 100%;
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: 49em) {
       height: 250px;
       width: 100% !important;
       object-fit: cover;
@@ -58,7 +58,7 @@ p {
     border-right: $red solid 2px;
     padding: 5px 50px;
     font-size: 18px;
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: 49em) {
       padding: 0;
       border-right: 0;
       &:nth-child(3), &:nth-child(4) {  
@@ -113,7 +113,7 @@ p {
 
 nav {
   height: 70px;
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     height: auto;
   }
   &.top-bar {
@@ -141,7 +141,7 @@ nav {
 img.support_availability {
   width: 36px;
   margin: 0 21px;
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     display: block;
     margin: 10px auto;
     &:before, &:after {
@@ -177,7 +177,7 @@ img.support_availability {
       margin-right: 15px;
     }
   }
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     text-align: center;
   }
 }
@@ -186,7 +186,7 @@ img.support_availability {
 .benutzerservice{
   .check-row {
     .cell {
-      @media screen and (max-width: 39.9375em) {
+      @media screen and (max-width: 49em) {
         &:not(.border-bottom-red) {
           border-bottom: 1px solid $red;
         }
@@ -199,7 +199,7 @@ img.support_availability {
 .rufbereitschaft{
   .check-row {
     .cell {
-      @media screen and (max-width: 39.9375em) {
+      @media screen and (max-width: 49em) {
         &:not(.border-bottom-lightgrey) {
           border-bottom: 1px solid $light-gray;
         }
@@ -212,7 +212,7 @@ img.support_availability {
 .netzwerk{
   .check-row {
     .cell {
-      @media screen and (max-width: 39.9375em) {
+      @media screen and (max-width: 49em) {
         &:not(.border-bottom-white) {
           border-bottom: 1px solid white;
         }
@@ -225,7 +225,7 @@ img.support_availability {
   font-size: 20px;
   .cell {
     padding: 10px 0;
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: 49em) {
       font-size: 18px;
     }
   }
@@ -235,12 +235,12 @@ img.support_availability {
 .klaus-raab {
   .quote {
     padding-left: 40px;
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: 49em) {
       padding-left: 80px;
       padding-right: 20px;
     }
     p {
-      @media screen and (max-width: 39.9375em) {
+      @media screen and (max-width: 49em) {
         text-align: left;
       }
     }
@@ -251,7 +251,7 @@ img.support_availability {
 .contactform_info {
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -260,12 +260,12 @@ img.support_availability {
 .contactform {
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     padding-top: 35px;
   }
     .cell {
       &:first-of-type{
-        @media screen and (max-width: 39.9375em) {
+        @media screen and (max-width: 49em) {
          padding-bottom: 60px; 
         }
       }
@@ -277,7 +277,7 @@ img.support_availability {
     display: inline-block;
     background-repeat: no-repeat;
     line-height: 2.5;
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: 49em) {
       background-size: 24px;
     }
   }
@@ -293,7 +293,7 @@ img.support_availability {
     a {
       color: white;
     }
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: 49em) {
       border-right: 0;
     }
     &:last-child {
@@ -355,7 +355,7 @@ img.support_availability {
 .nf-form-content label {
   font-size: 14px !important;
   line-height: 22px !important;
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     font-size: 12px !important;
   }
 }
@@ -377,14 +377,14 @@ img.support_availability {
 }
 .leistungen {
   font-size: 22px;
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     font-size: 15px;
   }
   margin-bottom: 75px;
   .cell {
     img {
       width: 75px;
-      @media screen and (max-width: 39.9375em) {
+      @media screen and (max-width: 49em) {
         width: 60px;
       }
       margin-bottom: 10px;
@@ -396,7 +396,7 @@ img.support_availability {
       height: 100%;
       display: block;
       padding: 20px;
-      @media screen and (max-width: 39.9375em) {
+      @media screen and (max-width: 49em) {
         padding: 15px;
       }
       -o-transition:color .2s ease-out, background .2s ease-in;
@@ -415,7 +415,7 @@ img.support_availability {
 
 .support-accordion, .karriere_ansprechpartner {
   padding-left: 100px;
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     padding-left: 0;
   }
 }
@@ -425,7 +425,7 @@ img.support_availability {
 }
 
 .support-accordion, .stellenangebot-accordion {
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     padding-left: 0;
   }
   .accordion-item {
@@ -528,7 +528,7 @@ img.support_availability {
   .cell {
     font-size: 28px;
     padding: 30px 0;
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: 49em) {
       font-size: 23px;
     }
   }
@@ -570,7 +570,7 @@ img.support_availability {
 
 
 .top-bar-additional {
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     display: none;
   }
   max-width: 75rem;
@@ -622,7 +622,7 @@ h1 {
 }
 h2 {
   font-weight: 900;
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     margin-bottom: 1rem;
   }
 }
@@ -642,7 +642,7 @@ p {
 
 .dark-header {
   padding: 70px 0;
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     padding: 35px 0;
   }
 }
@@ -665,7 +665,7 @@ p {
 }
 
 .telekommunikation {
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     text-align: center;
   }
 }
@@ -673,7 +673,7 @@ p {
 .telekommunikation-text {
   margin-top: 30px;
   padding: 0 120px 0 60px !important;
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     padding-right: .625rem !important;
     padding-left: .625rem !important;
   }
@@ -683,7 +683,7 @@ p {
   p {
     font-size: 30px;
     position: relative;
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: 49em) {
       font-size: 20px;
     }
     img {
@@ -702,7 +702,7 @@ p {
     -webkit-column-count: 2; /* Old Chrome, Safari and Opera */
     -moz-column-count: 2; /* Old Firefox */
     column-count: 2;
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: 49em) {
       -webkit-column-count: 1; /* Old Chrome, Safari and Opera */
       -moz-column-count: 1; /* Old Firefox */
       column-count: 1;
@@ -711,7 +711,7 @@ p {
 }
 
 .gebaeudetechnik-container, .consulting-container {
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     text-align: center;
   }
 }
@@ -719,13 +719,13 @@ p {
 .it-security, .telekommunikation, .systemintegration{
   .text {
     padding-right: 100px;
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: 49em) {
       padding-right: 0;
     }
   }
   .list {
     background-image: linear-gradient(to right, #f1f1f1 , #fefefe);
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: 49em) {
       text-align: left;
     }
   }
@@ -747,7 +747,7 @@ p {
       object-fit: fill;
     }
   }
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     text-align: center;
   }
 }
@@ -815,21 +815,21 @@ header {
 
 .mobile-navigation {
   display: none;
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     display: block;
   }
 }
 
 .desktop-navigation {
   display: flex;
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     display: none;
   }
 }
 
 
 .site-header {
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     height: 52px;
   }
 }
@@ -841,7 +841,7 @@ header {
   z-index: 999;
 
 
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     bottom: 0;
     width: 100%;
     display: block;
@@ -864,7 +864,7 @@ header {
     padding: 7px 10px 10px;
     margin: 7px 0;
     width: inherit;
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: 49em) {
       background: $red;
       float: left;
       padding: 12px 10px 20px;
@@ -879,13 +879,13 @@ header {
   }
   .phone {
     display: none;
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: 49em) {
       display: inline-block;
     }
   }
   .fernwartung {
     display: block;
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: 49em) {
       display: none;
     }
   }
@@ -928,7 +928,7 @@ i, italic {
   height:1px;
   background-color: $dark-gray;
   margin: 15px 0 60px 0;
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     margin: 15px 0 30px 0;
   }
   background: $dark-gray;
@@ -947,7 +947,7 @@ i, italic {
   height:1px;
   background-color: white;
   margin: 15px 0 60px 0;
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     margin: 15px 0 30px 0;
   }
   background: white;
@@ -966,7 +966,7 @@ i, italic {
   color:white;
   height:1px;
   margin: 15px 0 60px 0;
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     margin: 15px 0 30px 0;
     background: $dark-gray;
     background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, $dark-gray 50%, rgba(0,0,0,0) 100%);
@@ -992,7 +992,7 @@ i, italic {
   color:white;
   height:1px;
   margin: 15px 0 60px 0;
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     margin: 15px 0 30px 0;
     background: white;
     background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, white 50%, rgba(0,0,0,0) 100%);
@@ -1019,7 +1019,7 @@ i, italic {
   color:white;
   height:1px;
   margin: 15px 0 60px 0;
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     margin: 15px 0 30px 0;
     background: $dark-gray;
     background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, $dark-gray 50%, rgba(0,0,0,0) 100%);
@@ -1045,7 +1045,7 @@ i, italic {
   color:white;
   height:1px;
   margin: 15px 0 60px 0;
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     margin: 15px 0 30px 0;
     background: white;
     background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, white 50%, rgba(0,0,0,0) 100%);
@@ -1230,7 +1230,7 @@ reveal-overlay {
   height:    -moz-calc(100% - 50px);
   height:         calc(100% - 50px);
   top: 0 !important;
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     margin: 0;
   }
 }
@@ -1256,14 +1256,14 @@ reveal-overlay {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0 70px;
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
       background-repeat: no-repeat;
       background-size: auto 250px;
       background-position: center 53px;
   }
   img {
     visibility: visible;
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: 49em) {
       visibility: visible !important; //change for mobile fix
     }
   }
@@ -1271,7 +1271,7 @@ reveal-overlay {
 
 .bg-fixed {
   background-attachment: fixed;
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     background-attachment: initial;
   }
 }
@@ -1285,17 +1285,17 @@ reveal-overlay {
 }
 
 .footer-container p {
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     text-align: center;
   }
 }
 
 .text-center-mobile {
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     text-align: center !important;
   }
   p {
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: 49em) {
       text-align: center !important;
     }
   }
@@ -1303,7 +1303,7 @@ reveal-overlay {
 
 .supportlevel {
   .padding-top-80 {
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: 49em) {
       padding-top: 40px;
     }
   }
@@ -1316,14 +1316,14 @@ reveal-overlay {
 
 
 .gesch-mobile {
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     display: block;
   }
   display: none;
 }
 
 .gesch-desktop {
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 49em) {
     display: none;
   }
   display: block;
@@ -1331,7 +1331,7 @@ reveal-overlay {
 
 .supportlevel {
   .text {
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: 49em) {
       margin-bottom: 50px;
     }
   }
