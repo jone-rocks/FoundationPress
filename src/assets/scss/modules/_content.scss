@@ -517,6 +517,9 @@ img.support_availability {
 .erwartung_text {
   width: 90%;
   margin-left: 12%;
+  p {
+    text-align: left;
+  }
 }
 
 
@@ -1364,3 +1367,4 @@ reveal-overlay {
     box-shadow: none;
 }
 }
+
