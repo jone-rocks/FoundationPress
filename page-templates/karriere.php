@@ -61,7 +61,7 @@ $full_bg_img = wp_get_attachment_image_src( get_field('karriere_header'), "full"
 				<?php endwhile; ?>
 			</ul>
 			
-			<h3 class="color-red"><?php the_field('erwartungen_header'); ?></h3>
+			<h4><?php the_field('erwartungen_header'); ?></h4>
 			<?php
 			if( have_rows('erwartungen') ):
 				while ( have_rows('erwartungen') ) : the_row(); ?>
