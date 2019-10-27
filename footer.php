@@ -15,7 +15,7 @@
 			<div class="grid-x">
 				<div class="cell small-12 medium-4 adress">
 					<p>
-						<strong>Raab IT Systemhaus GmbH & Co. KG</strong></br>
+						<strong>Raab IT Systemhaus</strong></br>
 						Gartenstraße 28<br />
 						89547 Gerstetten
 					</p>
