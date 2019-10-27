@@ -294,3 +294,21 @@ $(document).ready(function() {
 
 
 });
+
+
+$(document).ready(function() {
+
+
+var senseSpeed = 0;
+var previousScroll = 0;
+$(window).scroll(function(event){
+   var scroller = $(this).scrollTop();
+   if (scroller-senseSpeed > previousScroll){
+      $(".contact-icons").filter(':not(:animated)').slideUp();
+   } else if (scroller+senseSpeed < previousScroll) {
+      $(".contact-icons").filter(':not(:animated)').slideDown();
+   }
+   previousScroll = scroller;
+});
+
+});
