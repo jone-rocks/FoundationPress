@@ -299,13 +299,14 @@ $(document).ready(function() {
 $(document).ready(function() {
 
 
+var width = $(window).width();
 var senseSpeed = 0;
 var previousScroll = 0;
 $(window).scroll(function(event){
    var scroller = $(this).scrollTop();
-   if (scroller-senseSpeed > previousScroll){
+   if (scroller-senseSpeed > previousScroll && width <= 790){
       $(".contact-icons").filter(':not(:animated)').slideUp();
-   } else if (scroller+senseSpeed < previousScroll) {
+   } else if (scroller+senseSpeed < previousScroll && width <= 790) {
       $(".contact-icons").filter(':not(:animated)').slideDown();
    }
    previousScroll = scroller;
