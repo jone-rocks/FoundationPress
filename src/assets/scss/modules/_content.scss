@@ -829,8 +829,10 @@ header {
 
 
 .site-header {
+  padding: 0 10px;
   @media screen and (max-width: 49em) {
     height: 52px;
+    padding: 0;
   }
 }
 

@@ -313,3 +313,16 @@ $(window).scroll(function(event){
 });
 
 });
+
+
+
+
+ /**
+ * DropDown Menu
+ */
+
+$(document).ready(function() {
+    $(".menu-item-has-children").on("click",function(){
+      $(".menu-item-has-children ul").toggle()
+    });
+  });
