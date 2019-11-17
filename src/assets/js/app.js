@@ -321,8 +321,19 @@ $(window).scroll(function(event){
  * DropDown Menu
  */
 
-$(document).ready(function() {
-    $(".menu-item-has-children").on("click",function(){
-      $(".menu-item-has-children ul").toggle()
+$(document).ready(function () {
+    $(window).on("resize", function (e) {
+        checkScreenSize();
     });
-  });
+
+    checkScreenSize();
+
+    function checkScreenSize(){
+        var newWindowWidth = $(window).width();
+        if (newWindowWidth < 790) {
+            $(".menu-item-has-children").on("click",function(){
+                $(".menu-item-has-children ul").toggle()
+              });
+        }
+    }
+});
