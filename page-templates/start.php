@@ -75,7 +75,8 @@ $full_bg_img = wp_get_attachment_image_src( get_field('support_header'), "full" 
 	</div>
 </div>
 
-<!-- Geschäftsführung Desktop -->
+<!-- Geschäftsführung Desktop image-->
+<!--
 <div class="grid-container gesch gesch-desktop">
 	<div class="grid-x geschaeftsfuehrung">
 		<div class="cell small-12 medium-5 bg-dark-grey padding-small">
@@ -87,20 +88,20 @@ $full_bg_img = wp_get_attachment_image_src( get_field('support_header'), "full" 
 		</div>
 	</div>
 </div>
+-->
 
-<!-- Geschäftsführung Desktop ALTERNATIVE-->
-<!--
+<!-- Geschäftsführung Desktop Background-->
+
 <div class="grid-container gesch gesch-desktop">
 	<div class="grid-x geschaeftsfuehrung">
 		<div class="cell small-12 medium-5 bg-dark-grey padding-small">
 			<h3><?php the_field('geschaeftsfuehrung_header'); ?></h3>
 			<p><?php the_field('geschaeftsfuehrung_txt'); ?></p>
 		</div>
-		<div class="cell small-12 medium-7 background-img" background="<?php echo wp_get_attachment_image( get_field('geschaeftsfuehrung_img'), 'full' ); ?>">
+		<div class="cell small-12 medium-7 background-img" style="background-image:url('<?php the_field('geschaeftsfuehrung_img'); ?>')">
 		</div>
 	</div>
 </div>
--->
 
 <!-- Geschäftsführung Mobile -->
 <div class="grid-container gesch gesch-mobile">
