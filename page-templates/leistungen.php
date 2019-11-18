@@ -109,7 +109,7 @@ while( have_rows('telekommunikation') ): the_row(); ?>
 	<div class="bg-light-grey"><a id="facilitytelefonie"></a>
 		<div class="grid-container full telekommunikation">
 			<div class="grid-x align-middle medium-padding-collapse">
-				<div class="cell small-12 medium-6 background-img" style="background-image:url('<?php the_field('img'); ?>')">
+				<div class="cell small-12 medium-6 align-self-stretch background-img" style="background-image:url('<?php the_sub_field('img'); ?>')">
 				</div>
 				<div class="cell small-12 medium-6 telekommunikation-text text-center-mobile">
 					<h4 class="headline_left with-icon" style="background-image: url('<?php the_sub_field('icon'); ?>')"><?php the_sub_field('title'); ?></h4>
