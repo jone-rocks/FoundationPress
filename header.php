@@ -107,7 +107,7 @@
 		<div data-sticky-container>
 			<div class="sticky" id="example2" data-sticky data-top-anchor="example2:top" data-options="anchor: page; marginTop: 0; stickyOn: small;" style="width:100%; z-index: 999">
 				<div class="navtext-container">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/raabit_logo_header.svg" />
+					<img src="<?php echo get_template_directory_uri(); ?>/img/raabit_logo_header2.svg" />
 				</div>
 				<input type="checkbox" class="mobmen-btn" id="mobmen-btn">
 				<label for="mobmen-btn" class="mobmen-icon"><span class="navicon"></span></label>
@@ -126,7 +126,7 @@
 			
 				<div class="mobile-navigation">
 					<div class="navtext-container">
-						<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/raabit_logo_header.svg" /></a>
+						<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/raabit_logo_header2.svg" /></a>
 					</div>
 						<input type="checkbox" class="mobmen-btn" id="mobmen-btn">
 						<label for="mobmen-btn" class="mobmen-icon"><span class="navicon"></span></label>
@@ -139,7 +139,7 @@
 				<nav class="site-navigation top-bar" role="navigation" id="<?php foundationpress_mobile_menu_id(); ?>" data-options="sticky_on: large">
 					<div class="top-bar-left">
 						<a href="/"><div class="site-desktop-title top-bar-title logo">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/raabit_logo_header.svg" class="logo_nonsticky" />
+							<img src="<?php echo get_template_directory_uri(); ?>/img/raabit_logo_header2.svg" class="logo_nonsticky" />
 							<img src="<?php echo get_template_directory_uri(); ?>/img/raabit_logo_haken_header.svg" class="logo_sticky" />
 						</div></a>
 					</div>
