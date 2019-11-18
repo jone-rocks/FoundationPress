@@ -783,6 +783,9 @@ header {
 .logo_sticky {
   top: 3px !important;
 }
+.logo_nonsticky {
+  width: 210px !important;
+}
 
 .logo {
   img {
@@ -790,9 +793,6 @@ header {
     position: absolute;
     top: -4px;
     width: 140px;
-    .logo_nonsticky {
-      width: 210px;
-    }
   }
 }
 

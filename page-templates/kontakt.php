@@ -14,7 +14,8 @@ $full_bg_img = wp_get_attachment_image_src( get_field('contact_header_img'), "fu
 	<div class="grid-x">
 		<div class="cell">
 			<div class="full_img_bg full_img_bg1" style="background-image: url('<?php echo $full_bg_img[0]; ?>')">
-				<?php echo wp_get_attachment_image( get_field('contact_header_img'), 'full' ); ?>
+				<!--<?php echo wp_get_attachment_image( get_field('contact_header_img'), 'full' ); ?>-->
+				<img src="<?php echo $full_bg_img[0]; ?>" />
 			</div>	
 		</div>
 	</div>
