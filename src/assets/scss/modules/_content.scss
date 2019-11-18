@@ -1261,9 +1261,9 @@ reveal-overlay {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  button, input[type=button] {
-    width: 100%;
+    button, input[type=button] {
+      width: 100% !important;
+    }
   }
 }
 
