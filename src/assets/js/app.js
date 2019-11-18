@@ -331,9 +331,12 @@ $(document).ready(function () {
     function checkScreenSize(){
         var newWindowWidth = $(window).width();
         if (newWindowWidth < 790) {
-            $(".menu-item-has-children").on("click",function(){
-                $(".menu-item-has-children ul").toggle()
-              });
+            $('.menu-item-has-children').click(function(){
+                $('ul', this).toggle();
+            });
         }
     }
 });
+
+
+
