@@ -1256,6 +1256,15 @@ reveal-overlay {
   .close-button {
     color: rgba(255, 255, 255, 0.9);
   }
+  .nf-form-cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  button, input[type=button] {
+    width: 100%;
+  }
 }
 
 .close-button, .close-button.medium {
