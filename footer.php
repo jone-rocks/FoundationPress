@@ -50,10 +50,10 @@
 	<div class="bg-red">
 		<div class="grid-container">
 			<div class="grid-x subfooter">
-				<div class="cell small-12 medium-6">
+				<div class="cell small-12 medium-6 text-left">
 					Copyright Raab IT-Systemhaus GmbH & Co. KG
 				</div>
-				<div class="cell small-12 medium-6 text-right">	
+				<div class="cell small-12 medium-6 text-left">	
 					<a data-toggle="impressum">Impressum</a> | <a data-toggle="datenschutz">Datenschutz</a> | <a data-toggle="agb">AGB</a>
 				</div>
 			</div>
