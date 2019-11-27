@@ -16,10 +16,10 @@
       &:first-child {
         padding-right: 2%;
         border-right: #fff solid 1px;
-        @media screen and (max-width: 48em) {
-          border: 0;
-          padding: inherit;
-        }
+      }
+      @media screen and (max-width: 48em) {
+        border: 0;
+        padding: inherit;
       }
       .phone-icon {
         @media screen and (max-width: 49em) {
