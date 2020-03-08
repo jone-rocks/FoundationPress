@@ -72,3 +72,35 @@ function my_acf_init() {
 }
 
 add_action('acf/init', 'my_acf_init');
+
+
+// Do NOT include the opening php tag above
+
+add_filter('tiny_mce_before_init', 'tiny_mce_remove_unused_formats' );
+/*
+ * Modify TinyMCE editor to remove H1.
+ */
+function tiny_mce_remove_unused_formats($init) {
+	// Add block format elements you want to show in dropdown
+	$init['block_formats'] = 'Paragraph=p;Heading 3=h3';
+	return $init;
+}
+
+
+
+	
+add_theme_support( 'post-thumbnails' );
+
+
+
+function new_excerpt_more($more) {
+    return '';
+}
+add_filter('excerpt_more', 'new_excerpt_more', 21 );
+
+function the_excerpt_more_link( $excerpt ){
+    $post = get_post();
+    $excerpt .= '<a href="'. get_permalink($post->ID) . '">weiterlesen ...</a>.';
+    return $excerpt;
+}
+add_filter( 'the_excerpt', 'the_excerpt_more_link', 21 );
